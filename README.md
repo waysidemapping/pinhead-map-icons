@@ -4,10 +4,7 @@ _High quality public domain icons for your map pins_
 
 Okay, so you're making a map and need some icons. Well, maybe a lot of icons. Like, for every type of thing that might appear on a map. And they need to be visually consistent. Like the size and direction and whatever. And they gotta be free. Open licensed. In vector format. Without any AI BS. Oh, and they all need to be legible on the head of a pin. 
 
-> This happened to me while building [themap.is](https://github.com/waysidemapping/themap.is). I put together this repo in case it happens to you too. It's called Pinhead. Enjoy!
-> –Q
-
----
+⬆️ This happened to me while building [themap.is](https://github.com/waysidemapping/themap.is). I put together this repo in case it happens to you too. It's called Pinhead. Enjoy!
 
 ## Overview
 
@@ -19,7 +16,7 @@ Pinhead is seeded from some of the most popular open source map icon sets includ
 
 I've been gradually cleaning up the seed icons by scaling them to the same size, conflating duplicates, improving names, removing SVG cruft, and manually improving legibility. I've also been splitting out certain icon elements into standalone icons, such as taking the NPS "wine" icon and creating two additional icons: `wine_glass` and `wine_bottle`.
 
-And finally, the icons come from the likes of you! I myself have been addings some totally new icons I've designed in support of [themap.is](https://github.com/waysidemapping/themap.is). We're looking for contributors to grow and sustain this icon library. Keep reading if you're interested.
+And finally, the icons come from the likes of you! I myself have been addings some totally new icons I've designed in support of [themap.is](https://github.com/waysidemapping/themap.is). I'm hoping for contributors to grow and sustain this icon library. Keep reading if you're interested.
 
 ## Contributing
 
