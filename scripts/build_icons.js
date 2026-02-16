@@ -1,9 +1,8 @@
-
-import { existsSync, rmSync, mkdirSync, readdirSync, copyFileSync } from 'fs';
+import { existsSync, rmSync, mkdirSync, readdirSync, copyFileSync, writeFileSync } from 'fs';
 import { join, basename, extname } from 'path';
 
-const sourceDir = './svg';
-const targetDir = './dist/svg';
+const sourceDir = 'icons';
+const targetDir = 'dist/icons';
 
 function ensureEmptyDir(dir) {
   if (existsSync(dir)) {
@@ -29,28 +28,46 @@ function collectFiles(dir) {
   return results;
 }
 
-function flatCopy(source, target) {
-  ensureEmptyDir(target);
+function flatCopy() {
+  ensureEmptyDir(targetDir);
 
-  const files = collectFiles(source);
+  const files = collectFiles(sourceDir);
   const seenNames = new Set();
 
-  for (const file of files) {
-    const baseName = basename(file);
+  const manifest = {
+    icons: {}
+  };
 
-    if (seenNames.has(baseName)) {
-      throw new Error(`Filename collision detected: ${baseName}`);
+  for (const file of files) {
+    const filename = basename(file, extname(file))
+    manifest.icons[filename] = {};
+
+    const subdir = file.slice(sourceDir.length + 1, file.length - basename(file).length - 1);
+    if (subdir) {
+      manifest.icons[filename].srcdir = subdir;
     }
 
-    seenNames.add(baseName);
-    const destPath = join(target, baseName);
+    if (seenNames.has(filename)) {
+      throw new Error(`Filename collision detected: ${filename}`);
+    }
+
+    seenNames.add(filename);
+    const destPath = join(targetDir, filename) + '.svg';
     copyFileSync(file, destPath);
   }
+  // sort icons by ID
+  manifest.icons = Object.fromEntries(
+    Object.entries(manifest.icons).sort(([keyA], [keyB]) =>
+      keyA.localeCompare(keyB)
+    )
+  );
+
+  writeFileSync('dist/index.json', JSON.stringify(manifest, null, 2));
   console.log(`${files.length} icons`);
 }
 
 try {
-  flatCopy(sourceDir, targetDir);
+  flatCopy();
   console.log('Flat copy completed successfully.');
 } catch (err) {
   console.error('Error:', err.message);

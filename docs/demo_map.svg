@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="105px" height="105px" viewBox="0 0 105 105" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>demo_map</title>
+    <defs>
+        <path d="M0,0 L105,0 L105,105 L0,105 L0,0 Z" id="path-1"></path>
+    </defs>
+    <g id="demo_map" stroke="none" fill="none" xlink:href="#path-1">
+        <use fill="#ECECEC" fill-rule="evenodd" xlink:href="#path-1"></use>
+        <polygon id="Rectangle" fill="#C5C5C5" fill-rule="evenodd" points="83.125 44.625 105 66.2083333 105 104.708333 23.3333333 104.708333"></polygon>
+        <polygon id="Rectangle-Copy" fill="#D7D7D7" fill-rule="evenodd" points="105 66.2083333 105 0 39.6666667 0"></polygon>
+        <line x1="15.75" y1="110.25" x2="84" y2="45.5" id="Line-2-Copy" stroke="#FFFFFF" stroke-width="4.66666667" stroke-linecap="square" transform="translate(49.5833, 78.1667) rotate(-1.5074) translate(-49.5833, -78.1667)"></line>
+        <line x1="129.5" y1="94.5" x2="24.5" y2="-18.6666667" id="Line-2-Copy-2" stroke="#FFFFFF" stroke-width="4.66666667" stroke-linecap="square" transform="translate(77, 37.9167) rotate(-2.1438) translate(-77, -37.9167)"></line>
+        <path d="M52.5,72 C60.1666667,63.2341831 64,56.7341831 64,52.5 C64,46.1487254 58.8512746,41 52.5,41 C46.1487254,41 41,46.1487254 41,52.5 C41,56.7341831 44.8333333,63.2341831 52.5,72 Z" id="Oval-Copy" fill="#000000" fill-rule="evenodd"></path>
+    </g>
+</svg>

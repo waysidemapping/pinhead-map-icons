@@ -3,9 +3,10 @@
     "type": "module",
     "version": "0.0.1",
     "scripts": {
-        "build_icons": "node ./scripts/build_icons.js",
+        "build": "node ./scripts/build_icons.js && cp -a docs/. dist/",
         "check_icons": "node ./scripts/check_icons.js",
-        "all": "npm run check_icons && npm run build_icons"
+        "all": "npm run check_icons && npm run build_icons",
+        "serve": "node serve.js"
     },
     "devDependencies": {
         "chalk": "^5.2.0",

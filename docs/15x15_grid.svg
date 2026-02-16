@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150px" height="150px" viewBox="0 0 150 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>15x15_grid</title>
+    <g id="15x15_grid" stroke="none" fill="none" fill-rule="evenodd" stroke-linecap="square" stroke-width="1">
+        <g id="Group" transform="translate(9.5, 0.5)" stroke="#BBBBBB">
+            <line x1="0.5" y1="-1.41813644e-14" x2="0.5" y2="150" id="Line"></line>
+            <line x1="10.5" y1="-1.41813644e-14" x2="10.5" y2="150" id="Line-Copy"></line>
+            <line x1="20.5" y1="-1.41813644e-14" x2="20.5" y2="150" id="Line-Copy-2"></line>
+            <line x1="30.5" y1="-1.41813644e-14" x2="30.5" y2="150" id="Line-Copy-3"></line>
+            <line x1="40.5" y1="-1.41813644e-14" x2="40.5" y2="150" id="Line-Copy-4"></line>
+            <line x1="50.5" y1="-1.41813644e-14" x2="50.5" y2="150" id="Line-Copy-5"></line>
+            <line x1="60.5" y1="-1.41813644e-14" x2="60.5" y2="150" id="Line-Copy-6"></line>
+            <line x1="70.5" y1="-1.41813644e-14" x2="70.5" y2="150" id="Line-Copy-7"></line>
+            <line x1="80.5" y1="-1.41813644e-14" x2="80.5" y2="150" id="Line-Copy-8"></line>
+            <line x1="90.5" y1="-1.41813644e-14" x2="90.5" y2="150" id="Line-Copy-9"></line>
+            <line x1="100.5" y1="-1.41813644e-14" x2="100.5" y2="150" id="Line-Copy-10"></line>
+            <line x1="110.5" y1="-1.41813644e-14" x2="110.5" y2="150" id="Line-Copy-11"></line>
+            <line x1="120.5" y1="-1.41813644e-14" x2="120.5" y2="150" id="Line-Copy-12"></line>
+            <line x1="130.5" y1="-1.41813644e-14" x2="130.5" y2="150" id="Line-Copy-13"></line>
+        </g>
+        <g id="Group" transform="translate(-0.5, 9)" stroke="#BBBBBB">
+            <line x1="75.5" y1="56" x2="75.5" y2="206" id="Line" transform="translate(75.5, 131) rotate(-90) translate(-75.5, -131)"></line>
+            <line x1="75.5" y1="46" x2="75.5" y2="196" id="Line-Copy" transform="translate(75.5, 121) rotate(-90) translate(-75.5, -121)"></line>
+            <line x1="75.5" y1="36" x2="75.5" y2="186" id="Line-Copy-2" transform="translate(75.5, 111) rotate(-90) translate(-75.5, -111)"></line>
+            <line x1="75.5" y1="26" x2="75.5" y2="176" id="Line-Copy-3" transform="translate(75.5, 101) rotate(-90) translate(-75.5, -101)"></line>
+            <line x1="75.5" y1="16" x2="75.5" y2="166" id="Line-Copy-4" transform="translate(75.5, 91) rotate(-90) translate(-75.5, -91)"></line>
+            <line x1="75.5" y1="6" x2="75.5" y2="156" id="Line-Copy-5" transform="translate(75.5, 81) rotate(-90) translate(-75.5, -81)"></line>
+            <line x1="75.5" y1="-4" x2="75.5" y2="146" id="Line-Copy-6" transform="translate(75.5, 71) rotate(-90) translate(-75.5, -71)"></line>
+            <line x1="75.5" y1="-14" x2="75.5" y2="136" id="Line-Copy-7" transform="translate(75.5, 61) rotate(-90) translate(-75.5, -61)"></line>
+            <line x1="75.5" y1="-24" x2="75.5" y2="126" id="Line-Copy-8" transform="translate(75.5, 51) rotate(-90) translate(-75.5, -51)"></line>
+            <line x1="75.5" y1="-34" x2="75.5" y2="116" id="Line-Copy-9" transform="translate(75.5, 41) rotate(-90) translate(-75.5, -41)"></line>
+            <line x1="75.5" y1="-44" x2="75.5" y2="106" id="Line-Copy-10" transform="translate(75.5, 31) rotate(-90) translate(-75.5, -31)"></line>
+            <line x1="75.5" y1="-54" x2="75.5" y2="96" id="Line-Copy-11" transform="translate(75.5, 21) rotate(-90) translate(-75.5, -21)"></line>
+            <line x1="75.5" y1="-64" x2="75.5" y2="86" id="Line-Copy-12" transform="translate(75.5, 11) rotate(-90) translate(-75.5, -11)"></line>
+            <line x1="75.5" y1="-74" x2="75.5" y2="76" id="Line-Copy-13" transform="translate(75.5, 1) rotate(-90) translate(-75.5, -1)"></line>
+        </g>
+    </g>
+</svg>

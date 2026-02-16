@@ -1,0 +1,110 @@
+
+body {
+  font-family: ui-monospace, monospace;
+  font-size: 14px;
+}
+
+i {
+  font-style: italic;
+}
+b, strong {
+  font-weight: bold;
+}
+a {
+  color: inherit;
+  text-decoration: underline solid #000 1px;
+}
+
+#body {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+article {
+  line-height: 22px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+article > * {
+  margin-bottom: 1.5em;
+  max-width: 640px;
+}
+#main-title {
+  margin-bottom: -6px;
+  margin-left: -35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+#main-title .tagline {
+  text-align: right;
+}
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+hr {
+  border: 0;
+  border-bottom: 2px solid #000;
+  margin-bottom: 30px;
+}
+#main-title img {
+  width: 75px;
+  height: 75px;
+  margin-bottom: -7px;
+}
+#main-title span {
+  display: inline-block;
+  margin-left: -24px;
+  margin-bottom: -10px;
+}
+
+#icon-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #000;
+}
+
+#icon-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.icon-item {
+  width: 100%;
+  margin-bottom: 40px;
+}
+.icon-label {
+  background: #000;
+  width: fit-content;
+  min-width: 200px;
+  max-width: 100%;
+  color: #fff;
+  padding: 8px;
+}
+.icon-variants {
+  display: flex;
+  border-top: 1px solid #000;
+  align-items: flex-end;
+  gap: 30px;
+  padding: 20px 0 20px 8px;
+}
+.icon-variants p {
+  margin-top: 4px;
+  text-align: center;
+}
+textarea {
+  width: 100%;
+  border: 0;
+  overflow: scroll;
+  text-align: left;
+  white-space: nowrap;
+  background: #f7f7f7;
+  padding: 4px;
+  font-size: inherit;
+  resize: none;
+}
