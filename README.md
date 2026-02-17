@@ -69,7 +69,7 @@ If the following sections seem too technical or intimidating, feel free to just 
 * Filenames should be literal and descriptive at the risk of being verbose.
   * E.g. prefer <img src="https://pinhead.ink/i/giraffe.svg" height="15px" width="15px"/> `giraffe` to `zoo` and <img src="https://pinhead.ink/i/plus.svg" height="15px" width="15px"/> `plus` to `medicine`.
 * The filenames of icons with multiple descrete elements should be composed multiple component joined with a hyphen.
-  * E.g. prefer <img src="https://pinhead.ink/i/car-key.svg" height="15px" width="15px"/> `car-key` to `car_key` or `car_rental`.
+  * E.g. prefer <img src="https://pinhead.ink/i/key-car.svg" height="15px" width="15px"/> `key-car` to `key_car` or `car_rental`.
 * Two elements in different files should only have the same component name if they are intended to appear nearly identically, ignoring size and orientation. 
 * The subdirectory of an icon is not important.
 
