@@ -120,19 +120,37 @@ hr {
   gap: 20px;
   padding: 20px 0 20px 8px;
 }
-.res-preview {
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  gap:15px;
-  height:105px;
+.map-preview {
+  width: 105px;
+  height: 105px;
+  flex: 0 0 auto;
+  position: relative;
 }
-.res-preview-group {
+.map-preview-background {
+  width:105px;
+  height:105px;
+  background:url(/demo_map.svg);
+  background-size:contain;
+}
+.res-previews {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  height: 105px;
+}
+.res-preview-wrap {
   display: flex;
   align-items: center;
   gap: 4px;
 }
-textarea {
+canvas.res-preview {
+ width:15px;
+ height:15px;
+ image-rendering:crisp-edges;
+ image-rendering:pixelated;
+}
+textarea.svg-code {
   width: 100%;
   border: 0;
   overflow: scroll;
@@ -143,6 +161,8 @@ textarea {
   font-family: inherit;
   font-size: inherit;
   resize: none;
+  height:105px;
+  width: 100%;
 }
 
 @media only screen and (max-width: 800px) {

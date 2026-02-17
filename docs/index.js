@@ -68,7 +68,7 @@ function setupPage(pageData) {
               .append(iconId)
           ),
         new Chainable('div')
-          .setAttribute('style', 'display:flex;gap: 10px;')
+          .setAttribute('class', 'links')
           .append(
             new Chainable('a')
               .setAttribute('href', `i/${iconId}.svg`)
@@ -92,57 +92,53 @@ function setupPage(pageData) {
       .setAttribute('class', 'icon-variants')
       .append(
         new Chainable('div')
-          .setAttribute('class', 'res-preview')
+          .setAttribute('class', 'res-previews')
           .append(
               new Chainable('div')
-              .setAttribute('class', 'res-preview-group')
+              .setAttribute('class', 'res-preview-wrap')
               .append(
                 new Chainable('canvas')
-                  .setAttribute('class', 'icon')
+                  .setAttribute('class', 'res-preview icon')
                   .setAttribute('icon', iconId)
                   .setAttribute('scale', 1)
                   .setAttribute('width', 15)
-                  .setAttribute('height', 15)
-                  .setAttribute('style', 'width:15px;height:15px;image-rendering:crisp-edges;image-rendering:pixelated;'),
+                  .setAttribute('height', 15),
                 new Chainable('p')
                   .append('1x') 
               ),
             new Chainable('div')
-              .setAttribute('class', 'res-preview-group')
+              .setAttribute('class', 'res-preview-wrap')
               .append(
                 new Chainable('canvas')
-                  .setAttribute('class', 'icon')
+                  .setAttribute('class', 'res-preview icon')
                   .setAttribute('icon', iconId)
                   .setAttribute('scale', 2)
                   .setAttribute('width', 30)
-                  .setAttribute('height', 30)
-                  .setAttribute('style', 'width:15px;height:15px;image-rendering:crisp-edges;image-rendering:pixelated;'),
+                  .setAttribute('height', 30),
                 new Chainable('p')
                   .append('2x')
               ),
             new Chainable('div')
-              .setAttribute('class', 'res-preview-group')
+              .setAttribute('class', 'res-preview-wrap')
               .append(
                 new Chainable('canvas')
-                  .setAttribute('class', 'icon')
+                  .setAttribute('class', 'res-preview icon')
                   .setAttribute('icon', iconId)
                   .setAttribute('scale', 3)
                   .setAttribute('width', 45)
-                  .setAttribute('height', 45)
-                  .setAttribute('style', 'width:15px;height:15px;image-rendering:crisp-edges;image-rendering:pixelated;'),
+                  .setAttribute('height', 45),
                 new Chainable('p')
                   .append('3x')   
               )   
           ),
         new Chainable('div')
-          .setAttribute('style', `width:105px;height:105px;flex:0 0 auto;position:relative;`)
+          .setAttribute("class", "map-preview")
           .append(
             new Chainable('div')
-              .setAttribute('style', 'width:105px;height:105px;background:url(demo_map.svg);background-size:contain;')
-              ,
+              .setAttribute("class", "map-preview-background"),
             new Chainable('div')
               .setAttribute('style', `width:15px;height:15px;position:absolute;top:45px;left:45px;filter:invert(1);`)
-              .insertAdjacentHTML("afterbegin", icon.svg)   
+              .insertAdjacentHTML("afterbegin", icon.svg)
           ),
         new Chainable('div')
           .setAttribute("class", "pixel-grid")
@@ -150,7 +146,6 @@ function setupPage(pageData) {
         new Chainable('textarea')
           .setAttribute('readonly', true)
           .setAttribute('class', 'svg-code')
-          .setAttribute('style', 'height:105px;width: 100%;')
           .append(icon.svg)   
       )
     ].join(''));
