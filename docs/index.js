@@ -9,171 +9,186 @@ function setupPage(pageData) {
   const parser = new DOMParser();
   const icons = pageData.icons;
 
-  getElementById('icon-count')
+  document.getElementById('icon-count')
     .replaceChildren(
       new Intl.NumberFormat().format(Object.keys(icons).length)
     );
 
-  getElementById('icon-gallery')
-    .replaceChildren(
-      ...Object.keys(icons).map(iconId => {
+  document.getElementById('icon-gallery')
+    .insertAdjacentHTML("afterbegin",
+      Object.keys(icons).map(iconId => {
         const icon = icons[iconId];
-        return createElement('a')
+        return new Chainable('a')
           .setAttribute('href', '#' + iconId)
           .setAttribute('title', iconId)
-            .insertAdjacentHTML("afterbegin", icon.svg)
+          .insertAdjacentHTML("afterbegin", icon.svg)
         }
-      )
+      ).join('')
     );
 
-  getElementById('icon-list')
-    .replaceChildren(
-      ...Object.keys(icons).map(iconId => {
-        const icon = icons[iconId];
-        let preview1xCanvas, preview2xCanvas, preview3xCanvas;
-        const el = createElement('div')
+  document.getElementById('icon-list')
+    .insertAdjacentHTML("afterbegin",
+      Object.keys(icons).map(iconId => {
+        return new Chainable('div')
           .setAttribute('id', iconId)
-          .setAttribute('class', 'icon-item')
-          .append(
-             createElement('div')
-              .setAttribute('style', 'display:flex;justify-content:space-between;align-items: baseline;')
-              .append(
-                createElement('h4')
-                  .setAttribute('class', 'icon-label')
-                  .append(
-                    createElement('div')
-                      .setAttribute('style', 'width:15px;height:15px;display:inline-block;filter: invert(1);margin-right: 10px;vertical-align:middle;')
-                      .insertAdjacentHTML("afterbegin", icon.svg),
-                    createElement('span')
-                      .setAttribute('style', 'vertical-align:middle;')
-                      .append(iconId)
-                  ),
-                createElement('div')
-                  .setAttribute('style', 'display:flex;gap: 10px;')
-                  .append(
-                    createElement('a')
-                      .setAttribute('href', `i/${iconId}.svg`)
-                      .append(
-                        'Open'
-                      ),
-                    createElement('a')
-                      .setAttribute('href', `i/${iconId}.svg`)
-                      .setAttribute('download', true)
-                      .append(
-                        'Download'
-                      ),
-                    createElement('a')
-                      .setAttribute('href', `https://github.com/waysidemapping/pinhead-map-icons/blob/main/icons/${(icon.srcdir ? icon.srcdir + '/' : '') + iconId}.svg`)
-                      .append(
-                        'GitHub'
-                      )
-                  )
-              ),
-            createElement('div')
-              .setAttribute('class', 'icon-variants')
-              .append(
-                createElement('div')
-                  .setAttribute('class', 'res-preview')
-                  .append(
-                     createElement('div')
-                      .setAttribute('class', 'res-preview-group')
-                      .append(
-                        preview1xCanvas = createElement('canvas')
-                          .setAttribute('width', '15')
-                          .setAttribute('height', '15')
-                          .setAttribute('style', 'width:15px;height:15px;image-rendering:crisp-edges;image-rendering:pixelated;'),
-                        createElement('p')
-                          .append('1x')
-                      ),
-                    createElement('div')
-                      .setAttribute('class', 'res-preview-group')
-                      .append(
-                        preview2xCanvas = createElement('canvas')
-                          .setAttribute('width', '30')
-                          .setAttribute('height', '30')
-                          .setAttribute('style', 'width:15px;height:15px;image-rendering:crisp-edges;image-rendering:pixelated;'),
-                        createElement('p')
-                          .append('2x')
-                      ),
-                    createElement('div')
-                      .setAttribute('class', 'res-preview-group')
-                      .append(
-                        preview3xCanvas = createElement('canvas')
-                          .setAttribute('width', '45')
-                          .setAttribute('height', '45')
-                          .setAttribute('style', 'width:15px;height:15px;image-rendering:crisp-edges;image-rendering:pixelated;'),
-                        createElement('p')
-                          .append('3x')
-                      )
-                  ),
-                createElement('div')
-                  .setAttribute('style', `width:105px;height:105px;flex:0 0 auto;position:relative;`)
-                  .append(
-                    createElement('img')
-                      .setAttribute('loading', 'lazy')
-                      .setAttribute('decoding', 'async')
-                      .setAttribute('style', 'width:105px;height:105px;')
-                      .setAttribute('src', `demo_map.svg`),
-                    createElement('div')
-                      .setAttribute('style', `width:15px;height:15px;position:absolute;top:45px;left:45px;filter:invert(1);`)
-                      .insertAdjacentHTML("afterbegin", icon.svg)
-                  ),
-                createElement('div')
-                  .setAttribute("class", "pixel-grid")
-                  .insertAdjacentHTML("afterbegin", icon.svg),
-                createElement('textarea')
-                  .setAttribute('readonly', true)
-                  .setAttribute('class', 'svg-code')
-                  .setAttribute('style', 'height:105px;width: 100%;')
-                  .addEventListener('focus', e => e.target.select())
-                  .append(icon.svg)
-              )
-          );
-          const canvasContexts = [
-            preview1xCanvas.getContext("2d"),
-            preview2xCanvas.getContext("2d"),
-            preview3xCanvas.getContext("2d")
-          ];
-          canvasContexts.forEach((ctx, i) => ctx.scale(i + 1, i + 1));
-          parser.parseFromString(icon.svg, "image/svg+xml").querySelectorAll("path").forEach(pathEl => {
-            const path = new Path2D(pathEl.getAttribute("d"));
-            canvasContexts.forEach(ctx => ctx.fill(path));
-          });
-          return el;
-        }
-      )
+          .setAttribute('class', 'icon-item');
+      }).join('')
     );
+
+  const observer = new IntersectionObserver((entries) => {
+    for (const entry of entries) {
+      if (entry.isIntersecting) {
+        loadIconItemInner(entry.target);
+        observer.unobserve(entry.target);
+      }
+    }
+  }, {
+    // preload before visible
+    rootMargin: "200px" 
+  });
+
+  document.querySelectorAll(".icon-item")
+    .forEach(el => observer.observe(el));
+
+  function loadIconItemInner(el) {
+    const iconId = el.getAttribute('id');
+    const icon = icons[iconId];
+    el.insertAdjacentHTML("afterbegin", [
+    new Chainable('div')
+      .setAttribute('style', 'display:flex;justify-content:space-between;align-items: baseline;')
+      .append(
+        new Chainable('h4')
+          .setAttribute('class', 'icon-label')
+          .append(
+            new Chainable('div')
+              .setAttribute('style', 'width:15px;height:15px;display:inline-block;filter: invert(1);margin-right: 10px;vertical-align:middle;')
+              .insertAdjacentHTML("afterbegin", icon.svg),
+            new Chainable('span')
+              .setAttribute('style', 'vertical-align:middle;')
+              .append(iconId)
+          ),
+        new Chainable('div')
+          .setAttribute('style', 'display:flex;gap: 10px;')
+          .append(
+            new Chainable('a')
+              .setAttribute('href', `i/${iconId}.svg`)
+              .append(
+                'Open'
+              ),
+            new Chainable('a')
+              .setAttribute('href', `i/${iconId}.svg`)
+              .setAttribute('download', true)
+              .append(
+                'Download'
+              ),
+            new Chainable('a')
+              .setAttribute('href', `https://github.com/waysidemapping/pinhead-map-icons/blob/main/icons/${(icon.srcdir ? icon.srcdir + '/' : '') + iconId}.svg`)
+              .append(
+                'GitHub'
+              )
+          )
+      ),
+    new Chainable('div')
+      .setAttribute('class', 'icon-variants')
+      .append(
+        new Chainable('div')
+          .setAttribute('class', 'res-preview')
+          .append(
+              new Chainable('div')
+              .setAttribute('class', 'res-preview-group')
+              .append(
+                new Chainable('canvas')
+                  .setAttribute('class', 'icon')
+                  .setAttribute('icon', iconId)
+                  .setAttribute('scale', 1)
+                  .setAttribute('width', 15)
+                  .setAttribute('height', 15)
+                  .setAttribute('style', 'width:15px;height:15px;image-rendering:crisp-edges;image-rendering:pixelated;'),
+                new Chainable('p')
+                  .append('1x') 
+              ),
+            new Chainable('div')
+              .setAttribute('class', 'res-preview-group')
+              .append(
+                new Chainable('canvas')
+                  .setAttribute('class', 'icon')
+                  .setAttribute('icon', iconId)
+                  .setAttribute('scale', 2)
+                  .setAttribute('width', 30)
+                  .setAttribute('height', 30)
+                  .setAttribute('style', 'width:15px;height:15px;image-rendering:crisp-edges;image-rendering:pixelated;'),
+                new Chainable('p')
+                  .append('2x')
+              ),
+            new Chainable('div')
+              .setAttribute('class', 'res-preview-group')
+              .append(
+                new Chainable('canvas')
+                  .setAttribute('class', 'icon')
+                  .setAttribute('icon', iconId)
+                  .setAttribute('scale', 3)
+                  .setAttribute('width', 45)
+                  .setAttribute('height', 45)
+                  .setAttribute('style', 'width:15px;height:15px;image-rendering:crisp-edges;image-rendering:pixelated;'),
+                new Chainable('p')
+                  .append('3x')   
+              )   
+          ),
+        new Chainable('div')
+          .setAttribute('style', `width:105px;height:105px;flex:0 0 auto;position:relative;`)
+          .append(
+            new Chainable('div')
+              .setAttribute('style', 'width:105px;height:105px;background:url(demo_map.svg);background-size:contain;')
+              ,
+            new Chainable('div')
+              .setAttribute('style', `width:15px;height:15px;position:absolute;top:45px;left:45px;filter:invert(1);`)
+              .insertAdjacentHTML("afterbegin", icon.svg)   
+          ),
+        new Chainable('div')
+          .setAttribute("class", "pixel-grid")
+          .insertAdjacentHTML("afterbegin", icon.svg),
+        new Chainable('textarea')
+          .setAttribute('readonly', true)
+          .setAttribute('class', 'svg-code')
+          .setAttribute('style', 'height:105px;width: 100%;')
+          .append(icon.svg)   
+      )
+    ].join(''));
+
+    el.querySelector('textarea').addEventListener('focus', e => e.target.select());
+
+    el.querySelectorAll('canvas.icon').forEach(canvas => {
+      const scale = parseInt(canvas.getAttribute('scale'));
+      const context = canvas.getContext("2d");
+      if (scale !== 1) context.scale(scale, scale);
+      const paths = parser.parseFromString(icons[canvas.getAttribute('icon')].svg, "image/svg+xml")
+        .querySelectorAll("path")
+        .values()
+        .map(pathEl => new Path2D(pathEl.getAttribute("d")));
+      paths.forEach(path => context.fill(path));
+    });
+  }
 }
 
-// Creates a new HTML element where certain functions return the element itself.
-export function createElement(...args) {
-  let el = document.createElement(...args);
-  wrapElementFunctions(el);
-  return el;
-}
-
-// Gets an HTML element where certain functions return the element itself.
-export function getElementById(...args) {
-  let el = document.getElementById(...args);
-  if (el) wrapElementFunctions(el);
-  return el;
-}
-
-export function getElementsByName(...args) {
-  let els = document.getElementsByName(...args);
-  if (els) return els.map(wrapElementFunctions);
-}
-
-// Wraps certain functions of the element so they return the
-// element itself in order to enable chaining.
-function wrapElementFunctions(el) {
-  let fnNames = ['addEventListener', 'append', 'appendChild', 'replaceChildren', 'setAttribute', 'insertAdjacentHTML'];
-  for (let i in fnNames) {
-    let fnName = fnNames[i];
-    let fn = el[fnName];
-    el[fnName] = function(...args) {
-      fn.apply(this, args);
-      return el;
-    };
+class Chainable {
+  constructor(tag) {
+    this.tag = tag;
+    this.attrs = "";
+    this.children = "";
+  }
+  setAttribute(k, v) {
+    this.attrs += ` ${k}="${v}"`;
+    return this;
+  }
+  insertAdjacentHTML(_, html) {
+    this.children += html;
+    return this;
+  }
+  append(...args) {
+    this.children += Array.from(args).map(arg => arg.toString()).join('');
+    return this;
+  }
+  toString() {
+    return `<${this.tag}${this.attrs}>${this.children}</${this.tag}>`;
   }
 }
