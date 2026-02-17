@@ -62,6 +62,7 @@ async function flatCopy() {
     copyFileSync(file, baseDestPath + '.svg');
     writeFileSync(baseDestPath + '.15.png', await svgToPngData(file, 15));
     writeFileSync(baseDestPath + '.30.png', await svgToPngData(file, 30));
+    writeFileSync(baseDestPath + '.45.png', await svgToPngData(file, 45));
   }
   // sort icons by ID
   manifest.icons = Object.fromEntries(
