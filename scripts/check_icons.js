@@ -81,11 +81,12 @@ function checkIcons() {
     }
 
     const id = parse(file).name;
-    iconIds[id] = true;
-    const parts = id.split('-');
-    if (parts.length > 2) {
-      console.log(id);
+    if (!id.match(/^[a-z_\d]+$/)) {
+      console.error(`Invalid charachters in filename: ` + id);
+      process.exit(1);
     }
+    iconIds[id] = true;
+    const parts = id.split(/_with_|_on_|_in_|_onto_|_into_|_and_|_for_|_under_|_over_|_above_|_between_|_atop_|_within_|_toward_|_wearing_|_holding_|_carrying_|_beside_/);
     if (parts[0] !== id) parts.forEach(part => iconIdParts[part] = true);
 
     // Make xml declaration consistent
