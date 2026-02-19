@@ -1,0 +1,38 @@
+name: Release
+
+on:
+  push:
+    branches: ["main"]
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: "release"
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+      - name: Install
+        run: npm install
+      - name: Build
+        run: npm run build
+      - name: Create tar archive of dist
+        run: tar -czf release.tar.gz dist
+      - name: Create GitHub Release
+        run: |
+          gh release create "${GITHUB_REF_NAME}" release.tar.gz \
+            --title "${GITHUB_REF_NAME}" \
+            --generate-notes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
