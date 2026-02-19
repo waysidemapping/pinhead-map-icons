@@ -27,10 +27,14 @@ jobs:
       - name: Build
         run: npm run build
       - name: Create tar archive of dist
-        run: tar -czf release.tar.gz dist
+        run: |
+          mkdir -p temp
+          cp -r dist temp/pinhead-dist
+          tar -czf pinhead-dist.tar.gz -C temp pinhead-dist
+      - run: rm -rf temp
       - name: Create GitHub Release
         run: |
-          gh release create "${GITHUB_REF_NAME}" release.tar.gz \
+          gh release create "${GITHUB_REF_NAME}" pinhead-dist.tar.gz \
             --title "${GITHUB_REF_NAME}" \
             --generate-notes
         env:
