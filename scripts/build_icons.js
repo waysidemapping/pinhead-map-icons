@@ -1,12 +1,10 @@
 import { existsSync, rmSync, mkdirSync, readdirSync, copyFileSync, writeFileSync, readFileSync, write } from 'fs';
 import { join, basename, extname } from 'path';
-import sharp from 'sharp';
 
 const sourceDir = 'icons';
-const targetDirs = [
-  'docs/v1',
-  'dist/icons'
-];
+
+const docsIconsDir = 'docs/v1';
+const distIconsDir = 'dist/icons';
 
 function ensureEmptyDir(dir) {
   if (existsSync(dir)) {
@@ -33,7 +31,7 @@ function collectFiles(dir) {
 }
 
 async function flatCopy() {
-  targetDirs.forEach(dir => ensureEmptyDir(dir));
+  [docsIconsDir, distIconsDir].forEach(dir => ensureEmptyDir(dir));
 
   const files = collectFiles(sourceDir);
   const seenNames = new Set();
@@ -62,16 +60,8 @@ async function flatCopy() {
 
     seenNames.add(filename);
 
-    const png15 = await svgToPngData(file, 15);
-    const png30 = await svgToPngData(file, 30);
-    const png45 = await svgToPngData(file, 45);
-
-    targetDirs.map(targetDir => {
-      const baseDestPath = join(targetDir, filename);
-      copyFileSync(file, baseDestPath + '.svg');
-      writeFileSync(baseDestPath + '.15.png', png15);
-      writeFileSync(baseDestPath + '.30.png', png30);
-      writeFileSync(baseDestPath + '.45.png', png45);
+    [docsIconsDir, distIconsDir].map(targetDir => {
+      copyFileSync(file, join(targetDir, filename) + '.svg');
     });
   }
   // sort icons by ID
@@ -86,7 +76,7 @@ async function flatCopy() {
     )
   );
 
-  targetDirs.forEach(dir => {
+  [docsIconsDir, distIconsDir].forEach(dir => {
     writeFileSync(dir + '/index.json', JSON.stringify(manifest));
     writeFileSync(dir + '/index.complete.json', JSON.stringify(complete));
   });
@@ -99,12 +89,4 @@ try {
 } catch (err) {
   console.error('Error:', err.message);
   process.exit(1);
-}
-
-
-async function svgToPngData(svgPath, dim) {
-  return await sharp(svgPath)
-    .resize(dim, dim)
-    .png()
-    .toBuffer();
 }
