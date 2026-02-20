@@ -33,7 +33,11 @@ jobs:
       - name: Extract changelog section
         run: |
           VERSION=${GITHUB_REF_NAME#v}
-          awk "/## \\[$VERSION\\]/,/## \\[/" CHANGELOG.md | sed '$d' > RELEASE_NOTES.md
+          awk -v ver="$VERSION" '
+            $0 ~ "^## \\["ver"\\]" {flag=1; print; next}
+            /^## \[/ {flag=0}
+            flag
+          ' CHANGELOG.md > RELEASE_NOTES.md
       - name: Create GitHub Release
         run: |
           PACKAGE_FILE=$(ls *.tgz)
