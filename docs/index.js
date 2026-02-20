@@ -1,11 +1,15 @@
 let packageJson;
 
+let version;
+let majorVersion
+
 window.addEventListener('load', _ => {
   fetch('package.json')
     .then(result => result.json())
     .then(obj => {
       packageJson = obj;
-      const majorVersion = packageJson.version.split('.')[0];
+      version = packageJson.version;
+      majorVersion = version.split('.')[0];
       fetch(`v${majorVersion}/index.complete.json`)
         .then(result => result.json())
         .then(setupPage);
@@ -29,30 +33,36 @@ function setupPage(pageData) {
             .setAttribute('class', 'inline')
             .setAttribute('src', packageJson.versionIcon || "https://pinhead.ink/v1/heart.svg"),
             new Chainable('span')
-              .append('v' + packageJson.version)
+              .append('v' + version)
         ),
       new Chainable('a')
-        .setAttribute('href', `https://github.com/waysidemapping/pinhead/releases/download/v${packageJson.version}/waysidemapping-pinhead-${packageJson.version}.tgz`)
-        .append('download'),
+        .setAttribute('href', `https://github.com/waysidemapping/pinhead/releases/download/v${version}/waysidemapping-pinhead-${version}.tgz`)
+        .append(
+            new Chainable('span')
+              .append('download'),
+            new Chainable('img')
+              .setAttribute('class', 'inline')
+              .setAttribute('src', "https://pinhead.ink/v2/arrow_down_to_down_bracket.svg")
+          ),
       new Chainable('a')
-          .setAttribute('href', `https://www.npmjs.com/package/@waysidemapping/pinhead/v/${packageJson.version}`)
+          .setAttribute('href', `https://www.npmjs.com/package/@waysidemapping/pinhead/v/${version}`)
           .setAttribute('target', '_blank')
           .append(
             new Chainable('span')
               .append('npm package'),
             new Chainable('img')
               .setAttribute('class', 'inline')
-              .setAttribute('src', "https://pinhead.ink/v1/arrow_top_right_from_square_outline.svg")
+              .setAttribute('src', `https://pinhead.ink/v${majorVersion}/arrow_top_right_from_square_outline.svg`)
           ),
       new Chainable('a')
-        .setAttribute('href', `https://github.com/waysidemapping/pinhead/releases/tag/v${packageJson.version}`)
+        .setAttribute('href', `https://github.com/waysidemapping/pinhead/releases/tag/v${version}`)
         .setAttribute('target', '_blank')
         .append(
           new Chainable('span')
             .append('github release'),
           new Chainable('img')
             .setAttribute('class', 'inline')
-            .setAttribute('src', "https://pinhead.ink/v1/arrow_top_right_from_square_outline.svg")
+            .setAttribute('src', `https://pinhead.ink/v${majorVersion}/arrow_top_right_from_square_outline.svg`)
         )
     ].join(''));
 
@@ -115,12 +125,12 @@ function setupPage(pageData) {
           .setAttribute('class', 'links')
           .append(
             new Chainable('a')
-              .setAttribute('href', `v1/${iconId}.svg`)
+              .setAttribute('href', `v${majorVersion}/${iconId}.svg`)
               .append(
                 'open'
               ),
             new Chainable('a')
-              .setAttribute('href', `v1/${iconId}.svg`)
+              .setAttribute('href', `v${majorVersion}/${iconId}.svg`)
               .setAttribute('download', true)
               .append(
                 'download'

@@ -36,8 +36,8 @@ hr {
 }
 
 img.inline {
-  height: 1em;
-  aspect-ratio: 0.8;
+  height: 0.85em;
+  aspect-ratio: 1;
 }
 img.inline:not(:first-child) {
   margin-left: 4px;
