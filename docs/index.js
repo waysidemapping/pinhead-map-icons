@@ -131,7 +131,7 @@ function setupPage(pageData) {
               ),
             new Chainable('a')
               .setAttribute('href', `v${majorVersion}/${iconId}.svg`)
-              .setAttribute('download', true)
+              .setAttribute('download', `${iconId}.svg`)
               .append(
                 'download'
               ),
