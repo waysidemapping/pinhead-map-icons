@@ -20,6 +20,7 @@ Various icons have been renamed due to issues found in the initial release. A ma
 
 ### New icons
 
+- <img src="https://pinhead.ink/v2/turtle_top.svg" width="15px"/> Add `turtle_top`
 - <img src="https://pinhead.ink/v2/arrow_down_to_down_bracket.svg" width="15px"/> Add `arrow_down_to_down_bracket`
 - <img src="https://pinhead.ink/v2/arrow_up_to_up_bracket.svg" width="15px"/> Add `arrow_up_to_up_bracket`
 - <img src="https://pinhead.ink/v2/arrow_left_to_left_bracket.svg" width="15px"/> Add `arrow_left_to_left_bracket`
