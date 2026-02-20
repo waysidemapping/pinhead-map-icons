@@ -14,6 +14,27 @@ Pinhead has 1,000+ icons and counting, including standardized versions of the mo
 
 Pinhead is a repository of public domain SVG icons designed to be displayed at 15x15 pixels (minimum). This is much smaller than most other icon sets since the target use case is cartography. Map icons need to be really small to support high visual density. The cool part is that you can scale them up and they'll still look great, so you can use them for all kinds of things, not just maps.
 
+## Usage
+
+There are a few easy ways to get and use the icons depending on what you're trying to do.
+
+Visit [pinhead.ink](https://pinhead.ink) to browse the icons. Each icon has a download link, copyable`<svg>` code, and an embeddable `<img>` code. These links are permanent and will not break in the future even if an icon is deleted or renamed, so feel free to use them anywhere.
+
+If you want to get the full set of icon files, use the download link on pinhead.ink for the most recent version. Or, you can browse all version in the [releases](https://github.com/waysidemapping/pinhead/releases).
+
+### For developers
+
+Node developers can install Pinhead as usual:
+
+```
+npm install @waysidemapping/pinhead
+```
+
+Pinhead has no dependencies and is basically just a directory of SVG files. A few convenience files are included:
+
+- `dist/icons/index.json`: a list of all the available icons in this version
+- `dist/icons/index.complete.json`: same as the above but with the SVG code included inline
+
 ## Where the icons are from
 
 Pinhead is seeded from the following public domain sources. Thank you to all the contributors who made these projects possible.
