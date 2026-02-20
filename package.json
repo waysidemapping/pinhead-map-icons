@@ -1,5 +1,28 @@
 {
   "name": "@waysidemapping/pinhead",
+  "description": "Quality public domain icons for your map pins",
+  "license": "CC0-1.0",
+  "keywords": [
+    "icons",
+    "maps",
+    "cartography",
+    "public domain"
+  ],
+  "homepage": "https://pinhead.ink",
+  "repository": "github:waysidemapping/pinhead",
+  "bugs": {
+    "url": "https://github.com/waysidemapping/pinhead/issues"
+  },
+  "funding": [
+    {
+      "type": "GitHub Sponsors",
+      "url": "https://github.com/sponsors/quincylvania"
+    },
+    {
+      "type": "Ko-Fi",
+      "url": "https://ko-fi.com/waysidemapping"
+    }
+  ],
   "type": "module",
   "version": "1.0.0",
   "files": [
