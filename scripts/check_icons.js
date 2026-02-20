@@ -66,7 +66,7 @@ function checkIcons() {
   console.time(END);
 
   const iconIds = {};
-  const iconIdPartsObj = {};
+  // const iconIdPartsObj = {};
 
   globSync(`./icons/**/*.svg`).forEach(cleanSvgFile);
     
@@ -88,13 +88,10 @@ function checkIcons() {
       process.exit(1);
     }
     iconIds[id] = true;
-    const parts = id.split(/_with_|_on_|_in_|_onto_|_into_|_and_|_under_|_over_|_above_|_beside_|_between_|_atop_|_within_|_from_|_to_|_toward_|_wearing_|_holding_|_carrying_|_crossing_|_dragging_|_aiming_|_boarding_|_riding_|_driving_|_using_/);
+    // const parts = id.split(/_with_|_on_|_in_|_onto_|_into_|_and_|_under_|_over_|_above_|_beside_|_between_|_atop_|_within_|_from_|_to_|_toward_|_wearing_|_holding_|_carrying_|_crossing_|_dragging_|_aiming_|_boarding_|_riding_|_driving_|_using_/);
     // if (parts[0] !== id) {
     //  parts.forEach(part => iconIdPartsObj[part] = true);
     // }
-
-    // Make xml declaration consistent
-    xml.dec({ version: '1.0', encoding: 'UTF-8' });
 
     // Check the contents of the file
     let rootCount = 0;
@@ -127,14 +124,19 @@ function checkIcons() {
           process.exit(1);
         }
 
-        // Remove unwanted svg attributes
-        child.removeAtt(['width', 'height', 'x', 'y', 'id']);
-
         if (node.getAttribute('viewBox') !== '0 0 15 15') {
             console.warn(chalk.yellow('Warning - Unexpected viewBox on ' + node.nodeName + ': ' + node.getAttribute('viewBox')));
             console.warn('  in ' + file);
             console.warn('');
+            process.exit(1);
         }
+
+        // remove all attributes
+        while (child.node.attributes.length > 0) {
+          child.node.removeAttribute(child.node.attributes[0].name);
+        }
+        // add back the attributes we need in the order we want
+        child.att({"xmlns": "http://www.w3.org/2000/svg", "viewBox": "0 0 15 15"});
 
       // Checks for deeper levels
       } else {
@@ -201,7 +203,27 @@ function checkIcons() {
         });
     });
 
-    writeFileSync(file, xml.end({ prettyPrint: true }));
+    let xmlString = xml.end({ prettyPrint: true, headless: true });
+
+    // xmlbuilder2 output order of attributes is non-determinstic, so standardize it manually
+    xmlString = xmlString.replace(
+      /<svg\s+([^>]+)>/,
+      (_, attrs) => {
+        // Match full key="value" pairs
+        const attrMatches = attrs.match(/\S+="[^"]*"/g) || [];
+
+        // Sort reverse alphabetically by attribute name
+        attrMatches.sort((a, b) => {
+          const nameA = a.split("=")[0];
+          const nameB = b.split("=")[0];
+          return nameB.localeCompare(nameA);
+        });
+
+        return `<svg ${attrMatches.join(" ")}>`;
+      }
+    );
+
+    writeFileSync(file, xmlString);
   }
 
   // const iconIdParts = Object.keys(iconIdPartsObj).sort();

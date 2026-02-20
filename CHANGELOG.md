@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0] - 2026-02-20
+
+### Developer changes
+
+- Remove unnecessary `<?xml version="1.0" encoding="UTF-8"?>` declarations from every icon
+- Remove unnecessary `version="1.1"` and `xmlns:xlink="http://www.w3.org/1999/xlink"` attributes from `<svg>` element of every icon
+
 ## [2.0.0] - 2026-02-20
 
 ### ⚠️ Breaking changes
