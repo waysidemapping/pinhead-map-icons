@@ -29,9 +29,13 @@ function setupPage(pageData) {
     .insertAdjacentHTML("afterbegin", [
       new Chainable('h2')
         .append(
-          new Chainable('img')
-            .setAttribute('class', 'inline')
-            .setAttribute('src', packageJson.versionIcon || "https://pinhead.ink/v1/heart.svg"),
+          new Chainable('a')
+            .setAttribute('href', '#' + packageJson.versionIcon.slice(0, -4).split('/').slice(-1)[0])
+            .append(
+              new Chainable('img')
+                .setAttribute('class', 'inline')
+                .setAttribute('src', packageJson.versionIcon || "https://pinhead.ink/v1/heart.svg")
+            ),
             new Chainable('span')
               .append('v' + version)
         ),
