@@ -68,7 +68,9 @@ function checkIcons() {
   const iconIds = {};
   const iconIdPartsObj = {};
 
-  globSync(`./icons/**/*.svg`).forEach(file => {
+  globSync(`./icons/**/*.svg`).forEach(cleanSvgFile);
+    
+  function cleanSvgFile(file) {
     const contents = readFileSync(file, 'utf8');
     let xml;
     try {
@@ -135,68 +137,33 @@ function checkIcons() {
 
       // Checks for deeper levels
       } else {
-        // convert ellipses to paths
         if (node.nodeName === 'ellipse' || node.nodeName === 'circle') {
           const attr = (name) => parseFloat(node.getAttribute(name));
           pathDataToAdd.add(ellipseAttrsToPathD(attr('rx') || attr('r'), attr('cx'), attr('ry') || attr('r'), attr('cy')));
-          childrenToRemove.add(child);
-          return;
-        // convert rects to paths
         } else if (node.nodeName === 'rect') {
           const attr = (name) => node.getAttribute(name);
           pathDataToAdd.add(rectAttrsToPathD(attr));
-          childrenToRemove.add(child);
-          return;
-        // convert polygons to paths
         } else if (node.nodeName === 'polygon') {
           pathDataToAdd.add('M ' + node.getAttribute('points') + 'z');
-          childrenToRemove.add(child);
-          return;
-        // remove metadata nodes
-        } else if (node.nodeName === 'title' || node.nodeName === 'desc') {
-          childrenToRemove.add(child);
-          return;
-        } else if (node.nodeName === 'g') {
-          // groups will be emptied so remove them
-          childrenToRemove.add(child);
-          return;
-        }
-
-        // Remove unwanted attributes
-        child.removeAtt(['fill', 'fill-rule', 'id', 'xmlns']);
-
-        if (level > 2) {
-          let parent = child.up();
-          if (parent.node.nodeName === 'g') {
-            // move the node out of the group
-            pathDataToAdd.add(child.toString());
-            childrenToRemove.add(child);
-          }
-        }
-
-        // suspicious elements
-        if (node.nodeName !== 'path') {
+        } else if (node.nodeName === 'path') {
+          pathDataToAdd.add(node.getAttribute('d'));
+        } else if (node.nodeName !== 'title' && node.nodeName !== 'desc' && node.nodeName !== 'g') {
           warnings.push(chalk.yellow('Warning - Suspicious node: ' + node.nodeName));
           warnings.push(chalk.gray('  Each svg element should contain only one or more "path" elements.'));
           return;
         }
 
+        childrenToRemove.add(child);
+
         // suspicious attributes
-        let suspicious = node.attributes
+        const suspiciousAttrs = node.attributes
           .map(attr => attr.name)
           .filter(name => name !== 'd');
 
-        if (suspicious.length) {
-          warnings.push(chalk.yellow('Warning - Suspicious attributes on ' + node.nodeName + ': ' + suspicious));
+        if (suspiciousAttrs.length) {
+          warnings.push(chalk.yellow('Warning - Suspicious attributes on ' + node.nodeName + ': ' + suspiciousAttrs));
           warnings.push(chalk.gray('  Avoid identifiers, style, and presentation attributes.'));
-        }
-
-        // normalize path data
-        const d = node.getAttribute('d');
-        let pathdata = d && svgPathParse.pathParse(d);
-        if (pathdata) {
-          pathdata = pathdata.normalize({round: 2});
-          node.setAttribute('d', svgPathParse.serializePath(pathdata));
+          return;
         }
       }
 
@@ -207,16 +174,11 @@ function checkIcons() {
       child.remove();
     });
 
-    Array.from(pathDataToAdd).forEach((pathData) => {
-      if (pathData[0] === '<') {
-        xml.root().ele(pathData);
-      } else {
+    Array.from(pathDataToAdd).forEach(d => {
         xml.root().ele('path', {
-          d: pathData
+          d: svgPathParse.serializePath(svgPathParse.pathParse(d).normalize({round: 2}))
         });
-      }
     });
-
 
     if (warnings.length) {
       warnings.forEach(w => console.warn(w));
@@ -225,8 +187,7 @@ function checkIcons() {
     }
 
     writeFileSync(file, xml.end({ prettyPrint: true }));
-
-  });
+  }
 
   // const iconIdParts = Object.keys(iconIdPartsObj).sort();
   // iconIdParts
