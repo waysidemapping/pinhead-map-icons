@@ -1,8 +1,15 @@
+let packageJson;
 
 window.addEventListener('load', _ => {
-  fetch('v1/index.complete.json')
+  fetch('package.json')
     .then(result => result.json())
-    .then(setupPage);
+    .then(obj => {
+      packageJson = obj;
+      const majorVersion = packageJson.version.split('.')[0];
+      fetch(`v${majorVersion}/index.complete.json`)
+        .then(result => result.json())
+        .then(setupPage);
+    });
 });
 
 function setupPage(pageData) {
@@ -13,6 +20,41 @@ function setupPage(pageData) {
     .replaceChildren(
       new Intl.NumberFormat().format(Object.keys(icons).length)
     );
+
+  document.getElementById('sidebar')
+    .insertAdjacentHTML("afterbegin", [
+      new Chainable('h2')
+        .append(
+          new Chainable('img')
+            .setAttribute('class', 'inline')
+            .setAttribute('src', packageJson.versionIcon || "https://pinhead.ink/v1/heart.svg"),
+            new Chainable('span')
+              .append('v' + packageJson.version)
+        ),
+      new Chainable('a')
+        .setAttribute('href', `https://github.com/waysidemapping/pinhead/releases/download/v${packageJson.version}/waysidemapping-pinhead-${packageJson.version}.tgz`)
+        .append('download'),
+      new Chainable('a')
+          .setAttribute('href', `https://www.npmjs.com/package/@waysidemapping/pinhead/v/${packageJson.version}`)
+          .setAttribute('target', '_blank')
+          .append(
+            new Chainable('span')
+              .append('npm package'),
+            new Chainable('img')
+              .setAttribute('class', 'inline')
+              .setAttribute('src', "https://pinhead.ink/v1/arrow_top_right_from_square_outline.svg")
+          ),
+      new Chainable('a')
+        .setAttribute('href', `https://github.com/waysidemapping/pinhead/releases/tag/v${packageJson.version}`)
+        .setAttribute('target', '_blank')
+        .append(
+          new Chainable('span')
+            .append('github release'),
+          new Chainable('img')
+            .setAttribute('class', 'inline')
+            .setAttribute('src', "https://pinhead.ink/v1/arrow_top_right_from_square_outline.svg")
+        )
+    ].join(''));
 
   document.getElementById('icon-gallery')
     .insertAdjacentHTML("afterbegin",
@@ -75,18 +117,18 @@ function setupPage(pageData) {
             new Chainable('a')
               .setAttribute('href', `v1/${iconId}.svg`)
               .append(
-                'Open'
+                'open'
               ),
             new Chainable('a')
               .setAttribute('href', `v1/${iconId}.svg`)
               .setAttribute('download', true)
               .append(
-                'Download'
+                'download'
               ),
             new Chainable('a')
               .setAttribute('href', `https://github.com/waysidemapping/pinhead/blob/main/icons/${(icon.srcdir ? icon.srcdir + '/' : '') + iconId}.svg`)
               .append(
-                'GitHub'
+                'github'
               )
           )
       ),

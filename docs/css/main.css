@@ -14,6 +14,33 @@ a {
   color: inherit;
   text-decoration: underline solid #000 1px;
 }
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  border-bottom: 1px dashed #000;
+  padding-bottom: 10px;
+}
+hr {
+  border: 0;
+  border-bottom: 2px solid #000;
+  margin-bottom: 30px;
+}
+
+img.inline {
+  height: 1em;
+  aspect-ratio: 0.8;
+}
+img.inline:not(:first-child) {
+  margin-left: 4px;
+}
+img.inline:not(:last-child) {
+  margin-right: 4px;
+}
 
 .container {
   width: 100%;
@@ -22,10 +49,26 @@ a {
   padding: 20px 10px 40px 10px;
 }
 
-article {
-  line-height: 22px;
+#body-area {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
   margin-bottom: 40px;
   margin-top: 40px;
+}
+#sidebar {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 200px;
+  line-height: 2em;
+  border-left: 1px solid #000;
+  padding-left: 16px;
+}
+#sidebar a {
+  width: fit-content;
+}
+article {
+  line-height: 22px;
 }
 article > * {
   margin-bottom: 1.5em;
@@ -40,15 +83,6 @@ article > * {
 }
 #main-title .tagline {
   text-align: right;
-}
-h1 {
-  font-size: 32px;
-  font-weight: bold;
-}
-hr {
-  border: 0;
-  border-bottom: 2px solid #000;
-  margin-bottom: 30px;
 }
 #main-title img {
   width: 75px;
@@ -150,17 +184,19 @@ canvas.res-preview {
  image-rendering:crisp-edges;
  image-rendering:pixelated;
 }
-textarea.svg-code {
-  width: 100%;
+code, textarea {
+  background: #f3f3f3;
+  padding: 4px;
   border: 0;
   overflow: scroll;
   text-align: left;
   white-space: nowrap;
-  background: #f7f7f7;
-  padding: 4px;
   font-family: inherit;
   font-size: inherit;
   resize: none;
+}
+textarea.svg-code {
+  width: 100%;
   height:105px;
   width: 100%;
 }
@@ -174,6 +210,14 @@ textarea.svg-code {
   }
   h1 {
     font-size: 26px;
+  }
+
+  #body-area {
+    flex-direction: column;
+  }
+  #sidebar {
+    border: 0;
+    padding: 0;
   }
   
 }

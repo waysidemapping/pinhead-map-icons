@@ -27,7 +27,7 @@ jobs:
       - name: Install
         run: npm install
       - name: Build
-        run: npm run build
+        run: npm run dist
       - name: Pack
         run: npm pack
       - name: Create GitHub Release

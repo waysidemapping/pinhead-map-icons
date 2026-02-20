@@ -1,10 +1,10 @@
-import { existsSync, rmSync, mkdirSync, readdirSync, copyFileSync, writeFileSync, readFileSync, write } from 'fs';
+import { existsSync, rmSync, mkdirSync, readdirSync, copyFileSync, writeFileSync, readFileSync } from 'fs';
 import { join, basename, extname } from 'path';
 
 const sourceDir = 'icons';
-
-const docsIconsDir = 'docs/v1';
 const distIconsDir = 'dist/icons';
+
+const version = JSON.parse(readFileSync('package.json')).version;
 
 function ensureEmptyDir(dir) {
   if (existsSync(dir)) {
@@ -31,15 +31,17 @@ function collectFiles(dir) {
 }
 
 async function flatCopy() {
-  [docsIconsDir, distIconsDir].forEach(dir => ensureEmptyDir(dir));
+  ensureEmptyDir(distIconsDir);
 
   const files = collectFiles(sourceDir);
   const seenNames = new Set();
 
   const manifest = {
+    version: version,
     icons: {}
   };
   const complete = {
+    version: version,
     icons: {}
   };
 
@@ -60,9 +62,7 @@ async function flatCopy() {
 
     seenNames.add(filename);
 
-    [docsIconsDir, distIconsDir].map(targetDir => {
-      copyFileSync(file, join(targetDir, filename) + '.svg');
-    });
+    copyFileSync(file, join(distIconsDir, filename) + '.svg');
   }
   // sort icons by ID
   manifest.icons = Object.fromEntries(
@@ -76,10 +76,8 @@ async function flatCopy() {
     )
   );
 
-  [docsIconsDir, distIconsDir].forEach(dir => {
-    writeFileSync(dir + '/index.json', JSON.stringify(manifest));
-    writeFileSync(dir + '/index.complete.json', JSON.stringify(complete));
-  });
+  writeFileSync(distIconsDir + '/index.json', JSON.stringify(manifest));
+  writeFileSync(distIconsDir + '/index.complete.json', JSON.stringify(complete));
  
   console.log(`Built ${files.length} icons`);
 }

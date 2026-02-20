@@ -1,6 +1,11 @@
 name: Build and deploy site to GitHub Pages 
 
 on:
+  workflow_run:
+    # Runs after successful release workflow
+    workflows: ["Release"]
+    types:
+      - completed
   # Runs on pushes targeting the default branch
   push:
     branches: ["main"]
@@ -36,7 +41,7 @@ jobs:
       - name: Install
         run: npm install
       - name: Build
-        run: npm run build
+        run: npm run build_docs
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
