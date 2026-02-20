@@ -98,7 +98,6 @@ function checkIcons() {
 
     // Check the contents of the file
     let rootCount = 0;
-    let warnings = [];
 
     let childrenToRemove = new Set();
     let pathDataToAdd = new Set();
@@ -132,7 +131,9 @@ function checkIcons() {
         child.removeAtt(['width', 'height', 'x', 'y', 'id']);
 
         if (node.getAttribute('viewBox') !== '0 0 15 15') {
-            warnings.push(chalk.yellow('Warning - Unexpected viewBox on ' + node.nodeName + ': ' + node.getAttribute('viewBox')));
+            console.warn(chalk.yellow('Warning - Unexpected viewBox on ' + node.nodeName + ': ' + node.getAttribute('viewBox')));
+            console.warn('  in ' + file);
+            console.warn('');
         }
 
       // Checks for deeper levels
@@ -148,22 +149,41 @@ function checkIcons() {
         } else if (node.nodeName === 'path') {
           pathDataToAdd.add(node.getAttribute('d'));
         } else if (node.nodeName !== 'title' && node.nodeName !== 'desc' && node.nodeName !== 'g') {
-          warnings.push(chalk.yellow('Warning - Suspicious node: ' + node.nodeName));
-          warnings.push(chalk.gray('  Each svg element should contain only one or more "path" elements.'));
+          console.warn(chalk.yellow('Warning - Suspicious node: ' + node.nodeName));
+          console.warn(chalk.gray('  Each svg element should contain only one or more "path" elements.'));
+          console.warn('  in ' + file);
+          console.warn('');
           process.exit(1);
         }
 
         // remove all children since we'll re-add the paths we want later
         childrenToRemove.add(child);
 
+        if (node.getAttribute('stroke') && node.getAttribute('stroke') !== 'none') {
+          console.warn(chalk.yellow('Unexpcted stroke value on ' + node.nodeName + ': ' + node.getAttribute('stroke')));
+          console.warn(chalk.gray('  SVGs must be renderable through fill alone.'));
+          console.warn('  in ' + file);
+          console.warn('');
+          process.exit(1);
+        }
+        if (node.getAttribute('transform') && node.getAttribute('transform') !== 'translate(0, 0)') {
+          console.warn(chalk.yellow('Unexpcted transform value on ' + node.nodeName + ': ' + node.getAttribute('transform')));
+          console.warn(chalk.gray('  Elements must not rely on transforms.'));
+          console.warn('  in ' + file);
+          console.warn('');
+          process.exit(1);
+        }
+
         // suspicious attributes
         const suspiciousAttrs = node.attributes
           .map(attr => attr.name)
-          .filter(name => !['d', 'fill'].includes(name));
+          .filter(name => !['d', 'fill', 'id', 'fill-rule', 'stroke', 'transform'].includes(name));
 
         if (suspiciousAttrs.length) {
-          warnings.push(chalk.yellow('Warning - Suspicious attributes on ' + node.nodeName + ': ' + suspiciousAttrs));
-          warnings.push(chalk.gray('  Avoid identifiers, style, and presentation attributes.'));
+          console.warn(chalk.yellow('Warning - Suspicious attributes on ' + node.nodeName + ': ' + suspiciousAttrs));
+          console.warn(chalk.gray('  Avoid identifiers, style, and presentation attributes.'));
+          console.warn('  in ' + file);
+          console.warn('');
           process.exit(1);
         }
       }
@@ -180,12 +200,6 @@ function checkIcons() {
           d: svgPathParse.serializePath(svgPathParse.pathParse(d).normalize({round: 2}))
         });
     });
-
-    if (warnings.length) {
-      warnings.forEach(w => console.warn(w));
-      console.warn('  in ' + file);
-      console.warn('');
-    }
 
     writeFileSync(file, xml.end({ prettyPrint: true }));
   }
