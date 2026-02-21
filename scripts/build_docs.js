@@ -1,7 +1,6 @@
 import { execSync } from "child_process";
-import { existsSync, renameSync, rmSync, copyFileSync } from "fs";
+import { existsSync, renameSync, rmSync, copyFileSync, mkdirSync } from "fs";
 import { join } from "path";
-import { mkdirSync } from "fs";
 
 const packageName = "@waysidemapping/pinhead";
 
