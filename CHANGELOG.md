@@ -25,7 +25,7 @@
 
 ### Renamed and redesigned icons
 
-- <img src="https://pinhead.ink/v2/truck.svg" width="15px"/> `truck` -> <img src="https://pinhead.ink/v3/box_truck.svg" width="15px"/> `box_truck`
+- <img src="https://pinhead.ink/v2/truck_profile.svg" width="15px"/> `truck_profile` -> <img src="https://pinhead.ink/v3/box_truck.svg" width="15px"/> `box_truck`
 
 ## [2.1.1] - 2026-02-20
 
