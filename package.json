@@ -1,7 +1,7 @@
 {
   "name": "@waysidemapping/pinhead",
-  "version": "2.1.1",
-  "versionIcon": "https://pinhead.ink/v2/turtle_top.svg",
+  "version": "3.0.0-dev",
+  "versionIcon": "https://pinhead.ink/v3/car_profile.svg",
   "type": "module",
   "description": "Quality public domain icons for your map pins",
   "license": "CC0-1.0",

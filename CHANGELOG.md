@@ -1,5 +1,11 @@
 # Changelog
 
+## [3.0.0] - 2026-02-21
+
+### New icons
+
+- <img src="https://pinhead.ink/v3/car_profile.svg" width="15px"/> Add `car_profile`
+
 ## [2.1.1] - 2026-02-20
 
 ### Developer changes

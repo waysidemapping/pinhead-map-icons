@@ -56,5 +56,14 @@
         "new_id": "arrow_left_to_left_bracket"
       }
     ]
+  },
+  {
+    "from_major_version": "2",
+    "to_major_version": "3",
+    "icon_migrations": [
+      {
+        "new_id": "car_profile"
+      }
+    ]
   }
 ]
