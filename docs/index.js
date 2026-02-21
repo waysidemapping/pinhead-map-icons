@@ -89,7 +89,11 @@ function setupPage(pageData) {
           .setAttribute('id', iconId)
           .setAttribute('class', 'icon-item')
           // add a placeholder label to enable in-browser search and find before everything is loaded
-          .append(iconId);
+          .append(
+            new Chainable('span')
+              .setAttribute('class', 'icon-name')
+              .append(iconId)
+          );
       }).join('')
     );
 
@@ -113,16 +117,14 @@ function setupPage(pageData) {
     const icon = icons[iconId];
     el.innerHTML = [
     new Chainable('div')
-      .setAttribute('style', 'display:flex;justify-content:space-between;align-items: baseline;')
+      .setAttribute('class', 'icon-item-header')
       .append(
         new Chainable('h4')
           .setAttribute('class', 'icon-label')
           .append(
-            new Chainable('div')
-              .setAttribute('style', 'width:15px;height:15px;display:inline-block;margin-right: 10px;vertical-align:middle;')
-              .insertAdjacentHTML("afterbegin", icon.svg),
+            icon.svg,
             new Chainable('span')
-              .setAttribute('style', 'vertical-align:middle;')
+              .setAttribute('class', 'icon-name')
               .append(iconId)
           ),
         new Chainable('div')
@@ -190,7 +192,7 @@ function setupPage(pageData) {
                   .setAttribute('height', 45),
                 new Chainable('p')
                   .append('3x')
-              )   
+              )
           ),
         new Chainable('div')
           .setAttribute("class", "map-preview")
@@ -198,7 +200,7 @@ function setupPage(pageData) {
             new Chainable('div')
               .setAttribute("class", "map-preview-background"),
             new Chainable('div')
-              .setAttribute('style', `width:15px;height:15px;position:absolute;top:45px;left:45px;color:#fff;`)
+              .setAttribute('class', 'map-preview-pin-icon')
               .insertAdjacentHTML("afterbegin", icon.svg)
           ),
         new Chainable('div')
