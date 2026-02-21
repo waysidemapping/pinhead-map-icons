@@ -48,7 +48,6 @@ async function setupPage(pageData) {
             }
           ).join('')
         ),
-        
       new Chainable('a')
         .setAttribute('href', `https://github.com/waysidemapping/pinhead/releases/download/v${version}/waysidemapping-pinhead-${version}.tgz`)
         .append(
