@@ -16,7 +16,13 @@ window.addEventListener('load', _ => {
     });
 });
 
-function setupPage(pageData) {
+async function setupPage(pageData) {
+  const migrations = await fetch('migrations.json')
+    .then(result => result.json());
+
+  const currentMigrations = migrations.find(item => item.to_major_version === majorVersion);
+  const newIconIds = currentMigrations.icon_migrations.filter(mig => mig.new_id && (!mig.old_id || mig.redesign)).map(mig => mig.new_id);
+
   const parser = new DOMParser();
   const icons = pageData.icons;
 
@@ -28,17 +34,21 @@ function setupPage(pageData) {
   document.getElementById('sidebar')
     .insertAdjacentHTML("afterbegin", [
       new Chainable('h2')
-        .append(
-          new Chainable('a')
-            .setAttribute('class', 'inline-icon')
-            .setAttribute('href', '#' + packageJson.versionIcon.slice(0, -4).split('/').slice(-1)[0])
-            .append(
-              new Chainable('img')
-                .setAttribute('src', packageJson.versionIcon || "/v1/heart.svg")
-            ),
-            new Chainable('span')
-              .append('v' + version)
+        .setAttribute('class', 'version-title')
+        .append('v' + version),
+      new Chainable('div')
+        .setAttribute('class', 'icon-grid')
+        .insertAdjacentHTML("afterbegin",
+          newIconIds.map(iconId => {
+            const icon = icons[iconId];
+            return new Chainable('a')
+              .setAttribute('href', '#' + iconId)
+              .setAttribute('title', iconId)
+              .insertAdjacentHTML("afterbegin", icon.svg)
+            }
+          ).join('')
         ),
+        
       new Chainable('a')
         .setAttribute('href', `https://github.com/waysidemapping/pinhead/releases/download/v${version}/waysidemapping-pinhead-${version}.tgz`)
         .append(

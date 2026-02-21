@@ -31,9 +31,6 @@ h1 {
 h2 {
   font-size: 18px;
   font-weight: 700;
-  margin-bottom: 10px;
-  border-bottom: 1px dashed var(--text-color);
-  padding-bottom: 10px;
 }
 hr {
   border: 0;
@@ -70,12 +67,23 @@ img.inline-icon, a.inline-icon img {
   display: flex;
   flex-direction: column;
   flex-basis: 200px;
-  line-height: 2em;
+  line-height: 1.5em;
   border-left: 1px solid var(--text-color);
   padding-left: 16px;
 }
 #sidebar a {
   width: fit-content;
+}
+#sidebar > * {
+  margin-bottom: 10px;
+}
+.version-title {
+  padding-bottom: 10px;
+  border-bottom: 1px dashed var(--text-color);
+}
+#sidebar .icon-grid {
+    padding-bottom: 10px;
+    border-bottom: 1px dashed var(--text-color);
 }
 article {
   line-height: 22px;
@@ -106,13 +114,15 @@ article > * {
 }
 
 #icon-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
   padding-bottom: 30px;
   border-bottom: 2px solid var(--text-color);
 }
-#icon-gallery a {
+.icon-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.icon-grid a {
   min-width: 0;
   min-height: 0;
   display:block;
@@ -120,7 +130,7 @@ article > * {
   height:15px;
   flex:0 0 15px;
 }
-#icon-gallery a svg {
+.icon-grid a svg {
   min-width: 0;
   min-height: 0;
   display:block;
