@@ -54,6 +54,11 @@
       },
       {
         "new_id": "arrow_left_to_left_bracket"
+      },
+      {
+        "old_id": "arrow_right_to_right_bracket",
+        "new_id": "arrow_right_to_right_bracket",
+        "redesign": true
       }
     ]
   },
