@@ -46,7 +46,7 @@ function setupPage(pageData) {
               .append('download'),
             new Chainable('img')
               .setAttribute('class', 'inline-icon')
-              .setAttribute('src', "https://pinhead.ink/v2/arrow_down_to_down_bracket.svg")
+              .setAttribute('src', `https://pinhead.ink/v${majorVersion}/arrow_down_to_down_bracket.svg`)
           ),
       new Chainable('a')
           .setAttribute('href', `https://www.npmjs.com/package/@waysidemapping/pinhead/v/${version}`)
