@@ -6,6 +6,7 @@
 
 ### New icons
 
+- <img src="https://pinhead.ink/v3/maple_leaf.svg" width="15px"/> Add `maple_leaf`
 - <img src="https://pinhead.ink/v3/car_profile.svg" width="15px"/> Add `car_profile`
 - <img src="https://pinhead.ink/v3/mobile_phone_with_keypad_and_antenna_and_wifi.svg" width="15px"/> Add `mobile_phone_with_keypad_and_antenna_and_wifi`
 - <img src="https://pinhead.ink/v3/mobile_phone_with_touchscreen_and_antenna_and_wifi.svg" width="15px"/> Add `mobile_phone_with_touchscreen_and_antenna_and_wifi`

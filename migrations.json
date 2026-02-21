@@ -76,6 +76,9 @@
         "new_id": "mobile_phone_with_touchscreen_and_antenna_and_wifi"
       },
       {
+        "new_id": "maple_leaf"
+      },
+      {
         "old_id": "wifi",
         "new_id": "wifi",
         "redesign": true
