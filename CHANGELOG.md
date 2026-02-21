@@ -2,18 +2,30 @@
 
 ## [3.0.0] - 2026-02-21
 
-⚠️ This major release contains new and redesigned icons that may affect your setup. A machine-readable version of the icon upgrade paths can be found in the [`migrations.json`](/migrations.json) file.
+⚠️ This major release contains new, redesigned, and renamed icons that may affect your setup. A machine-readable version of the icon upgrade paths can be found in the [`migrations.json`](/migrations.json) file.
 
 ### New icons
 
 - <img src="https://pinhead.ink/v3/maple_leaf.svg" width="15px"/> Add `maple_leaf`
 - <img src="https://pinhead.ink/v3/car_profile.svg" width="15px"/> Add `car_profile`
+- <img src="https://pinhead.ink/v3/car_profile_with_raised_hood.svg" width="15px"/> Add `car_profile_with_raised_hood`
+- <img src="https://pinhead.ink/v3/compact_box_truck.svg" width="15px"/> Add `compact_box_truck`
+- <img src="https://pinhead.ink/v3/compact_box_truck_with_greek_cross.svg" width="15px"/> Add `compact_box_truck_with_greek_cross`
+- <img src="https://pinhead.ink/v3/compact_box_truck_with_heavy_six_point_asterisk.svg" width="15px"/> Add `compact_box_truck_with_heavy_six_point_asterisk`
+- <img src="https://pinhead.ink/v3/flatbed_truck.svg" width="15px"/> Add `flatbed_truck`
+- <img src="https://pinhead.ink/v3/pickup_truck.svg" width="15px"/> Add `pickup_truck`
+- <img src="https://pinhead.ink/v3/pickup_truck_with_crates.svg" width="15px"/> Add `pickup_truck_with_crates`
+- <img src="https://pinhead.ink/v3/pickup_truck_with_raised_hood.svg" width="15px"/> Add `pickup_truck_with_raised_hood`
 - <img src="https://pinhead.ink/v3/mobile_phone_with_keypad_and_antenna_and_wifi.svg" width="15px"/> Add `mobile_phone_with_keypad_and_antenna_and_wifi`
 - <img src="https://pinhead.ink/v3/mobile_phone_with_touchscreen_and_antenna_and_wifi.svg" width="15px"/> Add `mobile_phone_with_touchscreen_and_antenna_and_wifi`
 
 ### Redesigned icons
 
 - <img src="https://pinhead.ink/v2/wifi.svg" width="15px"/> -> <img src="https://pinhead.ink/v3/wifi.svg" width="15px"/> Update `wifi` to be simpler and bolder, and therefore more legible at smaller sizes and easier to combine with other icons
+
+### Renamed and redesigned icons
+
+- <img src="https://pinhead.ink/v2/truck.svg" width="15px"/> `truck` -> <img src="https://pinhead.ink/v3/box_truck.svg" width="15px"/> `box_truck`
 
 ## [2.1.1] - 2026-02-20
 

@@ -34,7 +34,7 @@ function setupPage(pageData) {
             .setAttribute('href', '#' + packageJson.versionIcon.slice(0, -4).split('/').slice(-1)[0])
             .append(
               new Chainable('img')
-                .setAttribute('src', packageJson.versionIcon || "https://pinhead.ink/v1/heart.svg")
+                .setAttribute('src', packageJson.versionIcon || "/v1/heart.svg")
             ),
             new Chainable('span')
               .append('v' + version)
@@ -46,7 +46,7 @@ function setupPage(pageData) {
               .append('download'),
             new Chainable('img')
               .setAttribute('class', 'inline-icon')
-              .setAttribute('src', `https://pinhead.ink/v${majorVersion}/arrow_down_to_down_bracket.svg`)
+              .setAttribute('src', `/v${majorVersion}/arrow_down_to_down_bracket.svg`)
           ),
       new Chainable('a')
           .setAttribute('href', `https://www.npmjs.com/package/@waysidemapping/pinhead/v/${version}`)
@@ -56,7 +56,7 @@ function setupPage(pageData) {
               .append('npm package'),
             new Chainable('img')
               .setAttribute('class', 'inline-icon')
-              .setAttribute('src', `https://pinhead.ink/v${majorVersion}/arrow_top_right_from_square_outline.svg`)
+              .setAttribute('src', `/v${majorVersion}/arrow_top_right_from_square_outline.svg`)
           ),
       new Chainable('a')
         .setAttribute('href', `https://github.com/waysidemapping/pinhead/releases/tag/v${version}`)
@@ -66,7 +66,7 @@ function setupPage(pageData) {
             .append('github release'),
           new Chainable('img')
             .setAttribute('class', 'inline-icon')
-            .setAttribute('src', `https://pinhead.ink/v${majorVersion}/arrow_top_right_from_square_outline.svg`)
+            .setAttribute('src', `/v${majorVersion}/arrow_top_right_from_square_outline.svg`)
         )
     ].join(''));
 

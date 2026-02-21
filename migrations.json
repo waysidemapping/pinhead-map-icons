@@ -70,6 +70,33 @@
         "new_id": "car_profile"
       },
       {
+        "new_id": "car_profile_with_raised_hood"
+      },
+      {
+        "new_id": "compact_box_truck"
+      },
+      {
+        "new_id": "compact_box_truck_with_greek_cross"
+      },
+      {
+        "new_id": "compact_box_truck_with_heavy_six_point_asterisk"
+      },
+      {
+        "new_id": "flatbed_truck"
+      },
+      {
+        "new_id": "pickup_truck"
+      },
+      {
+        "new_id": "pickup_truck_with_crates"
+      },
+      {
+        "new_id": "pickup_truck_with_raised_hood"
+      },
+      {
+        "new_id": "pickup_truck_with_slidein_camper"
+      },
+      {
         "new_id": "mobile_phone_with_keypad_and_antenna_and_wifi"
       },
       {
@@ -81,6 +108,11 @@
       {
         "old_id": "wifi",
         "new_id": "wifi",
+        "redesign": true
+      },
+      {
+        "old_id": "truck_profile",
+        "new_id": "box_truck",
         "redesign": true
       }
     ]
