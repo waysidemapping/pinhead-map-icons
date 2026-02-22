@@ -12,13 +12,18 @@ Pinhead has 1,000+ icons and counting, including standardized versions of the mo
 
 ## Overview
 
-Pinhead is a repository of public domain SVG icons designed to be displayed at 15x15 pixels (minimum). This is much smaller than most other icon sets since the target use case is cartography. Map icons need to be really small to support high visual density. The cool part is that you can scale them up and they'll still look great, so you can use them for all kinds of things, not just maps.
+Pinhead is a library of free vector icons. There are other projects like this, but Pinhead is special because it's:
+
+1. Cartography first
+2. 100% public domain
+
+Map icons need to be really small to support high visual density, so all of Pinhead icon's are intended to be legible at **15x15 pixels** minimum. This is much smaller than most other icon sets you'll find, but you can scale them up and they'll still look great. And since they're licensed **CC0**, you can use them anywhere for anything without restrictions.
 
 ## Usage
 
 There are a few easy ways to get and use the icons depending on what you're trying to do.
 
-Visit [pinhead.ink](https://pinhead.ink) to browse the icons. Each icon has a download link, copyable`<svg>` code, and an embeddable `<img>` code. These links are permanent and will not break in the future even if an icon is deleted or renamed, so feel free to use them anywhere.
+Visit [pinhead.ink](https://pinhead.ink) to browse the icons. Each icon has a download link, a copyable `<svg>` code, and an embeddable `<img>` code. These links are permanent and will not break in the future even if an icon is deleted or renamed, so feel to save, share, or embed them.
 
 If you want to get the full set of icon files, use the download link on pinhead.ink for the most recent version. Or, you can browse all version in the [releases](https://github.com/waysidemapping/pinhead/releases).
 
@@ -40,7 +45,7 @@ Pinhead has no dependencies and is basically just a directory of SVG files. A fe
 
 Pinhead uses a flavor of semantic versioning, with major releases (v2.0.0) corresponding to breaking changes, minor releases (v2.1.0) corresponding to backwards-compatible changes, and patch releases (v2.1.1) corresponding to fixes.
 
-When it comes to icons, renaming or deleting an icon, or making any visual modification, is a breaking change. Perhaps counterintuitively, we also consider the addition of any new icon to be a breaking change. The goal is clear version integrity, where each major version number refers to a complete set of icons with no differences between minor versions. This avoids common gotchas, like developers depending on a library like `^1.0.0` and potentially seeing different lists of icons in development vs. production in the case where v1.1.0 adds an icon.
+When it comes to icons, renaming or deleting an icon, or making any visual modification, is a breaking change. Perhaps counterintuitively, we also consider the addition of any new icon to be a breaking change. The goal is clear version integrity, where each major version number refers to a complete set of icons with no differences between minor versions. This avoids common gotchas, like developers depending on a package like `^1.0.0` and potentially seeing different lists of icons in development vs. production in the case where v1.1.0 adds an icon.
 
 ## Where the icons are from
 
@@ -61,6 +66,8 @@ And finally, the icons come from the likes of you! I myself have been addings so
 ## Contributing
 
 Contributions to Pinhead are **open**. I'd love to make this the best and largest library of public domain map icons anywhere on the web, but I can't do it alone. If you have questions, comments, or art, by all means open an [issue](https://github.com/waysidemapping/pinhead/issues/new) or [pull request](https://github.com/waysidemapping/pinhead/pulls/new) :)
+
+### What 
 
 ### Design guidelines
 
