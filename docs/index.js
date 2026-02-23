@@ -58,6 +58,16 @@ async function setupPage(pageData) {
               .setAttribute('src', `/v${majorVersion}/arrow_down_to_down_bracket.svg`)
           ),
       new Chainable('a')
+        .setAttribute('href', `https://github.com/waysidemapping/pinhead/releases/tag/v${version}`)
+        .setAttribute('target', '_blank')
+        .append(
+          new Chainable('span')
+            .append('release notes'),
+          new Chainable('img')
+            .setAttribute('class', 'inline-icon')
+            .setAttribute('src', `/v${majorVersion}/arrow_top_right_from_square_outline.svg`)
+        ),
+      new Chainable('a')
           .setAttribute('href', `https://www.npmjs.com/package/@waysidemapping/pinhead/v/${version}`)
           .setAttribute('target', '_blank')
           .append(
@@ -66,17 +76,7 @@ async function setupPage(pageData) {
             new Chainable('img')
               .setAttribute('class', 'inline-icon')
               .setAttribute('src', `/v${majorVersion}/arrow_top_right_from_square_outline.svg`)
-          ),
-      new Chainable('a')
-        .setAttribute('href', `https://github.com/waysidemapping/pinhead/releases/tag/v${version}`)
-        .setAttribute('target', '_blank')
-        .append(
-          new Chainable('span')
-            .append('github release'),
-          new Chainable('img')
-            .setAttribute('class', 'inline-icon')
-            .setAttribute('src', `/v${majorVersion}/arrow_top_right_from_square_outline.svg`)
-        )
+          )
     ].join(''));
 
   document.getElementById('icon-gallery')
