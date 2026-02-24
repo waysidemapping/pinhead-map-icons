@@ -1921,9 +1921,8 @@
       },
       {
         "newId": "elevator_rider",
-        "src": "nps",
-        "importBy": "@quincylvania",
-        "nps": "elevator"
+        "src": "https://raw.githubusercontent.com/nationalparkservice/symbol-library/89fe4d74d1017bba51bffab0eb458df084a21f82/src/standalone/elevator-black-14.svg",
+        "importBy": "@quincylvania"
       },
       {
         "newId": "elevator_three_riders",
@@ -5169,7 +5168,7 @@
         "importBy": "@quincylvania",
         "maki": "lodging",
         "nps": "lodging",
-        "osmcarto": "tourism/hostel"
+        "osmcarto": "tourism/hotel"
       },
       {
         "newId": "sleeper_in_shelter",

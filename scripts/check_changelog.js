@@ -80,7 +80,7 @@ function validateChangelog() {
           console.error(`Can't find old icon ${iconChange.oldId} for "${iconChange.newId}" in version ${v}`)
           return;
         }
-        delete icons[iconChange.oldId]
+        delete icons[iconChange.oldId];
       }
       if (iconChange.newId) {
         if (!iconChange.oldId && !iconChange.by && !iconChange.src) {
@@ -104,13 +104,15 @@ function validateChangelog() {
             console.error(`Missing "importBy" for "${iconChange.newId}" in version ${v}`)
             return;
           }
-          if (!importSources[iconChange.src]) {
-            console.error(`Unknown "src": "${iconChange.src}" for "${iconChange.newId}" in version ${v}`)
-            return;
-          }
-          if (!iconChange[iconChange.src]) {
-            console.error(`Missing "${iconChange.src}": "…" property for "${iconChange.newId}" in version ${v}`)
-            return;
+          if (!iconChange.src.startsWith('http')) {
+            if (!importSources[iconChange.src]) {
+              console.error(`Unknown "src": "${iconChange.src}" for "${iconChange.newId}" in version ${v}`)
+              return;
+            }
+            if (!iconChange[iconChange.src]) {
+              console.error(`Missing "${iconChange.src}": "…" property for "${iconChange.newId}" in version ${v}`)
+              return;
+            }
           }
         }
         icons[iconChange.newId] = true;
@@ -120,6 +122,10 @@ function validateChangelog() {
         if (iconChange[importSourceId]) {
           const ids = (typeof iconChange[importSourceId] === 'string' ? [iconChange[importSourceId]] : iconChange[importSourceId]);
           for (const id of ids) {
+            if (importSources[importSourceId].seenIcons[id]) {
+              console.error(`"${iconChange.newId}" and "${importSources[importSourceId].seenIcons[id]}" both reference the same "${importSourceId}" icon: "${id}"`);
+              return;
+            }
             let filename = `${id}.svg`;
             if (importSourceId === 'nps') {
               filename = `${id}-black-22.svg`
