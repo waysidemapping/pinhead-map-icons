@@ -1,4 +1,4 @@
-import { existsSync, readFileSync } from "fs";
+import { existsSync, readFileSync, writeFileSync } from "fs";
 import { exec } from "child_process";
 import { promisify } from "util";
 import fs from "fs/promises";
@@ -7,50 +7,70 @@ import os from "os";
 
 const workspace = await fs.mkdtemp(path.join(os.tmpdir(), "workspace-"));
 
-const changelogs = JSON.parse(readFileSync('changelog.json'));
-// sort oldest to newest
-changelogs.sort((a, b) => parseInt(a.majorVersion) - parseInt(b.majorVersion));
-
 const icons = {};
-
-const seenExternalIcons = {
-  maki: {},
-  temaki: {},
-  nps: {},
-  osmcarto: {},
-  opentrailmap: {}
-};
 
 const importSources = {
   maki: {
     repo: "https://github.com/mapbox/maki.git",
-    iconsPath: "icons"
-  },
-  temaki: {
-    repo: "https://github.com/rapideditor/temaki.git",
-    iconsPath: "icons"
+    iconsPath: "icons",
+    seenIcons: {}
   },
   nps: {
     repo: "https://github.com/nationalparkservice/symbol-library.git",
-    iconsPath: "src/standalone"
+    iconsPath: "src/standalone",
+    seenIcons: {}
   },
   opentrailmap: {
     repo: "https://github.com/osmus/opentrailmap.git",
-    iconsPath: "style/sprites/svg"
+    iconsPath: "style/sprites/svg",
+    seenIcons: {}
   },
   osmcarto: {
     repo: "https://github.com/openstreetmap-carto/openstreetmap-carto.git",
-    iconsPath: "symbols"
+    iconsPath: "symbols",
+    seenIcons: {}
+  },
+  temaki: {
+    repo: "https://github.com/rapideditor/temaki.git",
+    iconsPath: "icons",
+    seenIcons: {}
   }
 };
 
+const iconChangeProps = [
+  "oldId",
+  "newId",
+  "by",
+  "inspo",
+  "inspoBy",
+  "src",
+  "srcBy",
+  "importBy"
+].concat(Object.keys(importSources));
+
 function validateChangelog() {
+
+  const changelogPath = 'changelog.json';
+
+  const changelogs = JSON.parse(readFileSync(changelogPath));
+  // sort oldest to newest
+  changelogs.sort((a, b) => parseInt(a.majorVersion) - parseInt(b.majorVersion));
 
   for (const versionChangelog of changelogs) {
 
     const v = versionChangelog.majorVersion;
 
     for (const iconChange of versionChangelog.iconChanges) {
+      for (const key in iconChange) {
+        if (!iconChangeProps.includes(key)) {
+          console.error(`Unexpected property "${key}" for "${iconChange.newId}" in version ${v}`);
+          return;
+        }
+        if (!iconChange[key]) {
+          console.error(`Unexpected empty property "${key}" for "${iconChange.newId}" in version ${v}`);
+          return;
+        }
+      }
       if (!iconChange.oldId && !iconChange.newId) {
         console.error(`Missing both "newId" and "oldId" in version ${v}`)
         return;
@@ -63,13 +83,25 @@ function validateChangelog() {
         delete icons[iconChange.oldId]
       }
       if (iconChange.newId) {
+        if (!iconChange.oldId && !iconChange.by && !iconChange.src) {
+          console.error(`Missing provenance for "${iconChange.newId}" in version ${v}`)
+          return;
+        }
         if (iconChange.oldId && iconChange.src) {
           console.error(`Unexpected both "src": "${iconChange.src}" and "oldId": "${iconChange.oldId}" for "${iconChange.newId}" in version ${v}`)
           return;
         }
+        if (iconChange.by && iconChange.src) {
+          console.error(`Unexpected both "src": "${iconChange.src}" and "by": "${iconChange.by}" for "${iconChange.newId}" in version ${v}`)
+          return;
+        }
+        if (iconChange.importBy && !iconChange.src) {
+          console.error(`Unexpected "importBy": "${iconChange.importBy}" without "src": "…" for "${iconChange.newId}" in version ${v}`)
+          return;
+        }
         if (iconChange.src) {
-          if (!iconChange.importer) {
-            console.error(`Missing "importer" for "${iconChange.newId}" in version ${v}`)
+          if (!iconChange.importBy) {
+            console.error(`Missing "importBy" for "${iconChange.newId}" in version ${v}`)
             return;
           }
           if (!importSources[iconChange.src]) {
@@ -88,10 +120,6 @@ function validateChangelog() {
         if (iconChange[importSourceId]) {
           const ids = (typeof iconChange[importSourceId] === 'string' ? [iconChange[importSourceId]] : iconChange[importSourceId]);
           for (const id of ids) {
-            // if (seenExternalIcons[importSourceId][id]) {
-            //   console.error(`"${iconChange.newId}" and "${seenExternalIcons[importSourceId][id]}" both reference the same "${importSourceId}" icon: "${id}"`);
-            //   return;
-            // }
             let filename = `${id}.svg`;
             if (importSourceId === 'nps') {
               filename = `${id}-black-22.svg`
@@ -102,14 +130,31 @@ function validateChangelog() {
               console.error(`No such icon "${iconFile}" referenced by "${iconChange.newId}" in version ${v}`);
               return;
             }
-            seenExternalIcons[importSourceId][id] = iconChange.newId;
+            importSources[importSourceId].seenIcons[id] = iconChange.newId;
           }
         }
       }
     }
+
+    // sort properties into a consistent order
+    versionChangelog.iconChanges = versionChangelog.iconChanges.map(iconChange => {
+      const returner = {};
+      for (const prop of iconChangeProps) {
+        if (prop in iconChange) {
+          returner[prop] = iconChange[prop];
+        }
+        // collapse single string arrays down to string
+        if (Array.isArray(returner[prop]) && returner[prop].length === 1) {
+          returner[prop] = returner[prop][0];
+        }
+      }
+      return returner;
+    });
   }
 
-  console.log("changelog.json is valid")
+  console.log("changelog.json is valid");
+
+  writeFileSync(changelogPath, JSON.stringify(changelogs, null, 2));
 }
 
 function repoPath(repoUrl) {
