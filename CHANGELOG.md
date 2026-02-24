@@ -1,10 +1,40 @@
 # Changelog
 
-## [4.0.0] -
+## [4.0.0] - 2026-02-24
+
+⚠️ This major release contains new, redesigned, and renamed icons that may affect your setup. A machine-readable version of the icon upgrade paths can be found in the [`changelog.json`](/changelog.json) file. This update also include a breaking change for developers that relied on the `migrations.json` file.
+
+### New icons
+
+- <img src="https://pinhead.ink/v4/loaf_of_bread_with_steam.svg" width="15px"/> Add `loaf_of_bread_with_steam`
+- <img src="https://pinhead.ink/v4/loaf_of_pan_bread.svg" width="15px"/> Add `loaf_of_pan_bread`
+- <img src="https://pinhead.ink/v4/loaf_of_pan_bread_with_steam.svg" width="15px"/> Add `loaf_of_pan_bread_with_steam`
+- <img src="https://pinhead.ink/v4/station_wagon.svg" width="15px"/> Add `station_wagon`
+- <img src="https://pinhead.ink/v4/station_wagon_with_raised_hood.svg" width="15px"/> Add `station_wagon_with_raised_hood`
+- <img src="https://pinhead.ink/v4/car_with_taxi_checkerboard.svg" width="15px"/> Add `car_with_taxi_checkerboard`
+- <img src="https://pinhead.ink/v4/cabin.svg" width="15px"/> Add `cabin`
+
+### Renamed and redesigned icons
+
+- <img src="https://pinhead.ink/v3/bread.svg" width="15px"/> `bread` -> <img src="https://pinhead.ink/v4/loaf_of_bread.svg" width="15px"/> `loaf_of_bread`
+
+### Renamed icons
+
+- <img src="https://pinhead.ink/v4/sedan.svg" width="15px"/> Rename `car_profile` -> `sedan`
+- <img src="https://pinhead.ink/v4/sedan_with_raised_hood.svg" width="15px"/> Rename `car_profile_with_raised_hood` -> `sedan_with_raised_hood`
+- <img src="https://pinhead.ink/v4/cabin_with_chimney.svg" width="15px"/> Rename `cabin` -> `cabin_with_chimney`
 
 ### Developer changes
 
+- ⚠️ Rename `migrations.json` to [`changelog.json`](/changelog.json) file and alter format
+  - Add contributor credit
+  - Add mappings to source icon sets (Maki, Temaki, etc.)
+  - Add data for v1 icons 
 - Ensure that all SVGs contain one and only one closed `path` element
+
+### Docs
+
+- Add [pinhead.ink/coverage](https://pinhead.ink/coverage) page with visual comparison between icon libraries
 
 ## [3.0.0] - 2026-02-21
 
