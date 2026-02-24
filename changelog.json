@@ -569,7 +569,6 @@
       },
       {
         "newId": "bench",
-        "src": "",
         "by": [
           "@quincylvania"
         ]
@@ -830,15 +829,13 @@
       },
       {
         "newId": "bookmark",
-        "src": "",
-        "importer": [
+        "by": [
           "@quincylvania"
         ]
       },
       {
         "newId": "bookmark_outline",
-        "src": "",
-        "importer": [
+        "by": [
           "@quincylvania"
         ]
       },
@@ -994,7 +991,8 @@
       },
       {
         "newId": "broadleaved_tree_in_water",
-        "src": "",
+        "src": "temaki",
+        "temaki": "swamp",
         "importer": [
           "@quincylvania"
         ]
@@ -1232,8 +1230,7 @@
       },
       {
         "newId": "candle_with_flame",
-        "src": "",
-        "importer": [
+        "by": [
           "@quincylvania"
         ]
       },
@@ -1359,8 +1356,7 @@
       },
       {
         "newId": "car_with_checkmark",
-        "src": "",
-        "importer": [
+        "by": [
           "@quincylvania"
         ]
       },
@@ -1479,6 +1475,13 @@
       },
       {
         "newId": "charging_station",
+        "inspo": "charging_station_with_bolt",
+        "by": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "charging_station_with_bolt",
         "src": "osmcarto",
         "osmcarto": "amenity/charging_station",
         "maki": "charging-station",
@@ -1487,16 +1490,8 @@
         ]
       },
       {
-        "newId": "charging_station_with_bolt",
-        "src": "",
-        "importer": [
-          "@quincylvania"
-        ]
-      },
-      {
         "newId": "checkmark",
-        "src": "",
-        "importer": [
+        "by": [
           "@quincylvania"
         ]
       },
@@ -1594,8 +1589,7 @@
       },
       {
         "newId": "circle_outline_with_dot_outline",
-        "src": "",
-        "importer": [
+        "by": [
           "@quincylvania"
         ]
       },
@@ -1610,15 +1604,13 @@
       },
       {
         "newId": "circle_with_dot",
-        "src": "",
-        "importer": [
+        "by": [
           "@quincylvania"
         ]
       },
       {
         "newId": "circle_with_dot_outline",
-        "src": "",
-        "importer": [
+        "by": [
           "@quincylvania"
         ]
       },
@@ -1727,8 +1719,8 @@
       },
       {
         "newId": "club",
-        "src": "",
-        "importer": [
+        "inspo": "https://raw.githubusercontent.com/openstreetmap-carto/openstreetmap-carto/40820143374b5550fb294cfc754db8ca662094b0/symbols/shop/bookmaker.svg",
+        "by": [
           "@quincylvania"
         ]
       },
@@ -1760,8 +1752,8 @@
       },
       {
         "newId": "comb",
-        "src": "",
-        "importer": [
+        "inspo": "scissors_and_comb",
+        "by": [
           "@quincylvania"
         ]
       },
@@ -2153,7 +2145,8 @@
       },
       {
         "newId": "detergent_bottle",
-        "src": "",
+        "src": "temaki",
+        "temaki": "detergent_bottle",
         "importer": [
           "@quincylvania"
         ]
@@ -2189,8 +2182,7 @@
       },
       {
         "newId": "diamond_tall_outline",
-        "src": "",
-        "importer": [
+        "by": [
           "@quincylvania"
         ]
       },
@@ -2205,7 +2197,8 @@
       },
       {
         "newId": "diesel_train_on_railway_track",
-        "src": "",
+        "src": "temaki",
+        "temaki": "train_diesel",
         "importer": [
           "@quincylvania"
         ]
@@ -2586,9 +2579,8 @@
       },
       {
         "newId": "family_restroom_symbol",
-        "src": "",
         "nps": "family-restroom",
-        "importer": [
+        "by": [
           "@quincylvania"
         ]
       },
@@ -2795,15 +2787,15 @@
       },
       {
         "newId": "flat_coin",
-        "src": "",
-        "importer": [
+        "inspo": "https://raw.githubusercontent.com/rapideditor/temaki/5583986d633e4ee1ba2b62defdbcd0bf62825e73/icons/vending_flat_coin.svg",
+        "by": [
           "@quincylvania"
         ]
       },
       {
         "newId": "floor_lamp",
-        "src": "",
-        "importer": [
+        "inspo": "https://raw.githubusercontent.com/openstreetmap-carto/openstreetmap-carto/40820143374b5550fb294cfc754db8ca662094b0/symbols/shop/interior_decoration.svg",
+        "by": [
           "@quincylvania"
         ]
       },
@@ -2817,8 +2809,8 @@
       },
       {
         "newId": "fork",
-        "src": "",
-        "importer": [
+        "inspo": "fork_and_knife",
+        "by": [
           "@quincylvania"
         ]
       },
@@ -2857,16 +2849,16 @@
       },
       {
         "newId": "fountain",
-        "src": "",
-        "importer": [
+        "inspo": "fountain_from_water",
+        "by": [
           "@quincylvania"
         ]
       },
       {
         "newId": "fountain_from_fountain_basin",
         "osmcarto": "amenity/fountain",
-        "src": "",
-        "importer": [
+        "inspo": "fountain_from_water",
+        "by": [
           "@quincylvania"
         ]
       },
@@ -2898,8 +2890,8 @@
       },
       {
         "newId": "garage",
-        "src": "",
-        "importer": [
+        "inspo": "garage_and_key",
+        "by": [
           "@quincylvania"
         ]
       },
@@ -3804,7 +3796,6 @@
       {
         "newId": "kerb_rolled",
         "src": "temaki",
-        "inspo": ["kerb_rolled", "shoe"],
         "temaki": "kerb-rolled",
         "importer": [
           "@quincylvania"
@@ -3812,15 +3803,15 @@
       },
       {
         "newId": "kerb_rolled_under_shoe",
-        "src": "",
-        "importer": [
+        "inspo": ["kerb_rolled", "shoe"],
+        "by": [
           "@quincylvania"
         ]
       },
       {
         "newId": "key",
-        "src": "",
-        "importer": [
+        "inspo": "bicycle_and_key",
+        "by": [
           "@quincylvania"
         ]
       },
@@ -3858,8 +3849,8 @@
       },
       {
         "newId": "knife",
-        "src": "",
-        "importer": [
+        "inspo": "fork_and_knife",
+        "by": [
           "@quincylvania"
         ]
       },
@@ -4094,8 +4085,7 @@
       },
       {
         "newId": "magnifying_glass_for_search_ui",
-        "src": "",
-        "importer": [
+        "by": [
           "@quincylvania"
         ]
       },
@@ -4133,7 +4123,8 @@
       },
       {
         "newId": "manhole_cover_with_gas_flame",
-        "src": "",
+        "src": "temaki",
+        "temaki": "gas_manhole",
         "importer": [
           "@quincylvania"
         ]
@@ -4259,8 +4250,8 @@
       },
       {
         "newId": "medal_ribbon",
-        "src": "",
-        "importer": [
+        "inspo": "medal_ribbon_with_star",
+        "by": [
           "@quincylvania"
         ]
       },
@@ -4545,7 +4536,9 @@
       },
       {
         "newId": "mountains_and_lake",
-        "src": "",
+        "src": "opentrailmap",
+        "opentrailmap": "wilderness_preserve",
+        "by": ["@quincylvania"],
         "importer": [
           "@quincylvania"
         ]
@@ -4862,7 +4855,8 @@
       },
       {
         "newId": "pedestrian",
-        "src": "",
+        "src": "temaki",
+        "temaki": "pedestrian",
         "nps": "walking",
         "importer": [
           "@quincylvania"
@@ -4958,8 +4952,7 @@
       },
       {
         "newId": "pencil_bottom_left_to_square_outline",
-        "src": "",
-        "importer": [
+        "by": [
           "@quincylvania"
         ]
       },
@@ -5009,8 +5002,8 @@
       },
       {
         "newId": "person_balancing",
-        "src": "",
-        "importer": [
+        "inspo": "person_balancing_on_low_mounted_beam",
+        "by": [
           "@quincylvania"
         ]
       },
@@ -5799,8 +5792,7 @@
       },
       {
         "newId": "plus_squat",
-        "src": "",
-        "importer": [
+        "by": [
           "@quincylvania"
         ]
       },
@@ -5907,15 +5899,15 @@
       },
       {
         "newId": "pot",
-        "src": "",
-        "importer": [
+        "inspo": "spoon_and_chefs_knife_and_pot",
+        "by": [
           "@quincylvania"
         ]
       },
       {
         "newId": "potted_flower",
-        "src": "",
-        "importer": [
+        "inspo": "https://raw.githubusercontent.com/openstreetmap-carto/openstreetmap-carto/40820143374b5550fb294cfc754db8ca662094b0/symbols/shop/interior_decoration.svg",
+        "by": [
           "@quincylvania"
         ]
       },
@@ -6377,8 +6369,8 @@
       },
       {
         "newId": "sausage",
-        "src": "",
-        "importer": [
+        "inspo": "fork_and_sausage",
+        "by": [
           "@quincylvania"
         ]
       },
@@ -6462,8 +6454,8 @@
       },
       {
         "newId": "semi_trailer",
-        "src": "",
-        "importer": [
+        "inspo": "semi_trailer_with_bolt",
+        "by": [
           "@quincylvania"
         ]
       },
@@ -6626,8 +6618,8 @@
       },
       {
         "newId": "sign_beside_taxi",
-        "src": "",
-        "importer": [
+        "inspo": ["sign_beside_car", "taxi"],
+        "by": [
           "@quincylvania"
         ]
       },
@@ -6761,8 +6753,8 @@
       },
       {
         "newId": "smoke_curl",
-        "src": "",
-        "importer": [
+        "inspo": "cigarette_with_smoke_curl",
+        "by": [
           "@quincylvania"
         ]
       },
@@ -7147,8 +7139,8 @@
       },
       {
         "newId": "stroller",
-        "src": "",
-        "importer": [
+        "inspo": "person_riding_in_stroller",
+        "by": [
           "@quincylvania"
         ]
       },
@@ -7191,9 +7183,9 @@
       },
       {
         "newId": "sun",
-        "src": "",
+        "inspo": "person_lying_on_front_in_sun_on_surface",
         "nps": "sunny",
-        "importer": [
+        "by": [
           "@quincylvania"
         ]
       },
@@ -7276,8 +7268,7 @@
       },
       {
         "newId": "tea_bag",
-        "src": "",
-        "importer": [
+        "by": [
           "@quincylvania"
         ]
       },
@@ -7350,8 +7341,7 @@
       },
       {
         "newId": "three_dot_horizontal_line",
-        "src": "",
-        "importer": [
+        "by": [
           "@quincylvania"
         ]
       },
@@ -7364,8 +7354,7 @@
       },
       {
         "newId": "three_dot_vertical_line",
-        "src": "",
-        "importer": [
+        "by": [
           "@quincylvania"
         ]
       },
@@ -7763,15 +7752,13 @@
       },
       {
         "newId": "triangles_left_right",
-        "src": "",
-        "importer": [
+        "by": [
           "@quincylvania"
         ]
       },
       {
         "newId": "triangles_left_right_in_rectangle",
-        "src": "",
-        "importer": [
+        "by": [
           "@quincylvania"
         ]
       },
@@ -7897,8 +7884,8 @@
       },
       {
         "newId": "utility_device",
-        "src": "",
-        "importer": [
+        "inspo": "utility_device_with_bolt",
+        "by": [
           "@quincylvania"
         ]
       },
@@ -7944,8 +7931,8 @@
       },
       {
         "newId": "utility_meter",
-        "src": "",
-        "importer": [
+        "inspo": "utility_meter_with_bolt",
+        "by": [
           "@quincylvania"
         ]
       },
@@ -8001,8 +7988,8 @@
       },
       {
         "newId": "utility_shutoff",
-        "src": "",
-        "importer": [
+        "inspo": "utility_shutoff_with_bolt",
+        "by": [
           "@quincylvania"
         ]
       },
@@ -8024,8 +8011,8 @@
       },
       {
         "newId": "utility_valve",
-        "src": "",
-        "importer": [
+        "inspo": "utility_valve_with_droplet",
+        "by": [
           "@quincylvania"
         ]
       },
@@ -8090,8 +8077,7 @@
       },
       {
         "newId": "venus",
-        "src": "",
-        "importer": [
+        "by": [
           "@quincylvania"
         ]
       },
@@ -8174,8 +8160,8 @@
       },
       {
         "newId": "water",
-        "src": "",
-        "importer": [
+        "inspo": "arrows_left_right_above_water",
+        "by": [
           "@quincylvania"
         ]
       },
@@ -8392,8 +8378,8 @@
       },
       {
         "newId": "wine_bottle",
-        "src": "",
-        "importer": [
+        "inspo": "wine_bottle_and_wine_glass",
+        "by": [
           "@quincylvania"
         ]
       },
@@ -8408,8 +8394,8 @@
       },
       {
         "newId": "wine_glass",
-        "src": "",
-        "importer": [
+        "inspo": "wine_bottle_and_wine_glass",
+        "by": [
           "@quincylvania"
         ]
       },
@@ -8447,8 +8433,8 @@
       },
       {
         "newId": "x",
-        "src": "",
-        "importer": [
+        "inspo": "spiky_fish_with_x",
+        "by": [
           "@quincylvania"
         ]
       },
