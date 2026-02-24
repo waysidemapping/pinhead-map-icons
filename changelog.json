@@ -1,0 +1,8488 @@
+[
+  {
+    "majorVersion": "1",
+    "iconChanges": [
+      {
+        "newId": "adit_profile",
+        "basedOn": "adit_profile_with_rocks",
+        "designer": ["@quincylvania"]
+      },
+      {
+        "newId": "adit_profile_with_rocks",
+        "via": "temaki",
+        "temaki": "adit_profile",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "aerial_cargo_lift",
+        "designer": ["@quincylvania"],
+        "basedOn": "aerial_cargo_lift_with_crates"
+      },
+      {
+        "newId": "aerial_cargo_lift_with_crates",
+        "via": "temaki",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "aerial_chairlift_with_skier",
+        "via": "nps",
+        "temaki": "chairlift",
+        "nps": "chair-lift-ski-lift",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "aerial_drag_lift",
+        "via": "temaki",
+        "temaki": "drag_lift",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "aerial_gondola",
+        "via": "temaki",
+        "temaki": "gondola_lift",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "aerial_j_bar_lift",
+        "via": "temaki",
+        "temaki": "j_bar_lift",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "aerial_platter_lift",
+        "via": "temaki",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "aerial_t_bar_lift",
+        "via": "temaki",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "aerial_tram",
+        "via": "maki",
+        "maki": "aerialway",
+        "nps": "tramway",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "aerialway_pole",
+        "via": "temaki",
+        "temaki": "aerialway_pole",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "airboat_on_water",
+        "via": "nps",
+        "nps": "airboat",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "airport_terminal",
+        "designer": ["@quincylvania"],
+        "basedOn": "airport_terminal_with_plane_takeoff"
+      },
+      {
+        "newId": "airport_terminal_with_plane_takeoff",
+        "via": "temaki",
+        "temaki": "airport",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "american_football",
+        "via": "maki",
+        "maki": "american-football",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "ampersand",
+        "basedOn": ["https://github.com/openstreetmap-carto/openstreetmap-carto/blob/master/symbols/shop/department_store.svg"],
+        "designer": ["@quincylvania"]
+      },
+      {
+        "newId": "analog_tv_with_rabbitears",
+        "via": "osm-carto",
+        "importer": ["@quincylvania"]
+      },
+      {
+        "newId": "analog_watch",
+        "via": "maki",
+        "maki": "watch",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "anchor",
+        "via": "maki",
+        "maki": "harbor",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "angelfish",
+        "via": "maki",
+        "maki": "aquarium",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "antenna_array",
+        "designer": ["@quincylvania"],
+        "basedOn": "pole_with_antenna_array"
+      },
+      {
+        "newId": "anvil",
+        "via": "temaki",
+        "temaki": "ancil",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "anvil_and_mallet",
+        "via": "temaki",
+        "temaki": "anvil_and_hammer",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "app_terminal",
+        "via": "temaki",
+        "temaki": "app_terminal",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "apple",
+        "via": "osm-carto",
+        "importer": ["@quincylvania"]
+      },
+      {
+        "newId": "arch",
+        "basedOn": "campfire_in_arch",
+        "designer": ["@quincylvania"]
+      },
+      {
+        "newId": "archery_arrow",
+        "designer": ["@quincylvania"],
+        "basedOn": "archery_bow_and_archery_arrow"
+      },
+      {
+        "newId": "archery_bow",
+        "designer": ["@quincylvania"],
+        "basedOn": "archery_bow_and_archery_arrow"
+      },
+      {
+        "newId": "archery_bow_and_archery_arrow",
+        "designer": ["@quincylvania"],
+        "via": "temaki",
+        "temaki": "bow_and_arrow",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "army_tent",
+        "via": "temaki",
+        "temaki": "army_tent",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "arrow_bottom_right_to_eight_point_asterisk",
+        "via": "nps",
+        "nps": "point-of-interest",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "arrow_right",
+        "via": "maki",
+        "maki": "arrow",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "arrow_right_to_right_bracket",
+        "via": "maki",
+        "maki": "entrance-alt1",
+        "nps": "entrance",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "arrow_top_right_from_square_outline",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "arrow_up_from_down_bracket",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "arrows_left_right_above_water",
+        "via": "osm-carto",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "arrows_recirculating",
+        "basedOn": "https://github.com/openstreetmap-carto/openstreetmap-carto/blob/master/symbols/shop/second_hand.svg",
+        "designer": ["@quincylvania"]
+      },
+      {
+        "newId": "arrows_up_down_in_left_right_brackets",
+        "via": "osm-carto",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "at_sign",
+        "via": "osm-carto",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "atv",
+        "via": "nps",
+        "nps": "all-terrain-trail",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "axe",
+        "basedOn": "axe_and_firewood_pile",
+        "designer": ["@quincylvania"]
+      },
+      {
+        "newId": "axe_and_chipped_log",
+        "via": "nps",
+        "nps": "firewood-cutting",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "axe_and_firewood_pile",
+        "via": "nps",
+        "nps": "firewood",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "axial_reflecting_dish_with_monopod_antenna_and_beams",
+        "via": "osm-carto",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "axial_reflecting_dish_with_tripod_antenna",
+        "via": "osm-carto",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "baby",
+        "via": "nps",
+        "nps": "baby-changing-station",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "bag",
+        "basedOn": "bag_with_greek_cross",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "bag_with_greek_cross"
+      },
+      {
+        "newId": "bagel",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "bagel_seeded",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "baguette",
+        "via": "temaki",
+        "temaki": "bread",
+        "designer": ["@bhousel"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "balance_scales",
+        "temaki": "lawyer"
+      },
+      {
+        "newId": "balloon",
+        "via": "temaki",
+        "temaki": "balloon",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "banknote",
+        "via": "maki",
+        "maki": "bank",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "banknote_in_hand",
+        "via": "temaki",
+        "temaki": "money_hand",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "banknote_in_slot",
+        "via": "temaki",
+        "temaki": "atm2",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "barbecue_grill_wheeled_with_steam",
+        "via": "maki",
+        "maki": "bbq",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "barbecue_grill_with_steam",
+        "via": "nps",
+        "nps": "grill",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "barbell",
+        "via": "maki",
+        "maki": "fitness-centre",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "barn",
+        "via": "temaki",
+        "temaki": "barn",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "barn_and_silo",
+        "via": "maki",
+        "maki": "farm",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "barricade",
+        "via": "maki",
+        "maki": "barrier",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "baseball_batter",
+        "via": "maki",
+        "maki": "baseball",
+        "nps": "baseball",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "basketball_in_basketball_net",
+        "via": "maki",
+        "maki": "basketball",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "beach_umbrella_in_ground",
+        "via": "maki",
+        "maki": "beach",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "bear",
+        "via": "nps",
+        "nps": "bear-viewing",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "bear_spray_can_with_spray",
+        "via": "nps",
+        "nps": "bear-spray",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "beaver_in_water",
+        "basedOn": "https://github.com/osmus/OpenTrailMap/blob/main/style/sprites/svg/beaver_dam.svg",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "bed",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "beer_bottles_row",
+        "via": "temaki",
+        "temaki": "bottles",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "beer_mug_with_foam",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "bell_in_tall_gable_roofed_building",
+        "via": "nps-carto",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "bench",
+        "via": "",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "bench_with_backrest",
+        "temaki": "bench",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "bench_with_backrest_in_rectangular_shelter",
+        "via": "temaki",
+        "temaki": "transit_shelter",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "bicycle",
+        "via": "maki",
+        "maki": "bicycle",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "bicycle_and_key",
+        "via": "temaki",
+        "temaki": "bicycle_rental",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "bicycle_and_wrench",
+        "via": "temaki",
+        "temaki": "bicycle_repair",
+        "nps": "bike-repairs",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "bicycle_barrier",
+        "via": "temaki",
+        "temaki": "cycle_barrier",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "bicycle_in_garage",
+        "via": "temaki",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "bicycle_in_locker",
+        "via": "temaki",
+        "temaki": "bicycle_locker",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "bicycle_in_parking_structure",
+        "via": "temaki",
+        "temaki": "bicycle_structure",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "bicycle_on_parking_line",
+        "via": "temaki",
+        "temaki": "bicycle_parked",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "bicycle_racer",
+        "via": "maki",
+        "maki": "racetrack-cycling",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "bicycle_under_shower_spray",
+        "via": "temaki",
+        "temaki": "bicycle_wash",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "bicycle_with_staple_stand",
+        "via": "nps",
+        "nps": "bike-rack",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "bicyclist",
+        "via": "maki",
+        "maki": "bicycle-share",
+        "nps": "bicycle-trail",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "bicyclist_on_crosswalk",
+        "via": "temaki",
+        "temaki": "cyclist_crosswalk",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "bifold_pamphlet",
+        "via": "nps",
+        "nps": "newspaper",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "billboard",
+        "via": "temaki",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "binoculars",
+        "via": "temaki",
+        "temaki": "binoculars",
+        "nps": "birding-wildlife-viewing",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "bird",
+        "via": "opentrailmap",
+        "opentrailmap": "wildlife_refuge",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "bird_flying",
+        "via": "opentrailmap",
+        "opentrailmap": "bird_refuge",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "bison",
+        "via": "opentrailmap",
+        "opentrailmap": "bison_refuge",
+        "designer": [
+          "@quincylvania"
+        ],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "bleachers",
+        "via": "temaki",
+        "temaki": "bleachers",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "boat_on_trailer",
+        "via": "nps",
+        "nps": "boat-trailer-parking",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "boat_on_trailer_on_ramp_on_water",
+        "via": "temaki",
+        "temaki": "boat_ramp",
+        "nps": "boat-launch",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "boat_racer_on_water",
+        "via": "maki",
+        "maki": "racetrack-boat",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "bollard",
+        "via": "temaki",
+        "temaki": "bollard",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "bollard_row",
+        "temaki": "bollard_row",
+        "via": "temaki",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "bolt",
+        "via": "temaki",
+        "temaki": "power",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "book",
+        "via": "temaki",
+        "temaki": "book_store",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "bookmark",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "bookmark_outline",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "boombox",
+        "via": "nps",
+        "nps": "radios",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "border_officer_with_open_suitcase",
+        "via": "nps",
+        "nps": "customs",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "border_officer_with_stop_arm_with_passport",
+        "via": "temaki",
+        "temaki": "passport_checkpoint",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "bowling_pin_and_bowling_ball",
+        "via": "temaki",
+        "temaki": "bowling",
+        "maki": "bowling-alley",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "bowling_pins",
+        "via": "temaki",
+        "temaki": "bowling_alt1",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "boxes_on_pallet",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "bread",
+        "via": "osm-carto",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "brick_trowel",
+        "via": "temaki",
+        "temaki": "brick_trowel",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "bridge",
+        "via": "temaki",
+        "temaki": "bridge",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "bridge_tied_arch",
+        "via": "maki",
+        "maki": "bridge",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "briefcase",
+        "maki": "suitcase",
+        "via": "temaki",
+        "temaki": "briefcase",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "briefcase_with_bolt",
+        "temaki": "briefcase_bolt",
+        "via": "temaki",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "briefcase_with_greek_cross",
+        "temaki": "briefcase_cross",
+        "via": "temaki",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "briefcase_with_heavy_six_point_asterisk",
+        "temaki": "briefcase_asterisk",
+        "via": "temaki",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "briefcase_with_info_i",
+        "temaki": "briefcase_info",
+        "via": "temaki",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "briefcase_with_shield",
+        "temaki": "briefcase_shield",
+        "via": "temaki",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "broadleaved_tree",
+        "via": "maki",
+        "maki": "park",
+        "temaki": "tree_broadleaved",
+        "opentrailmap": "park",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "broadleaved_tree_in_water",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "buffer_stop",
+        "via": "temaki",
+        "temaki": "buffer_stop",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "bull",
+        "via": "maki",
+        "maki": "slaughterhouse",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "bulldozer",
+        "via": "temaki",
+        "temaki": "bulldozer",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "bullet_train_on_railway_track",
+        "via": "temaki",
+        "temaki": "train_bullet",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "bulletin_board",
+        "via": "temaki",
+        "temaki": "bulletin_board",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "bunker",
+        "via": "temaki",
+        "temaki": "bunker",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "bunker_silo",
+        "temaki": "bunker_silo",
+        "via": "temaki",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "buoy_on_water",
+        "via": "temaki",
+        "temaki": "buoy",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "burger",
+        "via": "maki",
+        "maki": "fast-food",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "burger_and_drink_cup_with_straw",
+        "via": "nps",
+        "temaki": "food",
+        "nps": "snack-bar",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "bus_with_destination_display",
+        "via": "temaki",
+        "maki": "bus",
+        "temaki": "bus",
+        "nps": "bus-stop",
+        "designer": [
+          "@quincylvania"
+        ],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "bus_with_destination_display_and_pantograph",
+        "via": "temaki",
+        "temaki": "trolleybus",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "bus_with_destination_display_within_guideway",
+        "via": "temaki",
+        "temaki": "bus_guided",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "bust_on_plinth",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "cabin",
+        "temaki": "cabin",
+        "via": "temaki",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "cable",
+        "via": "temaki",
+        "temaki": "cable",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "cairn",
+        "via": "temaki",
+        "temaki": "cairn",
+        "opentrailmap": "cairn",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "calculator",
+        "via": "temaki",
+        "temaki": "accounting",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "camera",
+        "via": "maki",
+        "maki": "camera",
+        "nps": "photography",
+        "opentrailmap": "viewpoint",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "camper_trailer",
+        "via": "temaki",
+        "temaki": "camper_trailer",
+        "designer": ["@quincylvania"],
+        "nps": "trailer-site",
+        "opentrailmap": "carvan_site",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "camper_trailer_with_waste_dump",
+        "temaki": "camper_trailer_dump",
+        "via": "temaki",
+        "nps": "sanitary-disposal-station",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "campfire",
+        "via": "temaki",
+        "temaki": "campfire",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "campfire_in_arch",
+        "via": "temaki",
+        "temaki": "fireplace",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "campsite",
+        "via": "maki",
+        "maki": "campsite",
+        "nps": "campsite",
+        "opentrailmap": ["campground", "campsite"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "can",
+        "via": "temaki",
+        "temaki": "can",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "candle_with_flame",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "cannon",
+        "via": "nps",
+        "nps": "cannon",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "canoe_on_ramp_on_water",
+        "via": "opentrailmap",
+        "opentrailmap": "slipway-canoe",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "canoe_on_trailer_on_ramp_on_water",
+        "via": "opentrailmap",
+        "opentrailmap": "slipway-canoe-trailer",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "cape_landform",
+        "via": "temaki",
+        "temaki": "cape_landform",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "car",
+        "maki": "car",
+        "nps": "automobiles",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "car_and_key",
+        "via": "temaki",
+        "maki": "car-rental",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "car_and_wrench",
+        "via": "temaki",
+        "maki": "car-repair",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "car_battery",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "car_beside_sleeper_in_bed",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "car_between_roller_brushes",
+        "temaki": "car_wash",
+        "basedOn": "transit_vehicle_on_railway_track_between_roller_brushes",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "car_in_gable_roofed_building",
+        "via": "temaki",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "car_in_parking_structure",
+        "via": "temaki",
+        "temaki": "car_structure",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "car_on_parking_line",
+        "via": "temaki",
+        "temaki": "car_parked",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "car_under_height_restrictor",
+        "basedOn": "height_restrictor",
+        "designer": ["@quincylvania"]
+      },
+      {
+        "newId": "car_under_shower_spray",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "car_with_checkmark",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "car_with_dollar",
+        "via": "temaki",
+        "temaki": "car_dealer",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "car_with_driver_and_passenger",
+        "temaki": "car_pool",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "car_with_emphasis_marks",
+        "basedOn": "https://github.com/mapbox/maki/blob/main/icons/road-accident.svg",
+        "maki": "road-accident",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "carousel",
+        "via": "temaki",
+        "temaki": "amusement_park",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "carpet",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "cars_on_barge_on_water",
+        "via": "nps",
+        "nps": "vehicle-ferry",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "castle",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "castle_keep",
+        "via": "maki",
+        "maki": "castle",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "cat_sitting",
+        "via": "maki",
+        "maki": "animal-shelter",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "cattle_grid",
+        "via": "temaki",
+        "temaki": "cattle_grid",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "cave",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "chainsaw",
+        "via": "maki",
+        "maki": "logging",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "champagne_bottle_and_champagne_glass",
+        "via": "maki",
+        "maki": "alcohol-shop",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "chapel",
+        "via": "nps",
+        "nps": "chapel",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "charging_station",
+        "via": "",
+        "maki": "charging-station",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "charging_station_with_bolt",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "checkmark",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "chefs_knife",
+        "via": "temaki",
+        "temaki": "chefs_knife",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "chest_of_drawers",
+        "via": "temaki",
+        "temaki": "furniture",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "chevron_up_tall",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "chevron_up_tall_outline",
+        "opentrailmap": "lock",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "chicane_arrow",
+        "via": "temaki",
+        "temaki": "chicane_arrow",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "chimney_with_smoke",
+        "via": "temaki",
+        "temaki": "chimney",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "cigarette",
+        "basedOn": "cigarette_with_smoke_curl",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "cigarette_with_smoke_curl",
+        "via": "",
+        "nps": "smoking-area",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "cindercone_volcano_erupting",
+        "via": "maki",
+        "maki": "volcano",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "circle",
+        "maki": "circle",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "circle_outline",
+        "maki": "circle-stroked",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "circle_outline_with_dot",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "circle_outline_with_dot_outline",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "circle_outline_with_top_left_quarter_and_bottom_right_quarter",
+        "via": "opentrailmap",
+        "opentrailmap": "streamgage",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "circle_with_dot",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "circle_with_dot_outline",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "city_buildings",
+        "via": "maki",
+        "maki": "city",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "city_gate",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "classical_building",
+        "via": "maki",
+        "temaki": "museum",
+        "maki": "museum",
+        "nps": "museum",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "classical_building_with_clock",
+        "via": "maki",
+        "maki": "town-hall",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "classical_building_with_dome_and_flag",
+        "via": "temaki",
+        "temaki": "capitol",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "classical_building_with_flag",
+        "via": "temaki",
+        "temaki": "town_hall",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "cleaver",
+        "via": "temaki",
+        "temaki": "cleaver",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "cliff_with_rocks",
+        "via": "temaki",
+        "temaki": "cliff_falling_rocks",
+        "nps": "falling-rocks",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "climber_with_climbing_rope",
+        "via": "nps",
+        "temaki": "abseiling",
+        "nps": "technical-rock-climb",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "clock_face",
+        "temaki": "clock",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "cloth",
+        "temaki": "cloth",
+        "via": "temaki",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "clothes_hanger",
+        "via": "temaki",
+        "temaki": "clothes_hanger",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "club",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "cocktail",
+        "via": "maki",
+        "maki": "bar",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "coffee_bean",
+        "via": "temaki",
+        "temaki": "coffee",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "coffee_mug_with_steam",
+        "via": "nps",
+        "nps": "coffee",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "comb",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "comb_and_dog_wearing_collar",
+        "via": "temaki",
+        "temaki": "pet_grooming",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "comedy_mask",
+        "basedOn": "comedy_mask_and_tragedy_mask",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "comedy_mask_and_tragedy_mask",
+        "via": "maki",
+        "maki": "theatre",
+        "nps": "theatre-arts",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "commercial_building",
+        "via": "maki",
+        "maki": "commercial",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "compass",
+        "temaki": "compass",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "compass_rose",
+        "via": "nps",
+        "nps": "directions",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "conifer_tree",
+        "via": "opentrailmap",
+        "temaki": "tree_needleleaved",
+        "nps": "wilderness",
+        "opentrailmap": "forest_reserve",
+        "maki": "park-alt1",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "conifer_tree_and_bench_on_ground",
+        "via": "maki",
+        "maki": "highway-rest-area",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "conifer_tree_and_flower_and_mountain_snowcapped",
+        "via": "maki",
+        "maki": "natural",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "conveyor_with_chevrons_right",
+        "via": "temaki",
+        "temaki": "conveyor",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "cooling_tower",
+        "via": "temaki",
+        "temaki": "cooling_tower",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "cooling_tower_with_radiation_symbol",
+        "via": "temaki",
+        "temaki": "cooling_tower_radiation",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "coral",
+        "basedOn": "coral_and_angelfish",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "coral_and_angelfish",
+        "via": "temaki",
+        "temaki": "coral_reef",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "couch",
+        "via": "osm-carto",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "crab",
+        "via": "maki",
+        "maki": "restaurant-seafood",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "crane",
+        "via": "temaki",
+        "temaki": "crane",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "crates_under_roof",
+        "via": "maki",
+        "maki": "warehouse",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "crescent",
+        "basedOn": "star_and_crescent",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "cricket_batter",
+        "via": "maki",
+        "maki": "cricket",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "croissant",
+        "via": "maki",
+        "maki": "bakery",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "cross_country_skier",
+        "via": "nps",
+        "temaki": "cross_country_skiing",
+        "nps": "cross-country-ski-trail",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "cross_latin",
+        "via": "maki",
+        "maki": "religious-christian",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "crosswalk_markings_dashes",
+        "via": "temaki",
+        "temaki": "crossing_markings-dashes",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "crosswalk_markings_dots",
+        "via": "temaki",
+        "temaki": "crossing_markings-dots",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "crosswalk_markings_ladder",
+        "via": "temaki",
+        "temaki": "crossing_markings-ladder",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "crosswalk_markings_ladder_paired",
+        "via": "temaki",
+        "temaki": "crossing_markings-ladder_paired",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "crosswalk_markings_ladder_skewed",
+        "via": "temaki",
+        "temaki": "crossing_markings-ladder_skewed",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "crosswalk_markings_lines",
+        "via": "temaki",
+        "temaki": "crossing_markings-lines",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "crosswalk_markings_lines_paired",
+        "via": "temaki",
+        "temaki": "crossing_markings-lines_paired",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "crosswalk_markings_surface",
+        "via": "temaki",
+        "temaki": "crossing_markings-surface",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "crosswalk_markings_zebra",
+        "via": "temaki",
+        "temaki": "crossing_markings-zebra",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "crosswalk_markings_zebra_double",
+        "via": "temaki",
+        "temaki": "crossing_markings-zebra_double",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "crosswalk_markings_zebra_paired",
+        "via": "temaki",
+        "temaki": "crossing_markings-zebra_paired",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "cup_and_saucer",
+        "via": "maki",
+        "maki": "cafe",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "curtains",
+        "via": "temaki",
+        "temaki": "curtains",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "cylinder",
+        "via": "temaki",
+        "temaki": "storage_tank",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "dagger",
+        "via": "temaki",
+        "temaki": "dagger",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "daisy",
+        "via": "nps",
+        "temaki": "florist",
+        "nps": "flower-viewing",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "dam",
+        "via": "maki",
+        "maki": "dam",
+        "opentrailmap": "dam",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "dancer_with_sparkles",
+        "via": "maki",
+        "maki": "nightclub",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "deer_head",
+        "basedOn": "deer_head_with_antlers",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "deer_head_with_antlers",
+        "via": "opentrailmap",
+        "opentrailmap": "game_land",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "deer_with_antlers",
+        "via": "nps",
+        "nps": "deer-viewing",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "delicate_arch",
+        "via": "temaki",
+        "temaki": "natural_arch",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "desk_lamp",
+        "via": "temaki",
+        "temaki": "desk_lamp",
+        "maki": "furniture",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "detergent_bottle",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "dharma_wheel",
+        "via": "maki",
+        "maki": "religious-buddhist",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "diamond",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "diamond_outline",
+        "temaki": "diamond",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "diamond_tall",
+        "maki": "diamond",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "diamond_tall_outline",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "dice",
+        "via": "",
+        "temaki": "dice",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "diesel_train_on_railway_track",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "disc_golf_basket",
+        "via": "temaki",
+        "temaki": "disk_golf_basket",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "diver_above_water",
+        "via": "nps",
+        "nps": "diving",
+        "temaki": "diving",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "dog_sledder",
+        "via": "nps",
+        "nps": "dog-sledding",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "dog_wearing_collar",
+        "via": "maki",
+        "maki": "dog_park",
+        "nps": "pets-off-leash",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "dog_wearing_collar_in_shelter",
+        "via": "temaki",
+        "temaki": "dog_shelter",
+        "nps": "kennel",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "dollar",
+        "nps": "atm",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "dollar_swap_to_euro",
+        "via": "osm-carto",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "domed_tower",
+        "via": "temaki",
+        "temaki": "domed_tower",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "donut",
+        "via": "temaki",
+        "temaki": "donut",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "dot",
+        "nps": "dot",
+        "temaki": "vertex",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "dot_outline",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "dot_with_rays_up",
+        "via": "maki",
+        "maki": "viewpoint",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "downhill_skier",
+        "via": "maki",
+        "maki": "skiing",
+        "temaki": "skiing",
+        "nps": "downhill-skiing",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "dress",
+        "via": "temaki",
+        "temaki": "dress",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "drink_bottle_and_drink_cup_with_straw",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "drink_cup_with_straw",
+        "via": "temaki",
+        "temaki": "drink_cup",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "drink_cup_with_straw_and_boba",
+        "temaki": "bubble_tea",
+        "via": "temaki",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "droplet",
+        "via": "maki",
+        "temaki": "water",
+        "maki": "water",
+        "opentrailmap": "watershed_reserve",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "droplet_with_greek_cross",
+        "via": "maki",
+        "maki": "blood-bank",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "dumbbell",
+        "via": "temaki",
+        "temaki": "gym",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "dumping_ash_in_bin",
+        "via": "nps",
+        "nps": "ash-disposal",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "dvd_case",
+        "via": "temaki",
+        "temaki": "movie_rental",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "ear",
+        "via": "temaki",
+        "temaki": "ear",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "ear_atop_slash",
+        "via": "nps",
+        "nps": "assistive-listening-systems",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "ear_with_hearing_aid",
+        "via": "temaki",
+        "temaki": "hearing_aid",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "egg",
+        "via": "temaki",
+        "temaki": "egg",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "electrical_circuit_and_bolt",
+        "via": "temaki",
+        "temaki": "power_circuit",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "electrical_current_transformer_and_bolt",
+        "via": "temaki",
+        "temaki": "power_ct",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "electrical_curved_circuit_breaker_and_bolt",
+        "via": "temaki",
+        "temaki": "power_cb",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "electrical_isolator_and_bolt",
+        "via": "temaki",
+        "temaki": "power_isolator",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "electrical_lightning_arrestor_and_bolt",
+        "via": "temaki",
+        "temaki": "power_la",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "electrical_square_circuit_breaker_and_bolt",
+        "via": "temaki",
+        "temaki": "power_cb2",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "electrical_switch_and_bolt",
+        "via": "temaki",
+        "temaki": "power_switch",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "electrical_transformer_and_bolt",
+        "via": "temaki",
+        "temaki": "power_transformer",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "elevator_rider",
+        "via": "nps",
+        "nps": "elevator",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "elevator_three_riders",
+        "via": "nps",
+        "nps": "elevator",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "entrance_station",
+        "via": "nps",
+        "nps": "entrance-station",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "envelope",
+        "via": "maki",
+        "maki": "post",
+        "nps": "post-office",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "envelope_in_slot",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "escalator",
+        "basedOn": "person_on_escalator",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "eye",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "eye_outline",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "eyebrow",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "eyebrow_and_eyelashes",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "eyeglasses",
+        "via": "maki",
+        "maki": "optician",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "eyelashes",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "family_restroom_symbol",
+        "via": "",
+        "nps": "family-restroom",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "fence",
+        "via": "temaki",
+        "temaki": "guard_rail",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "ferris_wheel",
+        "via": "maki",
+        "maki": "amusement-park",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "ferryboat",
+        "via": "temaki",
+        "temaki": "ferry",
+        "maki": "ferry",
+        "opentrailmap": "ferry",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "field_hockey_stick",
+        "basedOn": "field_hockey_stick_with_ball",
+        "designer": ["@quincylvania"]
+      },
+      {
+        "newId": "field_hockey_stick_with_ball",
+        "via": "temaki",
+        "temaki": "field_hockey",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "fighter_jet_plane",
+        "via": "temaki",
+        "temaki": "fighter_jet",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "file_box",
+        "via": "temaki",
+        "temaki": "storage",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "fillet_knife",
+        "basedOn": "fillet_knife_and_fish",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "fillet_knife_and_fish",
+        "via": "nps",
+        "nps": "fish-cleaning",
+        "temaki": "fish_cleaning",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "film",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "film_and_optical_disc",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "film_movie_projector",
+        "via": "maki",
+        "maki": "cinema",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "fingernail_polished",
+        "via": "temaki",
+        "temaki": "polished_nail",
+        "designer": ["@quincylvania", "@bhousel"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "fire",
+        "via": "maki",
+        "maki": "fire-station",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "fire_extinguisher",
+        "via": "nps",
+        "nps": "fire-extinguisher",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "fish",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "fish_and_hook",
+        "via": "",
+        "nps": "fishing",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "fish_and_hook_under_ice",
+        "via": "nps",
+        "temaki": "ice_fishing",
+        "nps": "ice-fishing",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "fish_jumping_up_cascade",
+        "via": "temaki",
+        "temaki": "fish_ladder",
+        "nps": "fish-ladder",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "fishes",
+        "nps": "fish-hatchery",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "flag",
+        "via": "maki",
+        "maki": "embassy",
+        "nps": "flagpole",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "flag_checkered",
+        "via": "maki",
+        "maki": "racetrack",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "flag_over_railway_track",
+        "via": "temaki",
+        "temaki": "rail_flag",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "flash_camera",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "flat_coin",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "floor_lamp",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "flower_boquette",
+        "via": "maki",
+        "maki": "florist",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "fork",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "fork_and_knife",
+        "via": "maki",
+        "maki": "restaurant",
+        "nps": "food-service",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "fork_and_sausage",
+        "via": "maki",
+        "maki": "restaurant-bbq",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "fort",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "fortress",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "fountain",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "fountain_from_fountain_basin",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "fountain_from_water",
+        "via": "temaki",
+        "temaki": "fountain",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "freight_car",
+        "via": "temaki",
+        "temaki": "freight_car",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "game_controller_with_wire",
+        "via": "maki",
+        "maki": "gaming",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "garage",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "garage_and_key",
+        "via": "temaki",
+        "temaki": "storage_rental",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "gas_flame",
+        "via": "temaki",
+        "temaki": "gas",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "gasoline_pump",
+        "via": "maki",
+        "maki": "fuel",
+        "nps": "gas-station",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "gate",
+        "via": "temaki",
+        "temaki": "gate",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "gate_tall",
+        "via": "temaki",
+        "temaki": "tall_gate",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "gavel_with_sound_block",
+        "via": "temaki",
+        "temaki": "courthouse",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "gazebo",
+        "via": "maki",
+        "maki": "landmark",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "geyser",
+        "basedOn": "geyser_from_ground",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "geyser_from_ground",
+        "via": "nps",
+        "nps": "geyser",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "giftwrapped_box",
+        "via": "maki",
+        "maki": "gift",
+        "nps": "souvenir-shop",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "giraffe",
+        "via": "temaki",
+        "temaki": "zoo",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "globe",
+        "via": "maki",
+        "maki": "globe",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "goggles",
+        "via": "temaki",
+        "temaki": "tanning2",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "golf_cart",
+        "via": "temaki",
+        "temaki": "golf_cart",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "golf_green",
+        "via": "temaki",
+        "temaki": "golf_green",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "golfer",
+        "via": "maki",
+        "maki": "golf",
+        "nps": "golfing",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "golfer_and_golf_pin",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "golfer_and_windmill",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "gown",
+        "via": "temaki",
+        "temaki": "gown",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "grapes",
+        "via": "temaki",
+        "temaki": "grapes",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "grass",
+        "via": "temaki",
+        "temaki": "grass",
+        "opentrailmap": "grassland_reserve",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "grass_in_water",
+        "via": "maki",
+        "maki": "wetland",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "gravestone",
+        "via": "maki",
+        "maki": "cemetery",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "grecian_vase",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "greek_cross",
+        "via": "maki",
+        "maki": "hospital",
+        "nps": "first-aid",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "guidepost",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "guyed_mast",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "guyed_mast_with_antenna_array",
+        "via": "temaki",
+        "temaki": "mast_communication",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "hair_dryer",
+        "via": "temaki",
+        "temaki": "hair_care",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "hammer",
+        "basedOn": "wrench_and_hammer",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "hammer_and_inverted_shoe",
+        "via": "temaki",
+        "temaki": "hammer_shoe",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "hand",
+        "via": "temaki",
+        "temaki": "hand",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "hand_holding_heart",
+        "via": "temaki",
+        "temaki": "social_facility",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "hand_holding_service_tray",
+        "via": "temaki",
+        "temaki": "catering",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "hand_reaching_down",
+        "basedOn": "hand_reaching_down_toward_rough_surface",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "hand_reaching_down_toward_rough_surface",
+        "via": "nps",
+        "nps": "tactile-exhibit",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "hand_with_eye",
+        "via": "temaki",
+        "temaki": "psychic",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "handled_bowl_with_steam",
+        "via": "temaki",
+        "temaki": "hotpot",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "hands_sign_language_interpretation",
+        "via": "nps",
+        "nps": "sign-language-interpretation",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "handwheel",
+        "via": "temaki",
+        "temaki": "wheel",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "hangar",
+        "via": "temaki",
+        "temaki": "hangar",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "hanging_rail_transit_vehicle",
+        "via": "temaki",
+        "temaki": "hanging_rail",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "hanging_sign_with_house",
+        "via": "temaki",
+        "temaki": "real_estate_agency",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "hard_candy_in_wrapper",
+        "via": "maki",
+        "maki": "confectionery",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "headphones_with_info_i",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "heart",
+        "maki": "heart",
+        "temaki": "heart",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "heart_outine_with_top_left_quarter",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "heart_outline",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "heart_outline_with_left_half",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "heart_outline_with_left_half_and_bottom_right_quarter",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "heart_with_bolt",
+        "nps": "aed",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "heart_with_crack",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "heart_with_ecg_line",
+        "basedOn": "https://github.com/mapbox/maki/blob/main/icons/defibrillator.svg",
+        "maki": "defibrillator",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "heart_with_greek_cross",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "heavy_six_point_asterisk",
+        "via": "temaki",
+        "temaki": "asterisk",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "hedge",
+        "via": "temaki",
+        "temaki": "hedge",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "height_restrictor",
+        "via": "temaki",
+        "temaki": "height_restrictor",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "helicopter",
+        "via": "maki",
+        "maki": "heliport",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "horn_cleat",
+        "via": "temaki",
+        "temaki": "horn_cleat",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "horse_in_shelter",
+        "via": "temaki",
+        "temaki": "horse_shelter",
+        "nps": "stable",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "horse_racer",
+        "via": "maki",
+        "maki": "racetrack-horse",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "horseshoe",
+        "via": "temaki",
+        "temaki": "horseshoe",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "horseshoe_with_stake",
+        "via": "temaki",
+        "temaki": "horseshoes",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "hot_dog_with_mustard",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "house_and_industrial_building_and_lowrise_building",
+        "via": "maki",
+        "maki": "landuse",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "house_and_trees_on_hill_in_water",
+        "via": "temaki",
+        "temaki": "island_trees_building",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "house_with_chimney",
+        "via": "maki",
+        "maki": "home",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "house_with_flag",
+        "via": "maki",
+        "maki": "ranger-station",
+        "nps": "range-station",
+        "opentrailmap": "ranger_station",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "houseboat_on_water",
+        "via": "temaki",
+        "temaki": "houseboat",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "hunting_stand",
+        "via": "temaki",
+        "temaki": "hunting_blind",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "hydrant",
+        "via": "temaki",
+        "temaki": "fire_hydrant",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "ice_cream_on_cone",
+        "via": "maki",
+        "nps": "ice-cream",
+        "maki": "ice-cream",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "ice_skater",
+        "via": "nps",
+        "temaki": "ice_skating",
+        "nps": "ice-skating",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "icicles",
+        "basedOn": "https://github.com/nationalparkservice/symbol-library/blob/gh-pages/src/standalone/ice-black-30.svg",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "inclined_information_panel",
+        "via": "nps",
+        "nps": "interpretive-exhibit",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "industrial_building",
+        "via": "maki",
+        "maki": "industry",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "info_i",
+        "via": "maki",
+        "nps": "information",
+        "maki": "information",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "inline_skater",
+        "via": "nps",
+        "temaki": "inline_skating",
+        "nps": "in-line-skating",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "inscribed_memorial_stone",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "inscribed_stone",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "international_wheelchair_symbol",
+        "via": "nps",
+        "temaki": "wheelchair",
+        "nps": "wheelchair-accessible",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "jail_door",
+        "via": "maki",
+        "maki": "prison",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "japanese_teacup_with_steam",
+        "via": "maki",
+        "maki": "teahouse",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "jar",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "jeep",
+        "via": "nps",
+        "nps": "four-wheel-drive-road",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "jet_plane_front",
+        "via": "temaki",
+        "temaki": "jetplane_front",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "jet_skier_on_water",
+        "via": "nps",
+        "temaki": "jet_skiing",
+        "nps": "personal-watercraft",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "jewel",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "jp_castle",
+        "via": "maki",
+        "maki": "castle-JP",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "jp_cemetery",
+        "via": "maki",
+        "maki": "cemetery-JP",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "jp_college",
+        "via": "maki",
+        "maki": "college-JP",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "jp_ferry",
+        "via": "maki",
+        "maki": "ferry-JP",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "jp_fire_station",
+        "via": "maki",
+        "maki": "fire-station-JP",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "jp_hospital",
+        "via": "maki",
+        "maki": "hospital-JP",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "jp_hot_spring",
+        "via": "maki",
+        "maki": "hot-spring",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "jp_landmark",
+        "via": "maki",
+        "maki": "landmark-JP",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "jp_lighthouse",
+        "via": "maki",
+        "maki": "lighthouse-JP",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "jp_monument",
+        "via": "maki",
+        "maki": "monument-JP",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "jp_police",
+        "via": "maki",
+        "maki": "police-JP",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "jp_post",
+        "via": "maki",
+        "maki": "post-JP",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "jp_school",
+        "via": "maki",
+        "maki": "school-JP",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "jug_and_apple",
+        "via": "nps",
+        "nps": "store",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "junk_car",
+        "via": "temaki",
+        "temaki": "junk_car",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "kayaker_on_water",
+        "via": "nps",
+        "temaki": "kayaking",
+        "nps": "kayaking",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "kerb_flush",
+        "via": "temaki",
+        "temaki": "kerb-flush",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "kerb_flush_under_shoe",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "kerb_lowered",
+        "via": "temaki",
+        "temaki": "kerb-lowered",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "kerb_lowered_under_shoe",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "kerb_raised",
+        "via": "temaki",
+        "temaki": "kerb-raised",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "kerb_raised_under_shoe",
+        "via": "temaki",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "kerb_rolled",
+        "via": "temaki",
+        "temaki": "kerb-rolled",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "kerb_rolled_under_shoe",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "key",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "keyhole",
+        "basedOn": "locked_lock_with_keyhole",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "khanda",
+        "via": "temaki",
+        "temaki": "sikhism",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "kids_train_on_railway_track",
+        "via": "temaki",
+        "temaki": "train_kids",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "kitchen_sink",
+        "via": "temaki",
+        "temaki": "kitchen_sink",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "knife",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "lantern",
+        "via": "maki",
+        "maki": "lighthouse",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "laptop",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "latrine",
+        "via": "temaki",
+        "temaki": "latrine",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "lattice_power_tower",
+        "via": "temaki",
+        "temaki": "power_tower",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "lattice_tower_with_ball_tip_antenna_on_ground_with_beams",
+        "via": "maki",
+        "maki": "communications-tower",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "lattice_tower_with_lookout_deck",
+        "via": "",
+        "nps": "lookout-tower",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "lattice_tower_with_observation_deck_on_ground",
+        "via": "maki",
+        "maki": "observation-tower",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "leaf",
+        "via": "opentrailmap",
+        "opentrailmap": "nature_reserve",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "leafless_tree",
+        "via": "temaki",
+        "temaki": "tree_leafless",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "letter_box_us",
+        "via": "temaki",
+        "temaki": "letter_box",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "life_jacket",
+        "via": "nps",
+        "nps": "life-jackets",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "lift_gate",
+        "via": "temaki",
+        "temaki": "lift_gate",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "lift_gate_lowered",
+        "via": "maki",
+        "maki": "lift_gate",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "lightbulb",
+        "via": "temaki",
+        "temaki": ["bulb", "bulb2", "bulb3"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "lighthouse",
+        "via": "nps",
+        "nps": "lighthouse",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "lion",
+        "via": "maki",
+        "maki": "zoo",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "lips",
+        "basedOn": "lips_and_lipstick",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "lips_and_lipstick",
+        "via": "temaki",
+        "temaki": "lipstick",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "lipstick",
+        "basedOn": "lips_and_lipstick",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "local_transit_vehicle",
+        "via": "temaki",
+        "temaki": "transit",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "locked_lock",
+        "basedOn": "locked_lock_with_keyhole",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "locked_lock_with_keyhole",
+        "via": "temaki",
+        "temaki": "lock",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "lockers_terminal",
+        "via": "temaki",
+        "temaki": "vending_lockers",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "lounger",
+        "via": "temaki",
+        "temaki": "lounger",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "low_mounted_beam",
+        "basedOn": "person_balancing_on_low_mounted_beam",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "low_shrub",
+        "via": "temaki",
+        "temaki": "shrub_low",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "lowrise_building",
+        "via": "maki",
+        "maki": "building",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "lowrise_building_and_tree_on_ground",
+        "via": "maki",
+        "maki": "residential-community",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "magnifying_glass_for_search_ui",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "manhole_cover",
+        "via": "temaki",
+        "temaki": "manhole",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "manhole_cover_with_bolt",
+        "via": "temaki",
+        "temaki": "power_manhole",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "manhole_cover_with_cable",
+        "via": "temaki",
+        "temaki": "cable_manhole",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "manhole_cover_with_droplet",
+        "via": "temaki",
+        "temaki": "water_manhole",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "manhole_cover_with_gas_flame",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "manhole_cover_with_hydrant",
+        "via": "temaki",
+        "temaki": "fire_hydrant_underground",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "manhole_cover_with_sewage_pipe_cross_section",
+        "via": "temaki",
+        "temaki": "waste_manhole",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "manicured_grass",
+        "via": "temaki",
+        "temaki": "lawn",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "manor",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "manufactured_home",
+        "via": "temaki",
+        "temaki": "manufactured_home",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "map_outline",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "map_outline_with_info_i",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "map_outline_with_swap_arrows",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "map_pin",
+        "via": "maki",
+        "maki": "marker",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "map_pin_outline",
+        "via": "maki",
+        "maki": "marker-stroked",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "map_pin_with_dot",
+        "via": "temaki",
+        "temaki": "pin",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "marae",
+        "via": "maki",
+        "maki": "marae",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "market_stall",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "maze",
+        "via": "temaki",
+        "temaki": "maze",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "meat",
+        "via": "temaki",
+        "temaki": "meat",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "medal_ribbon",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "medal_ribbon_with_anchor",
+        "via": "temaki",
+        "temaki": "anchor_medal",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "medal_ribbon_with_star",
+        "via": "temaki",
+        "temaki": "military",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "megalith",
+        "via": "temaki",
+        "temaki": "ruins",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "mens_restroom_symbol",
+        "nps": "mens-restroom",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "microphone",
+        "via": "maki",
+        "maki": "karaoke",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "microscope",
+        "via": "nps",
+        "nps": "young-scientist-program",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "milestone",
+        "via": "temaki",
+        "temaki": "milestone",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "military_police_officer_with_stop_arm",
+        "via": "temaki",
+        "temaki": "military_checkpoint",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "milk_churn",
+        "via": "temaki",
+        "temaki": "milk_churn",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "mineshaft_cage",
+        "via": "temaki",
+        "temaki": "mineshaft_cage",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "mineshaft_profile",
+        "via": "temaki",
+        "temaki": "mineshaft_profile",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "mobile_phone_with_keypad_and_antenna",
+        "maki": "mobile-phone",
+        "designer": ["@quincylvania"]
+      },
+      {
+        "newId": "mobile_phone_with_keypad_and_antenna_and_bolt",
+        "designer": ["@quincylvania"],
+        "nps": "mobile-device-charging"
+      },
+      {
+        "newId": "mobile_phone_with_touchscreen_and_antenna",
+        "designer": ["@quincylvania"]
+      },
+      {
+        "newId": "mobile_phone_with_touchscreen_and_antenna_and_bolt",
+        "designer": ["@quincylvania"]
+      },
+      {
+        "newId": "molar_tooth",
+        "via": "maki",
+        "maki": "dentist",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "monopod_antenna_with_beams",
+        "via": "temaki",
+        "temaki": "antenna",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "monorail_transit_vehicle",
+        "via": "temaki",
+        "temaki": "monorail",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "mortar_and_pestle_with_greek_cross",
+        "via": "maki",
+        "maki": "pharmacy",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "motor_scooter",
+        "via": "maki",
+        "maki": "scooter",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "motorboat",
+        "via": "temaki",
+        "temaki": "boat",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "motorboat_and_key",
+        "via": "temaki",
+        "temaki": "boat_rental",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "motorboat_and_wrench",
+        "via": "temaki",
+        "temaki": "boat_repaid",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "motorboat_on_ramp",
+        "via": "maki",
+        "maki": "slipway",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "motorboat_on_water",
+        "via": "temaki",
+        "temaki": "boat_floating",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "motorboater_on_water",
+        "via": "nps",
+        "temaki": "boating",
+        "nps": ["boating", "motorboating"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "motorcycle",
+        "via": "temaki",
+        "temaki": "motorcycle",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "motorcycle_and_key",
+        "via": "temaki",
+        "temaki": "motorcycle_rental",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "motorcycle_and_wrench",
+        "via": "temaki",
+        "temaki": "motorcycle_repair",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "motorcycle_in_parking_structure",
+        "basedOn": ["motorcycle", "car_in_parking_structure"],
+        "designer": ["@quincylvania"]
+      },
+      {
+        "newId": "motorcycle_on_parking_line",
+        "basedOn": ["motorcycle", "car_on_parking_line"],
+        "designer": ["@quincylvania"]
+      },
+      {
+        "newId": "mountain",
+        "basedOn": "mountain_with_greek_cross",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "mountain_with_greek_cross",
+        "via": "temaki",
+        "temaki": "mountain_cross",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "mountain_with_heavy_six_point_asterisk",
+        "via": "temaki",
+        "temaki": "mountain_asterisk",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "mountaineer_with_backpack_climbing_cliff",
+        "via": "nps",
+        "nps": "climbing",
+        "temaki": "climbing",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "mountains_and_lake",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "mounted_scope",
+        "via": "temaki",
+        "temaki": "spotting_scope",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "mounted_slotted_dispenser_with_dog_wearing_collar",
+        "via": "temaki",
+        "temaki": "vending_pet_waste",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "music_note_with_optical_disc",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "music_notes_sixteenth",
+        "via": "maki",
+        "maki": "music",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "needle",
+        "basedOn": "needle_and_spool_of_thead",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "needle_and_spool_of_thread",
+        "via": "temaki",
+        "temaki": "needle_and_spool",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "newspaper",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "newspaper_box_with_newspaper",
+        "via": "temaki",
+        "temaki": "vending_newspaper",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "no_entry",
+        "via": "maki",
+        "maki": "roadblock",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "noodle_bowl_and_chopsticks_with_noodles",
+        "via": "maki",
+        "maki": "restaurant-noodle",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "obelisk",
+        "via": "temaki",
+        "temaki": "obelisk",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "obelisk_on_plinth",
+        "via": "maki",
+        "maki": "monument",
+        "nps": "monument",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "observatory_dome",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "octagon",
+        "via": "temaki",
+        "temaki": "stop",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "office_building_with_flag",
+        "via": "temaki",
+        "temaki": "embassy",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "officer_with_stop_arm",
+        "via": "temaki",
+        "temaki": "checkpoint",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "om",
+        "via": "temaki",
+        "temaki": "hinduism",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "open_book",
+        "via": "maki",
+        "maki": "library",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "ordnance_survey_benchmark",
+        "via": "temaki",
+        "temaki": "os_benchmark",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "paifang",
+        "via": "temaki",
+        "temaki": "paifang",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "paint_roller",
+        "maki": "paint",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "palace",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "palette",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "palette_with_music_note",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "palm_tree",
+        "via": "temaki",
+        "temaki": "tree_palm",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "paper_and_pencil",
+        "via": "temaki",
+        "temaki": "school",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "paperclip",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "parking_line",
+        "basedOn": "car_on_parking_line",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "parking_p",
+        "via": "maki",
+        "maki": "parking",
+        "nps": "parking",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "parking_p_under_roof",
+        "via": "maki",
+        "maki": "parking-garage",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "parking_p_with_parking_meter",
+        "via": "maki",
+        "maki": "parking-paid",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "parking_stall_markings",
+        "via": "temaki",
+        "temaki": "parking_space",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "parking_stall_markings_with_person_in_wheelchair",
+        "via": "temaki",
+        "temaki": "accessible_space",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "parking_structure",
+        "basedOn": "car_in_parking_structure",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "pawprint",
+        "via": "temaki",
+        "temaki": "pet_store",
+        "maki": "veterinary",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "pawprint_with_greek_cross",
+        "via": "temaki",
+        "temaki": "veterinary_care",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "pedal_boater_on_water",
+        "via": "nps",
+        "nps": "paddle-boating",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "pedestrian",
+        "via": "",
+        "nps": "walking",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "pedestrian_and_cyclist",
+        "via": "temaki",
+        "temaki": "pedestrian_and_cyclist",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "pedestrian_and_cyclist_on_crosswalk",
+        "via": "temaki",
+        "temaki": "ped_cyclist_crosswalk",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "pedestrian_between_walls",
+        "via": "temaki",
+        "temaki": "pedestrian_walled",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "pedestrian_holding_shopping_bags",
+        "via": "temaki",
+        "temaki": "shopping_mall",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "pedestrian_on_crosswalk",
+        "via": "temaki",
+        "temaki": "pedestrian_crosswalk",
+        "nps": "pedestrian-crossing",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "pedestrian_under_icy_eave",
+        "via": "nps",
+        "nps": "watch-for-falling-ice",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "pedestrian_using_white_cane",
+        "via": "nps",
+        "temaki": "blind",
+        "nps": "low-vision-access",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "pedestrian_wearing_backpack_holding_hiking_pole",
+        "via": "osm-carto",
+        "opentrailmap": "trailhead",
+        "nps": "trailhead",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "pedestrian_wearing_backpack_holding_hiking_pole_under_roof",
+        "via": "osm-carto",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "pencil_and_apple",
+        "via": "maki",
+        "maki": "school",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "pencil_bottom_left_to_square_outline",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "people_and_person_pointing",
+        "via": "nps",
+        "nps": "guided-tours",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "people_sitting_on_seesaw",
+        "via": "temaki",
+        "temaki": "seesaw",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "perfume_bottle_with_spray",
+        "via": "temaki",
+        "temaki": "perfume",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_aiming_archery_bow",
+        "via": "nps",
+        "nps": "archery",
+        "temaki": "archery",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_aiming_rifle",
+        "via": "nps",
+        "nps": "hunting",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_balancing",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_balancing_on_low_mounted_beam",
+        "via": "temaki",
+        "temaki": "balance_beam",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_behind_barred_window",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_boarding",
+        "designer": ["@quincylvania"],
+        "basedOn": "person_boarding_bus"
+      },
+      {
+        "newId": "person_boarding_aerial_gondola",
+        "via": "temaki",
+        "temaki": "board_gondola_lift",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_boarding_bullet_train_on_railway_track",
+        "via": "temaki",
+        "temaki": "board_train_bullet",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_boarding_bus",
+        "temaki": "board_bus",
+        "via": "temaki",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_boarding_bus_with_destination_display_and_pantograph",
+        "via": "temaki",
+        "temaki": "board_trolleybus",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_boarding_car",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_boarding_diesel_train_on_railway_track",
+        "via": "temaki",
+        "temaki": "board_train_diesel",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_boarding_ferryboat",
+        "temaki": "board_ferry",
+        "via": "temaki",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_boarding_hanging_rail_transit_vehicle",
+        "via": "temaki",
+        "temaki": "board_hanging_rail",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_boarding_kids_train_on_railway_track",
+        "via": "temaki",
+        "temaki": "board_train_kids",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_boarding_local_transit_vehicle",
+        "via": "temaki",
+        "temaki": "board_transit",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_boarding_monorail_transit_vehicle",
+        "via": "temaki",
+        "temaki": "board_monorail",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_boarding_school_bus",
+        "via": "temaki",
+        "temaki": "board_school_bus",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_boarding_steam_train_on_railway_track",
+        "via": "temaki",
+        "temaki": "board_train_steam",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_boarding_taxi",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_boarding_tram_with_destination_display_and_pantograph_on_tram_track",
+        "via": "temaki",
+        "temaki": "board_tram",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_boarding_transit_vehicle_on_railway_track",
+        "temaki": "board_train",
+        "via": "temaki",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_boarding_transit_vehicle_with_destination_display_and_pantograph_on_tram_track",
+        "temaki": "board_light_rail",
+        "via": "temaki",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_boarding_transit_vehicle_with_destination_display_on_railway_track",
+        "temaki": "board_heavy_rail",
+        "via": "temaki",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_boarding_transit_vehicle_with_destination_display_on_railway_track_under_ground",
+        "temaki": "board_subway",
+        "via": "temaki",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_carrying_canoe",
+        "via": "nps",
+        "nps": "canoe-portaging",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_falling_on_rough_surface",
+        "via": "nps",
+        "nps": "uneven-walkways",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_fishing_from_pier_above_water",
+        "via": "nps",
+        "temaki": "fishing_pier",
+        "nps": "fishing_pier",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_hanging_from_horizontal_bar",
+        "via": "temaki",
+        "temaki": "horizontal_bar",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_holding_branches",
+        "via": "nps",
+        "nps": "wood-gathering",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_holding_chestfeeding_baby",
+        "via": "nps",
+        "nps": "breastfeeding-station",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_holding_open_book",
+        "via": "nps",
+        "nps": "library",
+        "temaki": "library",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_in_water",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_in_water_wearing_swim_briefs_holding_bucket",
+        "via": "nps",
+        "nps": "wading",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_in_wheelchair",
+        "via": "maki",
+        "temaki": "wheelchair_active",
+        "maki": "wheelchair",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_kneeling_and_praying",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_lounging_on_lounger",
+        "via": "temaki",
+        "temaki": "lounging",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_lying_on_front_in_sun_on_surface",
+        "via": "temaki",
+        "temaki": "tanning",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_massaging_person_lying_on_front",
+        "via": "temaki",
+        "temaki": "spa",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_on_escalator",
+        "via": "maki",
+        "maki": "entrance",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_on_ground_dragging_raft_to_water",
+        "via": "nps",
+        "nps": "hand-launch-small-boat-launch",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_on_inclined_swing",
+        "via": "nps",
+        "nps": "playground",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_on_swing",
+        "via": "maki",
+        "maki": "playground",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_padding_raft_on_water",
+        "via": "nps",
+        "nps": "river-rafting",
+        "temaki": "rafting",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_paddling_canoe_on_water",
+        "via": "opentrailmap",
+        "temaki": "canoe",
+        "opentrailmap": "access_point",
+        "nps": "canoe-access",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_piloting_hang_glider",
+        "via": "nps",
+        "temaki": "hang_gliding",
+        "nps": "hang-gliding",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_reaching_up",
+        "basedOn": "person_squatting_and_person_reaching_up",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_riding_atv",
+        "via": "nps",
+        "nps": "motor-bike-trail",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_riding_horse",
+        "via": "maki",
+        "nps": "horseback-riding",
+        "maki": "horse-riding",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_riding_in_stroller",
+        "via": "nps",
+        "nps": "strollers",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_riding_snowmobile",
+        "via": "nps",
+        "temaki": "snowmobile",
+        "nps": "snowmobile-trail",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_riding_surfboard",
+        "via": "nps",
+        "nps": "surfing",
+        "temaki": "surfing",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_riding_tube_on_water",
+        "via": "nps",
+        "nps": "tubing",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_rowing_rowboat_on_water",
+        "via": "nps",
+        "nps": "rowboating",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_showering_with_soap_under_shower_spray",
+        "via": "nps",
+        "nps": "showers",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_shushing",
+        "via": "nps",
+        "nps": "quiet",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_sitting_in_seat",
+        "via": "nps",
+        "nps": "benches-seating",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_sitting_in_steam_sauna",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_sitting_on_lifeguard_stand_above_water",
+        "via": "nps",
+        "nps": "lifeguard",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_slipping_down_cliff",
+        "via": "nps",
+        "nps": "stay-back-from-edge-cliff",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_slipping_down_ramp",
+        "via": "nps",
+        "nps": "slippery-ramp",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_slipping_down_steps",
+        "via": "nps",
+        "nps": "slippery-steps",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_squatting",
+        "basedOn": "person_squatting_and_person_reaching_up",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_squatting_and_person_reaching_up",
+        "via": "nps",
+        "temaki": "physiotherapist",
+        "nps": "exercise-fitness",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "person_using_mounted_binoculars",
+        "via": "nps",
+        "nps": "viewing-area",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "phone_and_keyboard",
+        "via": "nps",
+        "nps": "text-telephone-service",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "phone_bottom_right",
+        "via": "maki",
+        "maki": "telephone",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "phone_right_with_exclamation_point",
+        "via": "nps",
+        "nps": "emergency-telephone",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "phone_top_right_with_greek_cross",
+        "via": "maki",
+        "maki": "emergency-phone",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "pick_hammer",
+        "via": "temaki",
+        "temaki": "pick_hammer",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "pick_hammer_with_rocks",
+        "via": "nps",
+        "nps": "rock-collecting",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "picket_fence",
+        "via": "maki",
+        "maki": "fence",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "pickleball_paddle_with_ball",
+        "via": "temaki",
+        "temaki": "pickleball",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "picnic_table",
+        "via": "maki",
+        "maki": "picnic-site",
+        "nps": "picnic-area",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "picnic_table_in_shelter",
+        "via": "temaki",
+        "temaki": "picnic_shelter",
+        "nps": "picnic-shelter",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "pier_mounted_in_water",
+        "via": "temaki",
+        "temaki": "pier_fixed",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "pier_on_water",
+        "temaki": "pier_floating",
+        "via": "temaki",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "pill",
+        "temaki": "pharmacy",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "pill_bottle_with_greek_cross",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "pin",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "pint_glass",
+        "via": "maki",
+        "maki": "beer",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "pipe",
+        "via": "temaki",
+        "temaki": "pipe",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "pixel_invader",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "pizza_slice",
+        "via": "maki",
+        "maki": "restaurant-pizza",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "place_of_worship_building",
+        "via": "maki",
+        "maki": "place-of-worship",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "plan_in_raised_planter",
+        "via": "temaki",
+        "temaki": "garden_bed",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "plane",
+        "maki": "airport",
+        "nps": "airport",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "plane_takeoff_above_ground",
+        "via": "maki",
+        "maki": "terminal",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "plane_taxiing",
+        "via": "temaki",
+        "temaki": "plane_taxiing",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "planes",
+        "via": "temaki",
+        "temaki": "planes",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "planes_bidirectional",
+        "via": "temaki",
+        "temaki": "planes",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "plant",
+        "via": "temaki",
+        "temaki": "plant",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "plaque",
+        "via": "temaki",
+        "temaki": "plaque",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "play_structure_with_slide",
+        "via": "temaki",
+        "temaki": "play_structure",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "plug",
+        "basedOn": "plug_with_bolt",
+        "nps": "electrical-hookup",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "plug_with_bolt",
+        "via": "temaki",
+        "temaki": "electronic",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "plus_squat",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "pointy_rock",
+        "via": "temaki",
+        "temaki": "boulder2",
+        "designer": ["@bhousel"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "pole_with_antenna_array",
+        "via": "temaki",
+        "temaki": "tower_communcation",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "pole_with_floodlights",
+        "via": "temaki",
+        "temaki": "mast_lighting",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "police_officer",
+        "via": "temaki",
+        "temaki": "police_officer",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "police_officer_with_stop_arm",
+        "via": "temaki",
+        "temaki": "police_checkpoint",
+        "maki": "police",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "poo_pile",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "portable_fence",
+        "via": "temaki",
+        "temaki": "railing",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "portable_radio",
+        "via": "temaki",
+        "temaki": "radio",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "portrait_of_person_in_hat_in_frame",
+        "via": "temaki",
+        "temaki": "portrait_framed",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "post_box",
+        "via": "temaki",
+        "temaki": "post_box",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "postage_stamp",
+        "via": "temaki",
+        "temaki": "stamp",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "poster_box",
+        "via": "temaki",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "pot",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "potted_flower",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "profile_of_person_in_hat",
+        "via": "temaki",
+        "temaki": "portrait",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "propane_tank",
+        "basedOn": "propane_tank_with_gas_flame",
+        "temaki": "propane_tank",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "propane_tank_with_gas_flame",
+        "via": "nps",
+        "nps": "propane",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "propane_tank_with_recycling_symbol",
+        "via": "nps",
+        "nps": "propane-bottle-recycling",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "propeller_plane",
+        "via": "maki",
+        "maki": "airfield",
+        "nps": "airfield",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "public_speaker",
+        "via": "nps",
+        "nps": "amphitheater",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "pumpjack",
+        "via": "temaki",
+        "temaki": "oil_well",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "purse",
+        "via": "temaki",
+        "temaki": "handbag",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "quaker_star",
+        "via": "temaki",
+        "temaki": "quakerism",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "quay",
+        "via": "temaki",
+        "temaki": "quay",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "racetrack_eight_with_dashes",
+        "via": "temaki",
+        "temaki": "speedway_8",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "racetrack_oval",
+        "via": "temaki",
+        "temaki": "racetrack_oval",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "racetrack_oval_with_dashes",
+        "via": "temaki",
+        "temaki": "speedway_oval",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "racquet",
+        "via": "maki",
+        "maki": "tennis",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "radiation_symbol",
+        "via": "temaki",
+        "temaki": "radiation",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "rail_profile",
+        "via": "temaki",
+        "temaki": "rail_profile",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "railway_cable_track",
+        "via": "temaki",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "railway_track",
+        "via": "temaki",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "railway_track_askew",
+        "via": "temaki",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "railway_track_crossing_dashed_line",
+        "via": "temaki",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "railway_track_crossing_railway_track",
+        "via": "temaki",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "railway_track_crossing_solid_line",
+        "via": "temaki",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "railway_track_crossing_striped_line",
+        "via": "temaki",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "railway_track_mini",
+        "via": "temaki",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "railway_track_narrow_gauge",
+        "via": "temaki",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "railway_track_partial",
+        "via": "temaki",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "ranger_hat",
+        "via": "opentrailmap",
+        "nps": "ranger-led-events",
+        "opentrailmap": "protected_area",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "rattlesnake",
+        "via": "nps",
+        "nps": "rattlesnakes",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "rectangle",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "rectangle_outline",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "rectangle_tall",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "rectangle_tall_outline",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "recycling_symbol",
+        "via": "nps",
+        "nps": "recycling",
+        "maki": "recycling",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "rigging",
+        "via": "temaki",
+        "temaki": "rigging",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "ring_with_jewel",
+        "via": "maki",
+        "maki": "jewelry-store",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "rocket_firework",
+        "via": "temaki",
+        "temaki": "rocket_firework",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "rocketship",
+        "via": "maki",
+        "maki": "rocket",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "rocking_horse",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "roller_brushes",
+        "basedOn": "transit_vehicle_on_railway_track_between_roller_brushes",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "roller_coaster",
+        "via": "temaki",
+        "temaki": "roller_coaster",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "roof_with_fireplace_and_chimney",
+        "via": "osm-carto",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "roofed_information_board",
+        "via": "temaki",
+        "temaki": "info_board",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "room",
+        "via": "temaki",
+        "temaki": "room",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "rope_fence",
+        "via": "temaki",
+        "temaki": "rope_fence",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "round_structure_with_flag",
+        "via": "maki",
+        "maki": "stadium",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "row_houses",
+        "via": "temaki",
+        "temaki": "row_houses",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "rumble_strip",
+        "via": "temaki",
+        "temaki": "rumble_strip",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "runner",
+        "via": "maki",
+        "maki": "pitch",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "saguaro",
+        "via": "temaki",
+        "temaki": "tree_cactus",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "sail",
+        "via": "temaki",
+        "temaki": "sail",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "sailboat",
+        "via": "temaki",
+        "temaki": "sailboat",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "sailboat_on_water",
+        "via": "nps",
+        "temaki": "sailing",
+        "nps": "sailing",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "sandbox",
+        "basedOn": "sandbox_with_sand_trowel",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "sandbox_with_sand_trowel",
+        "via": "temaki",
+        "temaki": "sandbox",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "sausage",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "scaffold",
+        "via": "temaki",
+        "temaki": "scaffold",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "school_bus",
+        "via": "temaki",
+        "temaki": "school_bus",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "scissors_and_comb",
+        "via": "temaki",
+        "temaki": "beauty_salon",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "scissors_open",
+        "via": "maki",
+        "maki": "hairdresser",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "scuba_diver",
+        "via": "nps",
+        "temaki": "scuba_diving",
+        "nps": "scuba-diving",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "sculpture",
+        "via": "temaki",
+        "temaki": "sculpture",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "sea_lion",
+        "via": "nps",
+        "nps": "sea-lion-viewing",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "sea_star",
+        "via": "nps",
+        "nps": "tidepooling",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "seaplane_takeoff_over_water",
+        "via": "nps",
+        "nps": "sea-plane",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "semi_trailer",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "semi_trailer_with_bolt",
+        "via": "nps",
+        "nps": "generators",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "sewage_pipe_cross_section",
+        "via": "temaki",
+        "temaki": "waste",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "shelter",
+        "via": "maki",
+        "nps": "shelter",
+        "maki": "shelter",
+        "opentrailmap": "lean_to",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "shield",
+        "via": "temaki",
+        "temaki": "shield",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "shipwreck_in_water",
+        "via": "nps",
+        "nps": "shipwreck",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "shoe",
+        "via": "maki",
+        "maki": "shoe",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "shoe_under_shower_spray",
+        "via": "temaki",
+        "temaki": "footwear_decontamination",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "shopping_bag",
+        "via": "maki",
+        "maki": "shop",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "shopping_basket",
+        "via": "maki",
+        "maki": "convenience",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "shopping_cart",
+        "via": "maki",
+        "maki": "grocery",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "shore",
+        "via": "temaki",
+        "temaki": "beach",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "showerhead_with_spray",
+        "via": "temaki",
+        "temaki": "shower",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "shrub",
+        "via": "temaki",
+        "temaki": "shrub",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "shuffleboard_court_with_pucks",
+        "via": "temaki",
+        "temaki": "shuffleboard",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "sign",
+        "via": "nps",
+        "maki": "historic",
+        "nps": "sign",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "sign_beside_bench_with_backrest",
+        "via": "temaki",
+        "temaki": "sign_and_bench",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "sign_beside_car",
+        "via": "temaki",
+        "temaki": "sign_and_car",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "sign_beside_pedestrian",
+        "via": "temaki",
+        "temaki": "sign_and_pedestrian",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "sign_beside_taxi",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "signboard",
+        "via": "osm-carto",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "silo",
+        "via": "temaki",
+        "temaki": "silo",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "skateboard",
+        "via": "maki",
+        "maki": "skateboard",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "skateboarder",
+        "via": "nps",
+        "temaki": "skateboarding",
+        "nps": "skateboarding",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "ski_jumper",
+        "via": "nps",
+        "temaki": "ski_jumping",
+        "nps": "ski-jumping",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "skull",
+        "basedOn": "skull_with_x_oblique",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "skull_with_x_oblique",
+        "via": "maki",
+        "maki": "danger",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "skyscraper_on_ground",
+        "via": "maki",
+        "maki": "building-alt1",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "sledder",
+        "via": "nps",
+        "temaki": "sledding",
+        "nps": "sldding",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "sleeper",
+        "basedOn": "sleeper_in_shelter",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "sleeper_in_bed",
+        "via": "maki",
+        "maki": "lodging",
+        "nps": "lodging",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "sleeper_in_shelter",
+        "via": "temaki",
+        "temaki": "sleep_shelter",
+        "nps": "sleeping-shelter",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "sleepers_in_bunkbeds",
+        "via": "temaki",
+        "temaki": "bunk_beds",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "slide",
+        "via": "temaki",
+        "temaki": "slide",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "slot_machine",
+        "via": "temaki",
+        "temaki": "casino",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "smoke_curl",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "snorkel_and_diving_mask",
+        "via": "nps",
+        "nps": "snorkeling",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "snowboarder",
+        "via": "nps",
+        "temaki": "snowboarding",
+        "nps": "snowboarding",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "snowcapped_mountain",
+        "via": "maki",
+        "maki": "mountain",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "snowcapped_mountain_range",
+        "via": "temaki",
+        "temaki": "mountain_range",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "snowcapped_mountain_saddle",
+        "via": "temaki",
+        "temaki": "saddle",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "snowcapped_mountain_valley",
+        "via": "temaki",
+        "temaki": "valley",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "snowflake",
+        "via": "nps",
+        "temaki": "snow",
+        "nps": "winter-recreation-area",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "snowflake_and_icicles",
+        "basedOn": ["icicles", "snowflake"],
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "snowmobile",
+        "via": "maki",
+        "maki": "snowmobile",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "snowshoer",
+        "via": "nps",
+        "temaki": "snoe_shoeing",
+        "nps": "snow-shoeing",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "soccer_player",
+        "via": "maki",
+        "maki": "soccer",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "spade",
+        "via": "maki",
+        "maki": "casino",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "speaker",
+        "via": "temaki",
+        "temaki": "speaker",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "speed_bump",
+        "via": "temaki",
+        "temaki": "speed_bump",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "speed_dip",
+        "via": "temaki",
+        "temaki": "speed_dip",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "speed_dip_double",
+        "via": "temaki",
+        "temaki": "speed_dip_double",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "speed_hump",
+        "via": "temaki",
+        "temaki": "speed_hump",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "speed_table",
+        "via": "temaki",
+        "temaki": "speed_table",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "spelunker",
+        "via": "nps",
+        "nps": "caving",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "spice_bottle",
+        "via": "temaki",
+        "temaki": "spice_bottle",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "spike_strip",
+        "via": "temaki",
+        "temaki": "spike_strip",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "spiky_fish",
+        "designer": [
+          "@quincylvania"
+        ],
+        "basedOn": "spiky_fish_with_x"
+      },
+      {
+        "newId": "spiky_fish_with_x",
+        "via": "nps",
+        "nps": "aquatic-invasive-species-decontamination-station",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "spoon",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "spoon_and_chefs_knife_and_pot",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "spring_rider",
+        "via": "temaki",
+        "temaki": "spring_rider",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "square",
+        "maki": "square",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "square_academic_cap",
+        "via": "maki",
+        "maki": "college",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "square_outline",
+        "maki": "square-stroked",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "squat_rock",
+        "temaki": "boulder3",
+        "via": "temaki",
+        "designer": ["@bhousel"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "squeeze_stile",
+        "via": "temaki",
+        "temaki": "stile_squeezer",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "stagecoach",
+        "via": "nps",
+        "nps": "stagecoach-rides",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "star",
+        "via": "maki",
+        "maki": "star",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "star_and_crescent",
+        "via": "maki",
+        "maki": "religious-muslim",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "star_of_david",
+        "via": "maki",
+        "maki": "religious-jewish",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "star_outline",
+        "via": "maki",
+        "maki": "star-stroked",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "statue",
+        "via": "temaki",
+        "temaki": "statue",
+        "nps": "statue",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "steam_train_on_railway_track",
+        "via": "temaki",
+        "temaki": "train_steam",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "stethoscope",
+        "via": "maki",
+        "maki": "doctor",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "stone_wall",
+        "via": "temaki",
+        "temaki": "wall",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "storage_drum",
+        "via": "temaki",
+        "temaki": "storage_drum",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "storage_fermenter",
+        "via": "temaki",
+        "temaki": "storage_fermenter",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "storage_tank",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "street_lamp_arm",
+        "via": "temaki",
+        "temaki": "street_lamp_arm",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "striped_zone",
+        "via": "temaki",
+        "temaki": ["striped_zone", "striped_way"],
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "stroller",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "sub_sandwich",
+        "via": "temaki",
+        "temaki": "sandwich",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "suitcase",
+        "temaki": "suitcase",
+        "via": "temaki",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "suitcase_and_key",
+        "temaki": "suitcase_key",
+        "via": "temaki",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "suitcase_xray",
+        "temaki": "suitcase_xray",
+        "via": "temaki",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "sun",
+        "via": "",
+        "nps": "sunny",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "survey_triangulation_disk",
+        "via": "temaki",
+        "temaki": "benchmark_disk",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "sushi",
+        "via": "maki",
+        "maki": "restaurant-sushi",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "swim_bra_and_swim_briefs",
+        "via": "temaki",
+        "temaki": "bikini",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "swimmer_in_water",
+        "via": "maki",
+        "maki": "swimming",
+        "nps": "swimming",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "swinging_doors",
+        "via": "maki",
+        "maki": "gate",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "table_soccer_players_with_ball",
+        "via": "temaki",
+        "temaki": "table_soccer",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "table_tennis_paddle",
+        "via": "maki",
+        "maki": "table-tennis",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "tattoo_machine",
+        "via": "temaki",
+        "temaki": "tattoo_machine",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "taxi",
+        "temaki": "taxi_stand",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "tea_bag",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "teapot",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "telescope",
+        "via": "temaki",
+        "temaki": "telescope",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "telescope_with_sparkles",
+        "nps": "star-gazing",
+        "basedOn": ["telescope", "dancer_with_sparkles"],
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "temaki",
+        "via": "temaki",
+        "temaki": "temaki",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "tennis_player",
+        "via": "nps",
+        "temaki": "tennis",
+        "nps": "tennis",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "tents",
+        "via": "temaki",
+        "temaki": "tents",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "thatched_roof_hut",
+        "via": "temaki",
+        "temaki": "hut",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "theater_with_audience",
+        "via": "nps",
+        "nps": "theater",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "three_dot_horizontal_line",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "three_dot_horizontal_line_in_rectangle",
+        "basedOn": "three_dot_vertical_line_in_rectangle",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "three_dot_vertical_line",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "three_dot_vertical_line_in_rectangle",
+        "via": "temaki",
+        "temaki": "traffic_signals",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "ticket",
+        "via": "temaki",
+        "temaki": "ticket",
+        "nps": "ticket-sales",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "ticket_in_slot",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "tiling",
+        "via": "temaki",
+        "temaki": "tiling",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "tire",
+        "via": "temaki",
+        "temaki": "tire",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "tire_course",
+        "via": "temaki",
+        "temaki": "tire_course",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "to_go_cup_with_cup_sleeve",
+        "via": "temaki",
+        "temaki": "hot_drink_cup",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "toilet_paper_roll",
+        "via": "nps",
+        "nps": "sewer-hookup",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "toll_booth",
+        "via": "maki",
+        "maki": "toll",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "toll_gantry",
+        "via": "temaki",
+        "temaki": "toll_gantry",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "toolbox",
+        "via": "temaki",
+        "temaki": "toolbox",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "toothbrush",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "torii",
+        "via": "temaki",
+        "temaki": "shinto",
+        "maki": "religious-shinto",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "tornado",
+        "basedOn": "tornado_beside_shelter",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "tornado_beside_shelter",
+        "via": "nps",
+        "nps": "tornado-shelter",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "tour_van",
+        "via": "nps",
+        "nps": "tram-tour",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "tourboat_on_water",
+        "via": "nps",
+        "nps": "boat-tour",
+        "temaki": "boat_tour",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "tow_truck",
+        "via": "nps",
+        "nps": "towing",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "towed_skier_on_water",
+        "via": "nps",
+        "temaki": "waterskiing",
+        "nps": "waterskiing",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "tower_with_observation_deck",
+        "via": "temaki",
+        "temaki": "tower",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "town_buildings",
+        "via": "maki",
+        "maki": "town",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "traffic_cone",
+        "via": "maki",
+        "maki": "construction",
+        "nps": "construction",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "tram_profile",
+        "via": "temaki",
+        "temaki": "tram_side",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "tram_track_crossing_dashed_line",
+        "via": "temaki",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "tram_track_crossing_solid_line",
+        "via": "temaki",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "tram_track_crossing_striped_line",
+        "via": "temaki",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "tram_with_destination_display_and_pantograph_on_tram_track",
+        "maki": "rail-metro",
+        "temaki": "tram",
+        "via": "temaki",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "transit_vehicle_on_railway_track",
+        "via": "temaki",
+        "temaki": "train",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "transit_vehicle_on_railway_track_between_roller_brushes",
+        "via": "temaki",
+        "temaki": "train_wash",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "transit_vehicle_with_destination_display_and_pantograph_on_tram_track",
+        "via": "temaki",
+        "temaki": "light_rail",
+        "maki": "rail-light",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "transit_vehicle_with_destination_display_on_railway_track",
+        "maki": "rail",
+        "nps": "rail-station",
+        "via": "temaki",
+        "temaki": "heavy_rail",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "transit_vehicle_with_destination_display_on_railway_track_in_tunnel",
+        "via": "temaki",
+        "temaki": "subway",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "trapezoidal_rock",
+        "via": "temaki",
+        "temaki": "boulder1",
+        "designer": ["@bhousel"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "trash_can",
+        "via": "maki",
+        "maki": "waste-basket",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "treasure_map",
+        "via": "nps",
+        "nps": "maps",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "tree_and_bench_with_backrest",
+        "via": "temaki",
+        "temaki": "tree_and_bench",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "tree_on_hill_in_water",
+        "via": "temaki",
+        "temaki": "islet_tree",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "tree_row",
+        "via": "temaki",
+        "temaki": "tree_row",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "tree_stump",
+        "via": "temaki",
+        "temaki": "tree_stump",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "trench",
+        "via": "temaki",
+        "temaki": "trench",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "triangle_down",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "triangle_down_outline",
+        "temaki": "yield",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "triangle_down_squat",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "triangle_up",
+        "maki": "triangle",
+        "opentrailmap": "peak",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "triangle_up_outline",
+        "via": "maki",
+        "maki": "triangle-stroked",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "triangle_up_with_exclamation_point",
+        "maki": "caution",
+        "nps": "safety-caution-alerts",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "triangles_left_right",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "triangles_left_right_in_rectangle",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "triangles_up_down",
+        "temaki": "elevator",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "triangles_up_down_in_rectangle",
+        "maki": "elevator",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "trifold_brochure",
+        "via": "nps",
+        "nps": "brochure",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "truck",
+        "via": "nps",
+        "nps": "trucks",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "truck_profile",
+        "via": "temaki",
+        "temaki": "truck",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "trumpet",
+        "via": "osm-carto",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "tshirt",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "tube",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "tube_and_toothbrush",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "tulip",
+        "via": "maki",
+        "maki": "garden",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "tunnel",
+        "via": "temaki",
+        "temaki": "tunnel",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "tunnel_entrance",
+        "via": "maki",
+        "maki": "tunnel",
+        "nps": "tunnel",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "turnstile",
+        "via": "temaki",
+        "temaki": "turnstile",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "two_dot_horizontal_line_in_rectangle",
+        "basedOn": "two_dot_vertical_line_in_rectangle",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "two_dot_vertical_line_in_rectangle",
+        "via": "temaki",
+        "temaki": "railway_signals",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "utility_device",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "utility_device_with_bolt",
+        "via": "temaki",
+        "temaki": "power_device",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "utility_device_with_cable",
+        "via": "temaki",
+        "temaki": "cable_device",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "utility_device_with_droplet",
+        "via": "temaki",
+        "temaki": "water_device",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "utility_device_with_gas_flame",
+        "via": "temaki",
+        "temaki": "gas_utility",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "utility_device_with_sewage_pipe_cross_section",
+        "via": "temaki",
+        "temaki": "waste_device",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "utility_meter",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "utility_meter_with_bolt",
+        "via": "temaki",
+        "temaki": "power_meter",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "utility_meter_with_cable",
+        "via": "temaki",
+        "temaki": "cable_meter",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "utility_meter_with_droplet",
+        "via": "temaki",
+        "temaki": "water_meter",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "utility_meter_with_gas_flame",
+        "via": "temaki",
+        "temaki": "gas_meter",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "utility_pole",
+        "via": "temaki",
+        "temaki": "utility_pole",
+        "designer": ["@quincylvania", "@bhousel"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "utility_pole_with_bolt",
+        "via": "temaki",
+        "temaki": "power_pole",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "utility_shutoff",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "utility_shutoff_with_bolt",
+        "via": "temaki",
+        "temaki": "power_shutoff",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "utility_shutoff_with_cable",
+        "via": "temaki",
+        "temaki": "cable_shutoff",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "utility_valve",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "utility_valve_with_droplet",
+        "via": "temaki",
+        "temaki": "water_shutoff",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "utility_valve_with_gas_flame",
+        "via": "temaki",
+        "temaki": "gas_shutoff",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "utv",
+        "via": "nps",
+        "nps": "utv",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "vacuum_cleaner",
+        "via": "temaki",
+        "temaki": "vacuum",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "vacuum_station",
+        "via": "temaki",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "vase",
+        "via": "temaki",
+        "temaki": "vase",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "vending_machine",
+        "via": "temaki",
+        "temaki": "vending_machine",
+        "nps": "vending-machine",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "venus",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "vertical_rotisserie",
+        "via": "temaki",
+        "temaki": "vertical_rotisserie",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "village_buildings",
+        "via": "maki",
+        "maki": "village",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "vneck_tshirt",
+        "via": "maki",
+        "maki": "clothing-store",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "volleyball",
+        "via": "maki",
+        "maki": "volleyball",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "volleyball_player",
+        "via": "nps",
+        "nps": "volleyball",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "waiter_holding_tray_with_wine_glass",
+        "via": "nps",
+        "nps": "table-service",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "wall_hanging_with_mountains_and_sun",
+        "via": "maki",
+        "maki": "art-gallery",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "wallmounted_surveillance_camera",
+        "via": "nps",
+        "temaki": "security_camera",
+        "nps": "video-surveillance",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "washing_machine",
+        "via": "maki",
+        "temaki": "laundry",
+        "maki": "laundry",
+        "nps": "laundry",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "water",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "water_bottle",
+        "via": "temaki",
+        "temaki": "water_bottle",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "water_faucet_with_droplet",
+        "via": "nps",
+        "nps": "water-hookup",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "water_glass",
+        "via": "nps",
+        "nps": "drinking-water",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "water_glass_under_faucet",
+        "via": "maki",
+        "maki": "drinking-water",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "water_glass_under_water_tap",
+        "via": "temaki",
+        "temaki": "water_tap_drinkable",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "water_pipe_with_motor",
+        "via": "temaki",
+        "temaki": "powered_pump",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "water_tap",
+        "via": "temaki",
+        "temaki": "water_tap",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "water_tap_with_motor",
+        "via": "temaki",
+        "temaki": "water_pump_powered",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "water_tap_with_pump_handle",
+        "via": "temaki",
+        "temaki": "water_pump_manual",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "water_tower",
+        "via": "temaki",
+        "temaki": "water_tower",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "waterfall",
+        "via": "maki",
+        "maki": "waterfall",
+        "nps": "waterfall",
+        "opentrailmap": "waterfall",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "waterfowl",
+        "via": "nps",
+        "nps": "waterfowl",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "watering_can",
+        "via": "maki",
+        "maki": "garden-centre",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "watermill_on_water",
+        "via": "maki",
+        "maki": "watermill",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "webcam",
+        "via": "nps",
+        "nps": "webcam",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "whale_tail_in_water",
+        "via": "nps",
+        "temaki": "whale_watching",
+        "nps": "whale-viewing",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "wheelchair",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "wifi",
+        "via": "nps",
+        "nps": "wi-fi",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "wind_surfer_on_water",
+        "via": "nps",
+        "temaki": "wind_surfing",
+        "nps": "wind-surfing",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "wind_turbine",
+        "via": "temaki",
+        "temaki": "wind_turbine",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "windmill",
+        "via": "maki",
+        "temaki": "windmill",
+        "maki": "windmill",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "window",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "windpump",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "windsock",
+        "via": "temaki",
+        "temaki": "windsock",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "wine_bottle",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "wine_bottle_and_wine_glass",
+        "via": "nps",
+        "nps": "wine",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "wine_glass",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "womens_and_mens_restroom_symbol",
+        "maki": "toilet",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "womens_restroom_symbol",
+        "nps": "womens-restroom",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "wrench",
+        "via": "maki",
+        "maki": "hardware",
+        "nps": "mechanic",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "wrench_and_hammer",
+        "via": "temaki",
+        "temaki": "tools",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "x",
+        "via": "",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "x_cross",
+        "via": "maki",
+        "maki": "cross",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "x_oblique",
+        "via": "temaki",
+        "temaki": "x_oblique",
+        "designer": ["@quincylvania"],
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "y_junction",
+        "via": "temaki",
+        "temaki": "y_junction",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "yen_yuan",
+        "via": "maki",
+        "maki": "bank-JP",
+        "importer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "newId": "yin_yang",
+        "via": "temaki",
+        "temaki": "taoism",
+        "importer": [
+          "@quincylvania"
+        ]
+      }
+    ]
+  },
+  {
+    "majorVersion": "2",
+    "iconChanges": [
+      {
+        "oldId": "cross_latin",
+        "newId": "latin_cross"
+      },
+      {
+        "oldId": "flower_boquette",
+        "newId": "flower_bouquet"
+      },
+      {
+        "oldId": "plan_in_raised_planter",
+        "newId": "plant_in_raised_planter"
+      },
+      {
+        "oldId": "hanging_rail_transit_vehicle",
+        "newId": "hanging_rail_transit_vehicle_with_destination_display"
+      },
+      {
+        "oldId": "local_transit_vehicle",
+        "newId": "transit_vehicle_with_destination_display"
+      },
+      {
+        "oldId": "monorail_transit_vehicle",
+        "newId": "monorail_transit_vehicle_with_destination_display"
+      },
+      {
+        "oldId": "person_boarding_bus",
+        "newId": "person_boarding_bus_with_destination_display"
+      },
+      {
+        "oldId": "person_boarding_hanging_rail_transit_vehicle",
+        "newId": "person_boarding_hanging_rail_transit_vehicle_with_destination_display"
+      },
+      {
+        "oldId": "person_boarding_local_transit_vehicle",
+        "newId": "person_boarding_transit_vehicle_with_destination_display"
+      },
+      {
+        "oldId": "person_boarding_monorail_transit_vehicle",
+        "newId": "person_boarding_monorail_transit_vehicle_with_destination_display"
+      },
+      {
+        "newId": "turtle_top",
+        "designer": ["@quincylvania"]
+      },
+      {
+        "newId": "arrow_down_to_down_bracket",
+        "designer": ["@quincylvania"]
+      },
+      {
+        "newId": "arrow_up_to_up_bracket",
+        "designer": ["@quincylvania"]
+      },
+      {
+        "newId": "arrow_left_to_left_bracket",
+        "designer": ["@quincylvania"]
+      },
+      {
+        "oldId": "arrow_right_to_right_bracket",
+        "newId": "arrow_right_to_right_bracket",
+        "editor": ["@quincylvania"]
+      }
+    ]
+  },
+  {
+    "majorVersion": "3",
+    "icon_migrations": [
+      {
+        "newId": "car_profile",
+        "designer": ["@quincylvania"]
+      },
+      {
+        "newId": "car_profile_with_raised_hood",
+        "designer": ["@quincylvania"]
+      },
+      {
+        "newId": "pickup_truck",
+        "designer": ["@quincylvania"]
+      },
+      {
+        "newId": "pickup_truck_with_raised_hood",
+        "designer": ["@quincylvania"]
+      },
+      {
+        "newId": "pickup_truck_with_crates",
+        "designer": ["@quincylvania"]
+      },
+      {
+        "newId": "pickup_truck_with_slidein_camper",
+        "nps": "rv-campground",
+        "designer": ["@quincylvania"]
+      },
+      {
+        "newId": "compact_box_truck",
+        "designer": ["@quincylvania"]
+      },
+      {
+        "newId": "compact_box_truck_with_greek_cross",
+        "designer": ["@quincylvania"]
+      },
+      {
+        "newId": "compact_box_truck_with_heavy_six_point_asterisk",
+        "designer": ["@quincylvania"]
+      },
+      {
+        "oldId": "truck_profile",
+        "newId": "box_truck",
+        "editor": ["@quincylvania"]
+      },
+      {
+        "newId": "flatbed_truck",
+        "designer": ["@quincylvania"]
+      },
+      {
+        "newId": "maple_leaf",
+        "designer": ["@quincylvania"]
+      },
+      {
+        "oldId": "wifi",
+        "newId": "wifi",
+        "editor": ["@quincylvania"]
+      },
+      {
+        "newId": "mobile_phone_with_keypad_and_antenna_and_wifi",
+        "designer": ["@quincylvania"]
+      },
+      {
+        "newId": "mobile_phone_with_touchscreen_and_antenna_and_wifi",
+        "designer": ["@quincylvania"]
+      }
+    ]
+  },
+  {
+    "majorVersion": "4",
+    "icon_migrations": [
+      {
+        "oldId": "bread",
+        "newId": "loaf_of_bread",
+        "editor": ["@quincylvania"]
+      },
+      {
+        "newId": "loaf_of_bread_with_steam",
+        "designer": ["@quincylvania"]
+      },
+      {
+        "newId": "loaf_of_pan_bread",
+        "designer": ["@quincylvania"]
+      },
+      {
+        "newId": "loaf_of_pan_bread_with_steam",
+        "designer": ["@quincylvania"]
+      },
+      {
+        "newId": "station_wagon",
+        "designer": ["@quincylvania"]
+      },
+      {
+        "newId": "station_wagon_with_raised_hood",
+        "designer": ["@quincylvania"]
+      },
+      {
+        "oldId": "car_profile",
+        "newId": "sedan"
+      },
+      {
+        "oldId": "car_profile_with_raised_hood",
+        "newId": "sedan_with_raised_hood"
+      },
+      {
+        "newId": "car_with_taxi_checkerboard",
+        "basedOn": "https://github.com/mapbox/maki/blob/main/icons/taxi.svg",
+        "maki": "taxi",
+        "designer": [
+          "@quincylvania"
+        ]
+      },
+      {
+        "oldId": "cabin",
+        "newId": "cabin_with_chimney",
+        "nps": "cabin"
+      },
+      {
+        "newId": "cabin",
+        "basedOn": "cabin_with_chimney",
+        "designer": [
+          "@quincylvania"
+        ]
+      }
+    ]
+  }
+]

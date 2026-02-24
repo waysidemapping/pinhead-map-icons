@@ -17,11 +17,11 @@ window.addEventListener('load', _ => {
 });
 
 async function setupPage(pageData) {
-  const migrations = await fetch('migrations.json')
+  const migrations = await fetch('changelog.json')
     .then(result => result.json());
 
-  const currentMigrations = migrations.find(item => item.to_major_version === majorVersion);
-  const newIconIds = currentMigrations.icon_migrations.filter(mig => mig.new_id && (!mig.old_id || mig.redesign)).map(mig => mig.new_id);
+  const currentMigrations = migrations.find(item => item.majorVersion === majorVersion);
+  const newIconIds = currentMigrations.icon_migrations.filter(mig => mig.newId && (!mig.oldId || mig.visualChange)).map(mig => mig.newId);
 
   const parser = new DOMParser();
   const icons = pageData.icons;
