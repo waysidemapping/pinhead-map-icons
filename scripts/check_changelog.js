@@ -63,21 +63,21 @@ function validateChangelog() {
         delete icons[iconChange.oldId]
       }
       if (iconChange.newId) {
-        if (iconChange.oldId && iconChange.via) {
-          console.error(`Unexpected both "via": "${iconChange.via}" and "oldId": "${iconChange.oldId}" for "${iconChange.newId}" in version ${v}`)
+        if (iconChange.oldId && iconChange.src) {
+          console.error(`Unexpected both "src": "${iconChange.src}" and "oldId": "${iconChange.oldId}" for "${iconChange.newId}" in version ${v}`)
           return;
         }
-        if (iconChange.via) {
+        if (iconChange.src) {
           if (!iconChange.importer) {
             console.error(`Missing "importer" for "${iconChange.newId}" in version ${v}`)
             return;
           }
-          if (!importSources[iconChange.via]) {
-            console.error(`Unknown "via": "${iconChange.via}" for "${iconChange.newId}" in version ${v}`)
+          if (!importSources[iconChange.src]) {
+            console.error(`Unknown "src": "${iconChange.src}" for "${iconChange.newId}" in version ${v}`)
             return;
           }
-          if (!iconChange[iconChange.via]) {
-            console.error(`Missing "${iconChange.via}": "…" property for "${iconChange.newId}" in version ${v}`)
+          if (!iconChange[iconChange.src]) {
+            console.error(`Missing "${iconChange.src}": "…" property for "${iconChange.newId}" in version ${v}`)
             return;
           }
         }
