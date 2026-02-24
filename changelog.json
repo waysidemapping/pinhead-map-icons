@@ -4744,8 +4744,7 @@
       },
       {
         "newId": "rectangle_outline",
-        "by": "@quincylvania",
-        "osmcarto": "rect"
+        "by": "@quincylvania"
       },
       {
         "newId": "rectangle_tall",
@@ -5390,7 +5389,8 @@
       {
         "newId": "square_outline",
         "by": "@quincylvania",
-        "maki": "square-stroked"
+        "maki": "square-stroked",
+        "osmcarto": "rect"
       },
       {
         "newId": "squat_rock",
