@@ -1,5 +1,5 @@
 import { execSync } from "child_process";
-import { existsSync, renameSync, rmSync, copyFileSync, mkdirSync } from "fs";
+import { readFileSync, existsSync, renameSync, rmSync, copyFileSync, mkdirSync } from "fs";
 import { join } from "path";
 
 const packageName = "@waysidemapping/pinhead";
@@ -24,16 +24,17 @@ function downloadLegacyIcons(majorVersion) {
   renameSync("package", folderName);
   rmSync(file);
 
-  const iconsPath = join(folderName, "dist", "icons");
-  if (!existsSync(iconsPath)) throw new Error(`dist/icons not found in ${folderName}`);
+  const iconDir = join(folderName, "dist", "icons");
+  if (!existsSync(iconDir)) throw new Error(`dist/icons not found in ${folderName}`);
 
   const targetDir = 'docs/v' + majorVersion;
   mkdirSync(targetDir, { recursive: true });
-  execSync(`cp -r "${iconsPath}/." "${targetDir}"`);
+  execSync(`cp -r "${iconDir}/." "${targetDir}"`);
 
   if (majorVersion === currentMajorVersion) {
-    copyFileSync(`${join(folderName, "package.json")}`, "docs/package.json")
-    if (existsSync(`${join(folderName, "dist/changelog.json")}`)) copyFileSync(`${join(folderName, "dist/changelog.json")}`, "docs/changelog.json")
+    copyFileSync(`${join(folderName, "package.json")}`, "docs/package.json");
+    if (existsSync(`${join(folderName, "dist/changelog.json")}`)) copyFileSync(`${join(folderName, "dist/changelog.json")}`, "docs/changelog.json");
+    if (existsSync(`${join(folderName, "dist/external_sources.json")}`)) copyFileSync(`${join(folderName, "dist/external_sources.json")}`, "docs/external_sources.json");
   }
 
   rmSync(folderName, { recursive: true, force: true });
@@ -41,33 +42,7 @@ function downloadLegacyIcons(majorVersion) {
   console.log("Loaded icons from " + folderName);
 }
 
-const importSources = [
-  {
-    id: "maki",
-    repo: "https://github.com/mapbox/maki.git",
-    iconsPath: "icons",
-  },
-  {
-    id: "nps",
-    repo: "https://github.com/nationalparkservice/symbol-library.git",
-    iconsPath: "src/standalone"
-  },
-  {
-    id: "opentrailmap",
-    repo: "https://github.com/osmus/opentrailmap.git",
-    iconsPath: "style/sprites/svg"
-  },
-  {
-    id: "osmcarto",
-    repo: "https://github.com/openstreetmap-carto/openstreetmap-carto.git",
-    iconsPath: "symbols"
-  },
-  {
-    id: "temaki",
-    repo: "https://github.com/rapideditor/temaki.git",
-    iconsPath: "icons"
-  }
-];
+const importSources = JSON.parse(readFileSync('metadata/external_sources.json'));
 
 function ensureEmptyDir(dir) {
   if (existsSync(dir)) {
@@ -81,7 +56,7 @@ ensureEmptyDir('docs/srcicons');
 
 for (const importSource of importSources) {
   execSync(`git clone ${importSource.repo} "tmp/${importSource.id}"`)
-  const srcDir = join(`tmp/${importSource.id}`, importSource.iconsPath);
+  const srcDir = join(`tmp/${importSource.id}`, importSource.iconDir);
   execSync(`cp -r "${srcDir}/." "docs/srcicons/${importSource.id}"`);
 }
 

@@ -2,7 +2,7 @@
 
 ## [4.0.0] - 2026-02-24
 
-⚠️ This major release contains new, redesigned, and renamed icons that may affect your setup. A machine-readable version of the icon upgrade paths can be found in the [`changelog.json`](/changelog.json) file. This update also include a breaking change for developers that relied on the `migrations.json` file.
+⚠️ This major release contains new, redesigned, and renamed icons that may affect your setup. A machine-readable version of the icon upgrade paths can be found in the [`changelog.json`](/metadata/changelog.json) file. This update also include a breaking change for developers that relied on the `migrations.json` file.
 
 ### New icons
 
@@ -26,7 +26,7 @@
 
 ### Developer changes
 
-- ⚠️ Rename `migrations.json` to [`changelog.json`](/changelog.json) file and alter format
+- ⚠️ Rename `migrations.json` to [`changelog.json`](/metadata/changelog.json) file and alter format
   - Add contributor credit
   - Add mappings to source icon sets (Maki, Temaki, etc.)
   - Add data for v1 icons 

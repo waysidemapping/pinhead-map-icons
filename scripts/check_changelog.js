@@ -7,39 +7,11 @@ import os from "os";
 
 const workspace = await fs.mkdtemp(join(os.tmpdir(), "workspace-"));
 
-const importSources = {
-  maki: {
-    name: "Maki",
-    repo: "https://github.com/mapbox/maki.git",
-    iconsPath: "icons",
-    seenIcons: {}
-  },
-  nps: {
-    name: "NPS",
-    repo: "https://github.com/nationalparkservice/symbol-library.git",
-    iconsPath: "src/standalone",
-    filenameGetter: (id) => `${id}-black-22.svg`,
-    seenIcons: {}
-  },
-  opentrailmap: {
-    name: "OpenTrailMap",
-    repo: "https://github.com/osmus/opentrailmap.git",
-    iconsPath: "style/sprites/svg",
-    seenIcons: {}
-  },
-  osmcarto: {
-    name: "OSM Carto",
-    repo: "https://github.com/openstreetmap-carto/openstreetmap-carto.git",
-    iconsPath: "symbols",
-    seenIcons: {}
-  },
-  temaki: {
-    name: "Temaki",
-    repo: "https://github.com/rapideditor/temaki.git",
-    iconsPath: "icons",
-    seenIcons: {}
-  }
-};
+const importSources = JSON.parse(readFileSync('metadata/external_sources.json'));
+
+for (const importSource of importSources) {
+  importSource.seenIcons = {};
+}
 
 function validateChangelog() {
 
@@ -54,9 +26,9 @@ function validateChangelog() {
     "src",
     "srcBy",
     "importBy"
-  ].concat(Object.keys(importSources));
+  ].concat(importSources.map(source => source.id));
 
-  const changelogPath = 'changelog.json';
+  const changelogPath = 'metadata/changelog.json';
 
   const changelogs = JSON.parse(readFileSync(changelogPath));
   // sort oldest to newest
@@ -104,7 +76,7 @@ function validateChangelog() {
             return;
           }
           if (!iconChange.src.includes('://')) {
-            if (!importSources[iconChange.src]) {
+            if (!importSources.find(source => source.id === iconChange.src)) {
               console.error(`Unknown "src": "${iconChange.src}" for "${iconChange.newId}" in version ${v}`)
               return;
             }
@@ -127,18 +99,16 @@ function validateChangelog() {
         }
       }
 
-      for (const importSourceId in importSources) {
-        const importSource = importSources[importSourceId];
-        if (iconChange[importSourceId]) {
-          const ids = stringArray(iconChange[importSourceId]);
+      for (const importSource of importSources) {
+        if (iconChange[importSource.id]) {
+          const ids = stringArray(iconChange[importSource.id]);
           for (const id of ids) {
             if (importSource.seenIcons[id]) {
-              console.error(`"${iconChange.newId}" and "${importSource.seenIcons[id]}" both reference the same "${importSourceId}" icon: "${id}"`);
+              console.error(`"${iconChange.newId}" and "${importSource.seenIcons[id]}" both reference the same "${importSource.id}" icon: "${id}"`);
               return;
             }
-            let filename = importSource.filenameGetter ? importSource.filenameGetter(id) : `${id}.svg`;
-         
-            const iconFile = join(repoPath(importSource.repo), importSource.iconsPath, filename);
+            const filename = id + (importSource.filenameSuffix || '') + '.svg';
+            const iconFile = join(repoPath(importSource.repo), importSource.iconDir, filename);
             
             if (!existsSync(iconFile)) {
               console.error(`No such icon "${iconFile}" referenced by "${iconChange.newId}" in version ${v}`);
@@ -212,5 +182,5 @@ async function cloneTempRepos(repos, workFunction) {
   }
 }
 
-const repoUrls = Object.values(importSources).map(obj => obj.repo);
+const repoUrls = importSources.map(obj => obj.repo);
 cloneTempRepos(repoUrls, validateChangelog);

@@ -6,7 +6,8 @@ console.log('Building docs for Pinhead v' + version);
 const majorVersion = parseInt(version.split('.')[0]);
 
 copyFileSync('package.json', "docs/package.json");
-copyFileSync('changelog.json', "docs/changelog.json");
+copyFileSync('metadata/changelog.json', "docs/changelog.json");
+copyFileSync('metadata/external_sources.json', "docs/external_sources.json");
 
 ensureEmptyDir(`docs/v${majorVersion}`);
 execSync(`cp -r "dist/icons/" 'docs/v${majorVersion}'`);

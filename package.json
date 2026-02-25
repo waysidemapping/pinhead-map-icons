@@ -1,6 +1,6 @@
 {
   "name": "@waysidemapping/pinhead",
-  "version": "4.0.0",
+  "version": "4.1.0-dev",
   "type": "module",
   "description": "Quality public domain icons for your map pins",
   "license": "CC0-1.0",
@@ -32,7 +32,7 @@
     "access": "public"
   },
   "scripts": {
-    "dist": "npm run check_icons && npm run build_dist && npm run check_changelog && cp changelog.json dist/changelog.json",
+    "dist": "npm run check_icons && npm run build_dist && npm run check_changelog && cp metadata/changelog.json dist/changelog.json && cp metadata/external_sources.json dist/external_sources.json",
     "build_docs": "node scripts/build_docs.js",
     "check_changelog": "node scripts/check_changelog.js",
     "build_docs_for_preview": "npm run build_docs && npm run dist && node scripts/build_preview_docs.js",

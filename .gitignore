@@ -2,4 +2,5 @@ dist
 docs/v*/
 docs/package.json
 docs/changelog.json
+docs/external_sources.json
 docs/srcicons/
