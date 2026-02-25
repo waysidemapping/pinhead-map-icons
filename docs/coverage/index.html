@@ -63,7 +63,7 @@
         id: 'nps',
         name: "NPS",
         repo: "https://github.com/nationalparkservice/symbol-library.git",
-        filenameGetter: (id) => `${id}-black-22.svg`
+        filenameSuffix: "-black-22"
       },
       {
         id: 'opentrailmap',
@@ -149,7 +149,7 @@
         html += `<td>`;
         if (icon[importSource.id]) {
           for (const importedIconId of icon[importSource.id]) {
-            let filename = importSource.filenameGetter ? importSource.filenameGetter(importedIconId) : `${importedIconId}.svg`;
+            const filename = importedIconId + (importSource.filenameSuffix || '') + '.svg';
             html += `<div title="${importedIconId}"><img src="/srcicons/${importSource.id}/${filename}"/> ${importedIconId}</div>`;
           }
         }
