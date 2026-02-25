@@ -1,5 +1,53 @@
 # Changelog
 
+## [5.0.0] - 2026-02-25
+
+⚠️ This major release contains new, redesigned, and renamed icons that may affect your setup. A machine-readable version of the icon upgrade paths can be found in the [`changelog.json`](/metadata/changelog.json) file.
+
+### Added icons
+
+- <img src="https://pinhead.ink/v5/clothes_hanger_holding_cloth.svg" width="15px"/> Add `clothes_hanger_holding_cloth`
+- <img src="https://pinhead.ink/v5/badge_shield_with_star.svg" width="15px"/> Add `badge_shield_with_star`
+
+Added icons from or inspired by [OpenStreetMap Americana](https://github.com/osm-americana/openstreetmap-americana) (CC0):
+
+- <img src="https://pinhead.ink/v5/f22_raptor_fighter_jet.svg" width="15px"/> Add `f22_raptor_fighter_jet`
+- <img src="https://pinhead.ink/v5/hospital_h.svg" width="15px"/> Add `hospital_h`
+- <img src="https://pinhead.ink/v5/bus.svg" width="15px"/> Add `bus`
+- <img src="https://pinhead.ink/v5/dome_with_flag.svg" width="15px"/> Add `dome_with_flag`
+- <img src="https://pinhead.ink/v5/book_with_raised_cover.svg" width="15px"/> Add `book_with_raised_cover`
+- <img src="https://pinhead.ink/v5/memorial_stone.svg" width="15px"/> Add `memorial_stone`
+- <img src="https://pinhead.ink/v5/badge_shield.svg" width="15px"/> Add `badge_shield`
+- <img src="https://pinhead.ink/v5/badge_shield_with_fire.svg" width="15px"/> Add `badge_shield_with_fire`
+- <img src="https://pinhead.ink/v5/circle_outline_with_star.svg" width="15px"/> Add `circle_outline_with_star`
+- <img src="https://pinhead.ink/v5/cocktail_with_straw.svg" width="15px"/> Add `cocktail_with_straw`
+- <img src="https://pinhead.ink/v5/fork_crossing_knife.svg" width="15px"/> Add `fork_crossing_knife`
+- <img src="https://pinhead.ink/v5/sleepers_in_opposing_bunkbeds.svg" width="15px"/> Add `sleepers_in_opposing_bunkbeds`
+- <img src="https://pinhead.ink/v5/square_dot.svg" width="15px"/> Add `square_dot`
+- <img src="https://pinhead.ink/v5/pennant_on_square.svg" width="15px"/> Add `pennant_on_square`
+- <img src="https://pinhead.ink/v5/star_and_crescent_on_square.svg" width="15px"/> Add `star_and_crescent_on_square`
+- <img src="https://pinhead.ink/v5/latin_cross_on_square.svg" width="15px"/> Add `latin_cross_on_square`
+- <img src="https://pinhead.ink/v5/flaming_chalice.svg" width="15px"/> Add `flaming_chalice`
+- <img src="https://pinhead.ink/v5/flaming_chalice_on_square.svg" width="15px"/> Add `flaming_chalice_on_square`
+- <img src="https://pinhead.ink/v5/quaker_star_on_square.svg" width="15px"/> Add `quaker_star_on_square`
+- <img src="https://pinhead.ink/v5/star_of_david.svg" width="15px"/> Add `star_of_david`
+- <img src="https://pinhead.ink/v5/star_of_david_filled_outline.svg" width="15px"/> Add `star_of_david_filled_outline`
+- <img src="https://pinhead.ink/v5/star_of_david_on_square.svg" width="15px"/> Add `star_of_david_on_square`
+- <img src="https://pinhead.ink/v5/dharma_wheel_on_square.svg" width="15px"/> Add `dharma_wheel_on_square`
+- <img src="https://pinhead.ink/v5/yin_yang_on_square.svg" width="15px"/> Add `yin_yang_on_square`
+- <img src="https://pinhead.ink/v5/torii_on_square.svg" width="15px"/> Add `torii_on_square`
+- <img src="https://pinhead.ink/v5/khanda_on_square.svg" width="15px"/> Add `khanda_on_square`
+- <img src="https://pinhead.ink/v5/om_on_square.svg" width="15px"/> Add `om_on_square`
+
+### Renamed and redesigned icons
+
+- <img src="https://pinhead.ink/v4/inscribed_memorial_stone.svg" width="15px"/> `inscribed_memorial_stone` -> <img src="https://pinhead.ink/v5/memorial_stone_with_inscription.svg" width="15px"/> `memorial_stone_with_inscription`
+
+### Renamed icons
+
+- <img src="https://pinhead.ink/v5/star_of_david_filled.svg" width="15px"/> `star_of_david` -> `star_of_david_filled`
+
+
 ## [4.0.0] - 2026-02-24
 
 ⚠️ This major release contains new, redesigned, and renamed icons that may affect your setup. A machine-readable version of the icon upgrade paths can be found in the [`changelog.json`](/metadata/changelog.json) file. This update also include a breaking change for developers that relied on the `migrations.json` file.
