@@ -63,6 +63,8 @@
 
     const importSources = await fetch('/external_sources.json')
       .then(result => result.json());
+    const srciconsIndex = await fetch('/srcicons/index.json')
+      .then(result => result.json());
     const changelogs = await fetch('/changelog.json')
       .then(result => result.json());
 
@@ -118,7 +120,6 @@
 
     for (const importSource of importSources) {
       importSource.iconCount = icons.filter(icon => icon[importSource.id]).length;
-      console.log(importSource.iconCount);
     }
     importSources.sort((a, b) => b.iconCount - a.iconCount);
 
@@ -136,13 +137,31 @@
         html += `<td>`;
         if (icon[importSource.id]) {
           for (const importedIconId of icon[importSource.id]) {
-            const filename = importedIconId + (importSource.filenameSuffix || '') + '.svg';
-            html += `<div title="${importedIconId}"><img src="/srcicons/${importSource.id}/${filename}"/> ${importedIconId}</div>`;
+            const filename = importedIconId + (importSource.filenameSuffix || '');
+            delete srciconsIndex[importSource.id][filename];
+            html += `<div title="${importedIconId}"><img src="/srcicons/${importSource.id}/${filename}.svg"/> ${importedIconId}</div>`;
           }
         }
         html += `</td>`;
       }
       html += `</tr>`;
+    }
+    for (const importSource of importSources) {
+      for (const externalIconFilename in srciconsIndex[importSource.id]) {
+        html += `<tr><td></td>`;
+        for (const importSource2 of importSources) {
+          html += `<td>`;
+          if (importSource.id === importSource2.id) {
+            let externalIconId = externalIconFilename;
+            if (importSource.filenameSuffix) {
+              externalIconId = externalIconId.slice(0, -importSource.filenameSuffix.length);
+            }
+            html += `<div title="${externalIconId}"><img src="/srcicons/${importSource.id}/${externalIconFilename}.svg"/> ${externalIconId}</div>`;
+          }
+          html += `</td>`;
+        }
+        html += `</tr>`;
+      }
     }
     document.getElementById('coverage').innerHTML = html;
   </script>
