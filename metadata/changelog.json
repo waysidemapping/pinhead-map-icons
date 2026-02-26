@@ -7014,6 +7014,13 @@
         "temaki": "chocolate"
       },
       {
+        "newId": "womens_and_mens_separate_restrooms_symbol",
+        "by": "@quincylvania",
+        "inspo": "womens_and_mens_restroom_symbol",
+        "nps": "restrooms",
+        "osmcarto": "amenity/toilets"
+      },
+      {
         "oldId": "shopping_cart",
         "newId": "shopping_cart",
         "edit": "flip",
