@@ -60,40 +60,9 @@
   </div>
   <table id="coverage"></table>
   <script type="module">
-    const importSources = [
-      {
-        "id": "americana",
-        "name": "OSM Americana",
-        "repo": "https://github.com/osm-americana/openstreetmap-americana.git"
-      },
-      {
-        id: 'maki',
-        name: "Maki",
-        repo: "https://github.com/mapbox/maki.git",
-      },
-      {
-        id: 'nps',
-        name: "NPS",
-        repo: "https://github.com/nationalparkservice/symbol-library.git",
-        filenameSuffix: "-black-22"
-      },
-      {
-        id: 'opentrailmap',
-        name: "OpenTrailMap",
-        repo: "https://github.com/osmus/opentrailmap.git",
-      },
-      {
-        id: 'osmcarto',
-        name: "OSM Carto",
-        repo: "https://github.com/openstreetmap-carto/openstreetmap-carto.git",
-      },
-      {
-        id: 'temaki',
-        name: "Temaki",
-        repo: "https://github.com/rapideditor/temaki.git"
-      }
-    ];
 
+    const importSources = await fetch('/external_sources.json')
+      .then(result => result.json());
     const changelogs = await fetch('/changelog.json')
       .then(result => result.json());
 
