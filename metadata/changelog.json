@@ -6934,5 +6934,18 @@
         "americana": "poi_pow_hindu"
       }
     ]
+  },
+  {
+    "majorVersion": "6",
+    "iconChanges": [
+      {
+        "newId": "fallout_shelter_symbol",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "circle_with_fallout_shelter_symbol",
+        "by": "@quincylvania"
+      }
+    ]
   }
 ]
