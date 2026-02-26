@@ -29,6 +29,7 @@ function validateChangelog() {
   const iconChangeProps = [
     "oldId",
     "newId",
+    "edit",
     "by",
     "inspo",
     "inspoBy",
