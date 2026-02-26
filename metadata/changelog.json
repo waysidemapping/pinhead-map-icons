@@ -130,6 +130,7 @@
         "src": "maki",
         "importBy": "@quincylvania",
         "maki": "harbor",
+        "nps": "marina",
         "osmcarto": "amenity/ferry"
       },
       {
@@ -449,7 +450,8 @@
       },
       {
         "newId": "bench",
-        "by": "@quincylvania"
+        "by": "@quincylvania",
+        "osmcarto": "amenity/bench"
       },
       {
         "newId": "bench_with_backrest",
@@ -1158,6 +1160,7 @@
         "importBy": "@quincylvania",
         "americana": "poi_charging_station",
         "maki": "charging-station",
+        "nps": "electric-car-charging",
         "osmcarto": "amenity/charging_station"
       },
       {
@@ -1183,7 +1186,11 @@
       {
         "newId": "chevron_up_tall_outline",
         "by": "@quincylvania",
-        "opentrailmap": "lock"
+        "opentrailmap": [
+          "lock",
+          "lock-canoeable",
+          "lock-hazard"
+        ]
       },
       {
         "newId": "chicane_arrow",
@@ -1574,7 +1581,10 @@
         "newId": "crosswalk_markings_zebra",
         "src": "temaki",
         "importBy": "@quincylvania",
-        "temaki": "crossing_markings-zebra"
+        "temaki": [
+          "crossing_markings-zebra",
+          "crossing_markings-zebra_bicolour"
+        ]
       },
       {
         "newId": "crosswalk_markings_zebra_double",
@@ -1628,7 +1638,11 @@
         "src": "maki",
         "importBy": "@quincylvania",
         "maki": "dam",
-        "opentrailmap": "dam"
+        "opentrailmap": [
+          "dam",
+          "dam-canoeable",
+          "dam-hazard"
+        ]
       },
       {
         "newId": "dancer_with_sparkles",
@@ -1951,7 +1965,8 @@
         "importBy": "@quincylvania",
         "americana": "poi_envelope",
         "maki": "post",
-        "nps": "post-office"
+        "nps": "post-office",
+        "osmcarto": "amenity/post_office"
       },
       {
         "newId": "envelope_in_slot",
@@ -2266,6 +2281,7 @@
         "src": "temaki",
         "srcBy": "@quincylvania",
         "importBy": "@quincylvania",
+        "osmcarto": "barrier/gate",
         "temaki": "gate"
       },
       {
@@ -3702,7 +3718,11 @@
         "importBy": "@quincylvania",
         "americana": "poi_p",
         "maki": "parking",
-        "nps": "parking"
+        "nps": "parking",
+        "osmcarto": [
+          "amenity/parking",
+          "amenity/parking_subtle"
+        ]
       },
       {
         "newId": "parking_p_under_roof",
@@ -5746,7 +5766,8 @@
         "newId": "toll_booth",
         "src": "maki",
         "importBy": "@quincylvania",
-        "maki": "toll"
+        "maki": "toll",
+        "osmcarto": "barrier/toll_booth"
       },
       {
         "newId": "toll_gantry",
@@ -5919,7 +5940,8 @@
         "newId": "trash_can",
         "src": "maki",
         "importBy": "@quincylvania",
-        "maki": "waste-basket"
+        "maki": "waste-basket",
+        "osmcarto": "amenity/waste_basket"
       },
       {
         "newId": "treasure_map",
@@ -6380,7 +6402,11 @@
         "importBy": "@quincylvania",
         "maki": "waterfall",
         "nps": "waterfall",
-        "opentrailmap": "waterfall",
+        "opentrailmap": [
+          "waterfall",
+          "waterfall-canoeable",
+          "waterfall-hazard"
+        ],
         "osmcarto": "natural/waterfall"
       },
       {
@@ -6762,7 +6788,8 @@
       {
         "newId": "hospital_h",
         "by": "@quincylvania",
-        "americana": "poi_hospital"
+        "americana": "poi_hospital",
+        "nps": "hospital"
       },
       {
         "newId": "bus",
@@ -6785,7 +6812,8 @@
       {
         "newId": "book_with_raised_cover",
         "by": "@quincylvania",
-        "americana": "poi_book_upright"
+        "americana": "poi_book_upright",
+        "nps": "bookstore"
       },
       {
         "newId": "memorial_stone",
@@ -6898,7 +6926,8 @@
       },
       {
         "newId": "star_of_david",
-        "by": "@quincylvania"
+        "by": "@quincylvania",
+        "osmcarto": "religion/jewish"
       },
       {
         "oldId": "star_of_david",

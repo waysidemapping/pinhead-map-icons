@@ -3,7 +3,8 @@
     "id": "americana",
     "name": "OSM Americana",
     "repo": "https://github.com/osm-americana/openstreetmap-americana.git",
-    "iconDir": "icons"
+    "iconDir": "icons",
+    "ignoreFiles": "^(shield)|(oneway)"
   },
   {
     "id": "maki",
@@ -16,7 +17,8 @@
     "name": "NPS",
     "repo": "https://github.com/nationalparkservice/symbol-library.git",
     "iconDir": "src/standalone",
-    "filenameSuffix": "-black-22"
+    "filenameSuffix": "-black-22",
+    "ignoreFiles": "^transparent$"
   },
   {
     "id": "opentrailmap",
@@ -28,7 +30,8 @@
     "id": "osmcarto",
     "name": "OSM Carto",
     "repo": "https://github.com/openstreetmap-carto/openstreetmap-carto.git",
-    "iconDir": "symbols"
+    "iconDir": "symbols",
+    "ignoreFiles": "(^generating_patterns\\/)|(^shields\\/)|(^unpaved\\/)|(^[^/]+$)"
   },
   {
     "id": "temaki",
