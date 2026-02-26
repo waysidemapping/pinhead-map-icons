@@ -1,5 +1,94 @@
 # Changelog
 
+## [6.0.0] - 2026-02-26
+
+⚠️ This major release contains new, redesigned, and renamed icons that may affect your setup. A machine-readable version of the icon upgrade paths can be found in the [`changelog.json`](/metadata/changelog.json) file.
+
+### Added icons
+
+- <img src="https://pinhead.ink/v6/fallout_shelter_symbol.svg" width="15px"/> Add `fallout_shelter_symbol`
+- <img src="https://pinhead.ink/v6/circle_with_fallout_shelter_symbol.svg" width="15px"/> Add `circle_with_fallout_shelter_symbol`
+- <img src="https://pinhead.ink/v6/pixel_ghost.svg" width="15px"/> Add `pixel_ghost`
+- <img src="https://pinhead.ink/v6/terminal_screen_with_greater_than_prompt.svg" width="15px"/> Add `terminal_screen_with_greater_than_prompt`
+- <img src="https://pinhead.ink/v6/terminal_screen_with_hash_prompt.svg" width="15px"/> Add `terminal_screen_with_hash_prompt`
+- <img src="https://pinhead.ink/v6/terminal_screen_with_dollar_prompt.svg" width="15px"/> Add `terminal_screen_with_dollar_prompt`
+- <img src="https://pinhead.ink/v6/terminal_screen_with_percent_prompt.svg" width="15px"/> Add `terminal_screen_with_percent_prompt`
+- <img src="https://pinhead.ink/v6/rss.svg" width="15px"/> Add `rss`
+- <img src="https://pinhead.ink/v6/chocolate_drop.svg" width="15px"/> Add `chocolate_drop`
+- <img src="https://pinhead.ink/v6/womens_and_mens_separate_restrooms_symbol.svg" width="15px"/> Add `womens_and_mens_separate_restrooms_symbol`
+
+### Redesigned icons
+
+- <img src="https://pinhead.ink/v5/shopping_cart.svg" width="15px"/> -> <img src="https://pinhead.ink/v6/shopping_cart.svg" width="15px"/> `shopping_cart`
+- <img src="https://pinhead.ink/v5/person_shushing.svg" width="15px"/> -> <img src="https://pinhead.ink/v6/person_shushing.svg" width="15px"/> `person_shushing`
+
+### Renamed icons
+
+All the icons with people have been renamed for consistency:
+
+- <img src="https://pinhead.ink/v6/person_walking.svg" width="15px"/> `pedestrian` -> `person_walking`
+- <img src="https://pinhead.ink/v6/sign_beside_person_walking.svg" width="15px"/> `sign_beside_pedestrian` -> `sign_beside_person_walking`
+- <img src="https://pinhead.ink/v6/person_wearing_backpack_walking_with_hiking_pole.svg" width="15px"/> `pedestrian_wearing_backpack_holding_hiking_pole` -> `person_wearing_backpack_walking_with_hiking_pole`
+- <img src="https://pinhead.ink/v6/person_wearing_backpack_walking_with_hiking_pole_in_gable_roofed_building.svg" width="15px"/> `pedestrian_wearing_backpack_holding_hiking_pole_under_roof` -> `person_wearing_backpack_walking_with_hiking_pole_in_gable_roofed_building`
+- <img src="https://pinhead.ink/v6/person_walking_under_icy_eave.svg" width="15px"/> `pedestrian_under_icy_eave` -> `person_walking_under_icy_eave`
+- <img src="https://pinhead.ink/v6/person_walking_with_white_cane.svg" width="15px"/> `pedestrian_using_white_cane` -> `person_walking_with_white_cane`
+- <img src="https://pinhead.ink/v6/person_walking_between_walls.svg" width="15px"/> `pedestrian_between_walls` -> `person_walking_between_walls`
+- <img src="https://pinhead.ink/v6/person_walking_on_crosswalk.svg" width="15px"/> `pedestrian_on_crosswalk` -> `person_walking_on_crosswalk`
+- <img src="https://pinhead.ink/v6/person_holding_shopping_bags_walking.svg" width="15px"/> `pedestrian_holding_shopping_bags` -> `person_holding_shopping_bags_walking`
+- <img src="https://pinhead.ink/v6/person_driving_motorboat_on_water.svg" width="15px"/> `motorboater_on_water` -> `person_driving_motorboat_on_water`
+- <img src="https://pinhead.ink/v6/person_riding_bicycle.svg" width="15px"/> `bicyclist` -> `person_riding_bicycle`
+- <img src="https://pinhead.ink/v6/person_riding_bicycle_on_crosswalk.svg" width="15px"/> `bicyclist_on_crosswalk` -> `person_riding_bicycle_on_crosswalk`
+- <img src="https://pinhead.ink/v6/person_walking_and_person_riding_bicycle.svg" width="15px"/> `pedestrian_and_cyclist` -> `person_walking_and_person_riding_bicycle`
+- <img src="https://pinhead.ink/v6/person_walking_and_person_riding_bicycle_on_crosswalk.svg" width="15px"/> `pedestrian_and_cyclist_on_crosswalk` -> `person_walking_and_person_riding_bicycle_on_crosswalk`
+- <img src="https://pinhead.ink/v6/person_swimming_in_water.svg" width="15px"/> `swimmer_in_water` -> `person_swimming_in_water`
+- <img src="https://pinhead.ink/v6/person_wind_surfing_on_water.svg" width="15px"/> `wind_surfer_on_water` -> `person_wind_surfing_on_water`
+- <img src="https://pinhead.ink/v6/person_wearing_helmet_paddling_kayak_on_water.svg" width="15px"/> `kayaker_on_water` -> `person_wearing_helmet_paddling_kayak_on_water`
+- <img src="https://pinhead.ink/v6/person_riding_pedal_boat_on_water.svg" width="15px"/> `pedal_boater_on_water` -> `person_riding_pedal_boat_on_water`
+- <img src="https://pinhead.ink/v6/person_riding_jetski_on_water.svg" width="15px"/> `jet_skier_on_water` -> `person_riding_jetski_on_water`
+- <img src="https://pinhead.ink/v6/person_diving_into_water.svg" width="15px"/> `diver_above_water` -> `person_diving_into_water`
+- <img src="https://pinhead.ink/v6/person_tow_skiing_on_water.svg" width="15px"/> `towed_skier_on_water` -> `person_tow_skiing_on_water`
+- <img src="https://pinhead.ink/v6/person_running.svg" width="15px"/> `runner` -> `person_running`
+- <img src="https://pinhead.ink/v6/person_sleeping.svg" width="15px"/> `sleeper` -> `person_sleeping`
+- <img src="https://pinhead.ink/v6/person_sleeping_in_shelter.svg" width="15px"/> `sleeper_in_shelter` -> `person_sleeping_in_shelter`
+- <img src="https://pinhead.ink/v6/car_beside_person_sleeping_in_bed.svg" width="15px"/> `car_beside_sleeper_in_bed` -> `car_beside_person_sleeping_in_bed`
+- <img src="https://pinhead.ink/v6/person_sleeping_in_bed.svg" width="15px"/> `sleeper_in_bed` -> `person_sleeping_in_bed`
+- <img src="https://pinhead.ink/v6/people_sleeping_in_bunkbeds.svg" width="15px"/> `sleepers_in_bunkbeds` -> `people_sleeping_in_bunkbeds`
+- <img src="https://pinhead.ink/v6/people_sleeping_in_opposing_bunkbeds.svg" width="15px"/> `sleepers_in_opposing_bunkbeds` -> `people_sleeping_in_opposing_bunkbeds`
+- <img src="https://pinhead.ink/v6/person_climbing_with_climbing_rope.svg" width="15px"/> `climber_with_climbing_rope` -> `person_climbing_with_climbing_rope`
+- <img src="https://pinhead.ink/v6/person_dancing_with_sparkles.svg" width="15px"/> `dancer_with_sparkles` -> `person_dancing_with_sparkles`
+- <img src="https://pinhead.ink/v6/person_riding_skateboard.svg" width="15px"/> `skateboarder` -> `person_riding_skateboard`
+- <img src="https://pinhead.ink/v6/person_cross_country_skiing.svg" width="15px"/> `cross_country_skier` -> `person_cross_country_skiing`
+- <img src="https://pinhead.ink/v6/person_wearing_skis_riding_chairlift.svg" width="15px"/> `aerial_chairlift_with_skier` -> `person_wearing_skis_riding_chairlift`
+- <img src="https://pinhead.ink/v6/person_wearing_backpack_scrambling_up_cliff.svg" width="15px"/> `mountaineer_with_backpack_climbing_cliff` -> `person_wearing_backpack_scrambling_up_cliff`
+- <img src="https://pinhead.ink/v6/people_in_car.svg" width="15px"/> `car_with_driver_and_passenger` -> `people_in_car`
+- <img src="https://pinhead.ink/v6/person_snowshoeing.svg" width="15px"/> `snowshoer` -> `person_snowshoeing`
+- <img src="https://pinhead.ink/v6/person_snowboarding_downhill.svg" width="15px"/> `snowboarder` -> `person_snowboarding_downhill`
+- <img src="https://pinhead.ink/v6/person_sledding_downhill.svg" width="15px"/> `sledder` -> `person_sledding_downhill`
+- <img src="https://pinhead.ink/v6/person_ski_jumping.svg" width="15px"/> `ski_jumper` -> `person_ski_jumping`
+- <img src="https://pinhead.ink/v6/person_spiking_volleyball.svg" width="15px"/> `volleyball_player` -> `person_spiking_volleyball`
+- <img src="https://pinhead.ink/v6/person_playing_tennis.svg" width="15px"/> `tennis_player` -> `person_playing_tennis`
+- <img src="https://pinhead.ink/v6/people_sitting_in_theater.svg" width="15px"/> `theater_with_audience` -> `people_sitting_in_theater`
+- <img src="https://pinhead.ink/v6/person_playing_soccer.svg" width="15px"/> `soccer_player` -> `person_playing_soccer`
+- <img src="https://pinhead.ink/v6/person_ice_skating.svg" width="15px"/> `ice_skater` -> `person_ice_skating`
+- <img src="https://pinhead.ink/v6/person_inline_skating.svg" width="15px"/> `inline_skater` -> `person_inline_skating`
+- <img src="https://pinhead.ink/v6/person_skiing_downhill.svg" width="15px"/> `downhill_skier` -> `person_skiing_downhill`
+- <img src="https://pinhead.ink/v6/person_riding_dog_sled.svg" width="15px"/> `dog_sledder` -> `person_riding_dog_sled`
+- <img src="https://pinhead.ink/v6/person_wearing_scuba_gear_diving.svg" width="15px"/> `scuba_diver` -> `person_wearing_scuba_gear_diving`
+- <img src="https://pinhead.ink/v6/person_baseball_batting.svg" width="15px"/> `baseball_batter` -> `person_baseball_batting`
+- <img src="https://pinhead.ink/v6/person_cricket_batting_at_cricket_ball.svg" width="15px"/> `cricket_batter` -> `person_cricket_batting_at_cricket_ball`
+- <img src="https://pinhead.ink/v6/person_speaking_to_amphitheater.svg" width="15px"/> `public_speaker` -> `person_speaking_to_amphitheater`
+- <img src="https://pinhead.ink/v6/person_wearing_backpack_and_headlamp_crouching.svg" width="15px"/> `spelunker` -> `person_wearing_backpack_and_headlamp_crouching`
+- <img src="https://pinhead.ink/v6/person_wearing_helmet_padding_raft_on_water.svg" width="15px"/> `person_padding_raft_on_water` -> `person_wearing_helmet_padding_raft_on_water`
+- <img src="https://pinhead.ink/v6/profile_of_person_in_hat_in_frame.svg" width="15px"/> `portrait_of_person_in_hat_in_frame` -> `profile_of_person_in_hat_in_frame`
+- <img src="https://pinhead.ink/v6/person_swinging_golf_club.svg" width="15px"/> `golfer` -> `person_swinging_golf_club`
+- <img src="https://pinhead.ink/v6/person_swinging_golf_club_beside_golf_pin.svg" width="15px"/> `golfer_and_golf_pin` -> `person_swinging_golf_club_beside_golf_pin`
+- <img src="https://pinhead.ink/v6/person_swinging_golf_club_beside_windmill.svg" width="15px"/> `golfer_and_windmill` -> `person_swinging_golf_club_beside_windmill`
+- <img src="https://pinhead.ink/v6/person_jockeying_racehorse.svg" width="15px"/> `horse_racer` -> `person_jockeying_racehorse`
+- <img src="https://pinhead.ink/v6/person_boat_racing_in_waves.svg" width="15px"/> `boat_racer_on_water` -> `person_boat_racing_in_waves`
+- <img src="https://pinhead.ink/v6/person_bicycle_racing.svg" width="15px"/> `bicycle_racer` -> `person_bicycle_racing`
+- <img src="https://pinhead.ink/v6/person_wearing_helmet_riding_atv.svg" width="15px"/> `person_riding_atv` -> `person_wearing_helmet_riding_atv`
+- <img src="https://pinhead.ink/v6/person_wearing_waiters_attire_holding_tray_with_wine_glass.svg" width="15px"/> `waiter_holding_tray_with_wine_glass` -> `person_wearing_waiters_attire_holding_tray_with_wine_glass`
+
 ## [5.0.0] - 2026-02-25
 
 ⚠️ This major release contains new, redesigned, and renamed icons that may affect your setup. A machine-readable version of the icon upgrade paths can be found in the [`changelog.json`](/metadata/changelog.json) file.
