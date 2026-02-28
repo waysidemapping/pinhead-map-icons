@@ -7401,7 +7401,7 @@
         "inspo": "wifi"
       },
       {
-        "newId": "wifi_very_weak_signal",
+        "newId": "wifi_weakest_signal",
         "by": "@quincylvania",
         "inspo": "wifi"
       },
@@ -7409,6 +7409,26 @@
         "newId": "wifi_no_signal",
         "by": "@quincylvania",
         "inspo": "wifi"
+      },
+      {
+        "newId": "phone_bars",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "phone_bars_weak_signal",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "phone_bars_weaker_signal",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "phone_bars_weakest_signal",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "phone_bars_no_signal",
+        "by": "@quincylvania"
       }
     ]
   }
