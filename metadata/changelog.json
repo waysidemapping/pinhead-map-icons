@@ -7308,6 +7308,14 @@
         "inspo": "pickup_truck"
       },
       {
+        "newId": "conifer_tree_with_antenna_array",
+        "by": "@quincylvania",
+        "inspo": [
+          "conifer_tree",
+          "pole_with_antenna_array"
+        ]
+      },
+      {
         "newId": "plus",
         "by": "@quincylvania",
         "inspo": "plus_squat"
