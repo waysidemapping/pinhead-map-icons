@@ -7288,6 +7288,11 @@
     "date": "2026-02-",
     "iconChanges": [
       {
+        "newId": "plus",
+        "by": "@quincylvania",
+        "inspo": "plus_squat"
+      },
+      {
         "newId": "roman_numeral_i",
         "by": "@quincylvania",
         "issue": "11"
