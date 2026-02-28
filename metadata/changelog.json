@@ -7429,6 +7429,18 @@
       {
         "newId": "phone_bars_no_signal",
         "by": "@quincylvania"
+      },
+      {
+        "newId": "ladder",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "step_ladder",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "step_ladder_doubled_sided",
+        "by": "@quincylvania"
       }
     ]
   }
