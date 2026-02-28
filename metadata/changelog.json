@@ -7411,6 +7411,11 @@
         "inspo": "wifi"
       },
       {
+        "newId": "wifi_no_signal_with_x",
+        "by": "@quincylvania",
+        "inspo": "wifi"
+      },
+      {
         "newId": "phone_bars",
         "by": "@quincylvania"
       },
@@ -7428,6 +7433,10 @@
       },
       {
         "newId": "phone_bars_no_signal",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "phone_bars_no_signal_with_x",
         "by": "@quincylvania"
       },
       {
