@@ -7282,5 +7282,76 @@
         "newId": "person_wearing_waiters_attire_holding_tray_with_wine_glass"
       }
     ]
+  },
+  {
+    "majorVersion": "7",
+    "date": "2026-02-",
+    "iconChanges": [
+      {
+        "newId": "roman_numeral_i",
+        "by": "@quincylvania",
+        "issue": "11"
+      },
+      {
+        "newId": "roman_numeral_ii",
+        "by": "@quincylvania",
+        "issue": "11"
+      },
+      {
+        "newId": "roman_numeral_iii",
+        "by": "@quincylvania",
+        "issue": "11"
+      },
+      {
+        "newId": "roman_numeral_iv",
+        "by": "@quincylvania",
+        "issue": "11"
+      },
+      {
+        "newId": "roman_numeral_v",
+        "by": "@quincylvania",
+        "issue": "11"
+      },
+      {
+        "newId": "roman_numeral_vi",
+        "by": "@quincylvania",
+        "issue": "11"
+      },
+      {
+        "newId": "roman_numeral_vii",
+        "by": "@quincylvania",
+        "issue": "11"
+      },
+      {
+        "newId": "roman_numeral_viii",
+        "by": "@quincylvania",
+        "issue": "11"
+      },
+      {
+        "newId": "roman_numeral_ix",
+        "by": "@quincylvania",
+        "issue": "11"
+      },
+      {
+        "newId": "roman_numeral_x",
+        "by": "@quincylvania",
+        "issue": "11"
+      },
+      {
+        "newId": "roman_numeral_xi",
+        "by": "@quincylvania",
+        "issue": "11"
+      },
+      {
+        "newId": "roman_numeral_xii",
+        "by": "@quincylvania",
+        "issue": "11"
+      },
+      {
+        "newId": "roman_numeral_xx",
+        "by": "@quincylvania",
+        "issue": "11"
+      }
+    ]
   }
 ]

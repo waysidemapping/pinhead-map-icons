@@ -35,7 +35,8 @@ function validateChangelog() {
     "inspoBy",
     "src",
     "srcBy",
-    "importBy"
+    "importBy",
+    "issue"
   ].concat(importSources.map(source => source.id));
 
   const changelogPath = 'metadata/changelog.json';
