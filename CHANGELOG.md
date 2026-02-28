@@ -1,5 +1,34 @@
 # Changelog
 
+## [8.0.0] - 2026-02-28
+
+⚠️ This major release contains new icons that may affect your setup. A machine-readable version of this changelog can be found in the [`changelog.json`](/metadata/changelog.json) file.
+
+### Distribution changes
+
+- A QGIS plugin for Pinhead is now available
+
+### Added icons
+
+- <img src="https://pinhead.ink/v8/syrup_jug.svg" width="15px"/> Add `syrup_jug`
+- <img src="https://pinhead.ink/v8/syrup_jug_with_maple_leaf.svg" width="15px"/> Add `syrup_jug_with_maple_leaf`
+- <img src="https://pinhead.ink/v8/syrup_jug_with_maple_leaf_and_droplet.svg" width="15px"/> Add `syrup_jug_with_maple_leaf_and_droplet`
+- <img src="https://pinhead.ink/v8/slice_of_pan_bread.svg" width="15px"/> Add `slice_of_pan_bread`
+- <img src="https://pinhead.ink/v8/slice_of_pan_bread_outline.svg" width="15px"/> Add `slice_of_pan_bread_outline`
+- <img src="https://pinhead.ink/v8/ladder.svg" width="15px"/> Add `ladder`
+- <img src="https://pinhead.ink/v8/step_ladder.svg" width="15px"/> Add `step_ladder`
+- <img src="https://pinhead.ink/v8/step_ladder_doubled_sided.svg" width="15px"/> Add `step_ladder_doubled_sided`
+- <img src="https://pinhead.ink/v8/wifi_weak_signal.svg" width="15px"/> Add `wifi_weak_signal`
+- <img src="https://pinhead.ink/v8/wifi_weakest_signal.svg" width="15px"/> Add `wifi_weakest_signal`
+- <img src="https://pinhead.ink/v8/wifi_no_signal.svg" width="15px"/> Add `wifi_no_signal`
+- <img src="https://pinhead.ink/v8/wifi_no_signal_with_x.svg" width="15px"/> Add `wifi_no_signal_with_x`
+- <img src="https://pinhead.ink/v8/phone_bars.svg" width="15px"/> Add `phone_bars`
+- <img src="https://pinhead.ink/v8/phone_bars_weak_signal.svg" width="15px"/> Add `phone_bars_weak_signal`
+- <img src="https://pinhead.ink/v8/phone_bars_weaker_signal.svg" width="15px"/> Add `phone_bars_weaker_signal`
+- <img src="https://pinhead.ink/v8/phone_bars_weakest_signal.svg" width="15px"/> Add `phone_bars_weakest_signal`
+- <img src="https://pinhead.ink/v8/phone_bars_no_signal.svg" width="15px"/> Add `phone_bars_no_signal`
+- <img src="https://pinhead.ink/v8/phone_bars_no_signal_with_x.svg" width="15px"/> Add `phone_bars_no_signal_with_x`
+
 ## [7.0.0] - 2026-02-27
 
 ⚠️ This major release contains new icons that may affect your setup. A machine-readable version of this changelog can be found in the [`changelog.json`](/metadata/changelog.json) file.
