@@ -7285,8 +7285,28 @@
   },
   {
     "majorVersion": "7",
-    "date": "2026-02-",
+    "date": "2026-02-27",
     "iconChanges": [
+      {
+        "newId": "canoe_on_sedan",
+        "by": "@quincylvania",
+        "inspo": "sedan"
+      },
+      {
+        "newId": "canoe_on_station_wagon",
+        "by": "@quincylvania",
+        "inspo": "station_wagon"
+      },
+      {
+        "newId": "canoe_on_pickup_truck",
+        "by": "@quincylvania",
+        "inspo": "pickup_truck"
+      },
+      {
+        "newId": "pickup_truck_with_truck_cap",
+        "by": "@quincylvania",
+        "inspo": "pickup_truck"
+      },
       {
         "newId": "plus",
         "by": "@quincylvania",
