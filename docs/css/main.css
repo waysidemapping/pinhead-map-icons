@@ -22,7 +22,8 @@ b, strong {
 }
 a {
   color: inherit;
-  text-decoration: underline solid var(--text-color) 1px;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
 }
 h1 {
   font-size: 32px;
