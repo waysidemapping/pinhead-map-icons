@@ -7504,6 +7504,42 @@
         "newId": "syrup_jug_with_sugarcane_stalk_with_leaves_and_droplet",
         "by": "@quincylvania",
         "inspo": "syrup_jug_with_maple_leaf_and_droplet"
+      },
+      {
+        "newId": "pixel_conifer_tree",
+        "by": "@quincylvania",
+        "inspo": "conifer_tree"
+      },
+      {
+        "newId": "pixel_broadleaved_tree",
+        "by": "@quincylvania",
+        "inspo": "broadleaved_tree"
+      },
+      {
+        "newId": "pixel_apple",
+        "by": "@quincylvania",
+        "inspo": "apple"
+      },
+      {
+        "newId": "pixel_megalith",
+        "by": "@quincylvania",
+        "inspo": "megalith"
+      },
+      {
+        "newId": "pixel_star",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "pixel_circle",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "pixel_circle_outline",
+        "by": "@quincylvania"
+      },
+      {
+        "newId": "pixel_circle_with_star",
+        "by": "@quincylvania"
       }
     ]
   }
