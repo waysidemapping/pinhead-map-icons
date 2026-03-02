@@ -1,5 +1,38 @@
 # Changelog
 
+## [9.0.0] - 2026-03-01
+
+⚠️ This major release contains new icons that may affect your setup. A machine-readable version of this changelog can be found in the [`changelog.json`](/metadata/changelog.json) file.
+
+### Added icons
+
+Add sugar-related icons:
+
+- <img src="https://pinhead.ink/v9/sugar_cubes.svg" width="15px"/> Add `sugar_cubes`
+- <img src="https://pinhead.ink/v9/sugarcane_stalk_with_leaves.svg" width="15px"/> Add `sugarcane_stalk_with_leaves`
+- <img src="https://pinhead.ink/v9/sugarcane_stalk_with_top_leaves.svg" width="15px"/> Add `sugarcane_stalk_with_top_leaves`
+- <img src="https://pinhead.ink/v9/sugarcane_stalks_with_top_leaves.svg" width="15px"/> Add `sugarcane_stalks_with_top_leaves`
+- <img src="https://pinhead.ink/v9/syrup_jug_with_sugarcane_stalk_with_leaves.svg" width="15px"/> Add `syrup_jug_with_sugarcane_stalk_with_leaves`
+- <img src="https://pinhead.ink/v9/syrup_jug_with_sugarcane_stalk_with_leaves_and_droplet.svg" width="15px"/> Add `syrup_jug_with_sugarcane_stalk_with_leaves_and_droplet`
+
+Add icons in the pixel style:
+
+- <img src="https://pinhead.ink/v9/pixel_conifer_tree.svg" width="15px"/> Add `pixel_conifer_tree`
+- <img src="https://pinhead.ink/v9/pixel_broadleaved_tree.svg" width="15px"/> Add `pixel_broadleaved_tree`
+- <img src="https://pinhead.ink/v9/pixel_apple.svg" width="15px"/> Add `pixel_apple`
+- <img src="https://pinhead.ink/v9/pixel_megalith.svg" width="15px"/> Add `pixel_megalith`
+- <img src="https://pinhead.ink/v9/pixel_star.svg" width="15px"/> Add `pixel_star`
+- <img src="https://pinhead.ink/v9/pixel_circle.svg" width="15px"/> Add `pixel_circle`
+- <img src="https://pinhead.ink/v9/pixel_circle_outline.svg" width="15px"/> Add `pixel_circle_outline`
+- <img src="https://pinhead.ink/v9/pixel_circle_with_star.svg" width="15px"/> Add `pixel_circle_with_star`
+- <img src="https://pinhead.ink/v9/pixel_house_with_chimney.svg" width="15px"/> Add `pixel_house_with_chimney`
+- <img src="https://pinhead.ink/v9/pixel_house_with_flag.svg" width="15px"/> Add `pixel_house_with_flag`
+- <img src="https://pinhead.ink/v9/pixel_classical_building.svg" width="15px"/> Add `pixel_classical_building`
+- <img src="https://pinhead.ink/v9/pixel_classical_building_with_flag.svg" width="15px"/> Add `pixel_classical_building_with_flag`
+- <img src="https://pinhead.ink/v9/pixel_classical_building_with_dome_and_flag.svg" width="15px"/> Add `pixel_classical_building_with_dome_and_flag`
+- <img src="https://pinhead.ink/v9/pixel_dome_with_flag.svg" width="15px"/> Add `pixel_dome_with_flag`
+- <img src="https://pinhead.ink/v9/pixel_plane.svg" width="15px"/> Add `pixel_plane`
+
 ## [8.0.0] - 2026-02-28
 
 ⚠️ This major release contains new icons that may affect your setup. A machine-readable version of this changelog can be found in the [`changelog.json`](/metadata/changelog.json) file.
