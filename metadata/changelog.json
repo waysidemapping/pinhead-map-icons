@@ -7540,6 +7540,41 @@
       {
         "newId": "pixel_circle_with_star",
         "by": "@quincylvania"
+      },
+      {
+        "newId": "pixel_house_with_chimney",
+        "by": "@quincylvania",
+        "inspo": "house_with_chimney"
+      },
+      {
+        "newId": "pixel_house_with_flag",
+        "by": "@quincylvania",
+        "inspo": "house_with_flag"
+      },
+      {
+        "newId": "pixel_classical_building",
+        "by": "@quincylvania",
+        "inspo": "classical_building"
+      },
+      {
+        "newId": "pixel_classical_building_with_flag",
+        "by": "@quincylvania",
+        "inspo": "classical_building_with_flag"
+      },
+      {
+        "newId": "pixel_classical_building_with_dome_and_flag",
+        "by": "@quincylvania",
+        "inspo": "classical_building_with_dome_and_flag"
+      },
+      {
+        "newId": "pixel_dome_with_flag",
+        "by": "@quincylvania",
+        "inspo": "dome_with_flag"
+      },
+      {
+        "newId": "pixel_plane",
+        "by": "@quincylvania",
+        "inspo": "plane"
       }
     ]
   }
